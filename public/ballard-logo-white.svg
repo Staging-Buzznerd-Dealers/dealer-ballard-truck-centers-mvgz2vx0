@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="64" viewBox="0 0 240 64" role="img" aria-label="Ballard Truck Centers">
+  <text x="120" y="36" text-anchor="middle" font-family="Rockwell, 'Roboto Slab', Georgia, 'Times New Roman', serif" font-weight="900" font-size="38" letter-spacing="1" fill="#ffffff">BALLARD</text>
+  <path d="M8 44 H232 L224 60 H16 Z" fill="#0b7dda"/>
+  <text x="120" y="56" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="11" letter-spacing="3" fill="#ffffff">TRUCK CENTERS</text>
+</svg>

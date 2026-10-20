@@ -1,107 +1,212 @@
 {
-  "version": 1,
-  "blocks": [
+  "version": 2,
+  "nodes": [
     {
-      "id": "hero",
-      "type": "hero",
+      "id": "hero-band",
+      "type": "section",
       "props": {
-        "headingLevel": 1,
-        "eyebrow": "Trucks · Parts · Service",
-        "headline": "Your trusted partner on the road.",
-        "subhead": "New and used trucks, expert service, and genuine parts — all from one dealer you can rely on.",
-        "showSearch": true,
-        "ctas": [{ "ctaId": "browse-inventory" }, { "ctaId": "request-quote", "style": "secondary" }]
-      }
-    },
-    {
-      "id": "quick",
-      "type": "iconGrid",
-      "props": {
-        "heading": "How can we help?",
-        "items": [
-          {
-            "label": "In-stock inventory",
-            "desc": "New and used trucks and trailers, priced and ready to move.",
-            "url": "/store"
-          },
-          {
-            "label": "Parts counter",
-            "desc": "OEM and aftermarket parts, shipped or ready at the counter.",
-            "url": "/store"
-          },
-          {
-            "label": "Service & repair",
-            "desc": "Factory-trained technicians for inspections, warranty and repair.",
-            "url": "/contact"
-          },
-          {
-            "label": "Financing",
-            "desc": "Flexible terms for owner-operators, with fast pre-approval.",
-            "url": "/contact"
-          }
-        ]
-      }
-    },
-    {
-      "id": "featured",
-      "type": "widget",
-      "props": {
-        "widget": "inventory-carousel",
-        "config": { "heading": "Featured inventory", "limit": 4 }
-      }
-    },
-    {
-      "id": "band",
-      "type": "statBand",
-      "props": {
-        "heading": "Keeping your fleet on the road",
-        "body": "Every unit we sell is inspected in our own shop. When you buy from us you get a direct line to the people who worked on it.",
-        "ctas": [{ "ctaId": "about-us" }],
-        "stats": [
-          { "value": "39", "label": "Years in business" },
-          { "value": "12k+", "label": "Units delivered" },
-          { "value": "4", "label": "Sales & service centers" },
-          { "value": "48hr", "label": "Avg. parts turnaround" }
-        ]
-      }
-    },
-    {
-      "id": "locations",
-      "type": "widget",
-      "props": {
-        "widget": "locations-map",
-        "config": { "heading": "Find a location", "showMap": true }
-      }
-    },
-    {
-      "id": "contact-row",
-      "type": "row",
-      "props": {
-        "align": "start",
-        "columns": [
-          [
+        "width": "boxed",
+        "background": "ink",
+        "paddingY": 0,
+        "align": "center",
+        "behaviour": "rotator",
+        "behaviourOptions": "{\"autoplay\":7000}"
+      },
+      "children": [
+        {
+          "id": "hero-slide-vnx",
+          "type": "row",
+          "props": { "gap": 6, "align": "center", "part": "slide" },
+          "children": [
             {
-              "id": "contact-copy",
-              "type": "heading",
-              "props": { "text": "Talk to someone who knows the equipment", "headingLevel": 2 }
+              "id": "hero-vnx-copy",
+              "type": "column",
+              "props": { "span": 5, "align": "center" },
+              "children": [
+                { "id": "hero-vnx-h", "type": "heading", "props": { "text": "The All-New\nVolvo VNX", "headingLevel": 1 } },
+                {
+                  "id": "hero-vnx-t",
+                  "type": "text",
+                  "props": {
+                    "text": "The all-new Volvo VNX combines rugged capability, advanced safety, and enhanced driver comfort for the toughest jobs.",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            { "id": "hero-vnx-space", "type": "column", "props": { "span": 7 }, "children": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brands",
+      "type": "section",
+      "props": { "width": "boxed", "background": "card", "paddingY": 6 },
+      "children": [
+        {
+          "id": "brands-strip",
+          "type": "logoStrip",
+          "props": {
+            "logos": [
+              { "name": "Mack" },
+              { "name": "Volvo" },
+              { "name": "Isuzu" },
+              { "name": "Hino" },
+              { "name": "Tico" },
+              { "name": "Reitnouer" },
+              { "name": "Trail King" },
+              { "name": "XL Specialized" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "requests",
+      "type": "section",
+      "props": { "width": "boxed", "background": "card", "paddingY": 6 },
+      "children": [
+        {
+          "id": "requests-row",
+          "type": "row",
+          "props": { "gap": 7, "align": "start", "stackOn": "tablet" },
+          "children": [
+            {
+              "id": "service-card",
+              "type": "column",
+              "props": { "span": 6, "padding": 7, "background": "card" },
+              "children": [
+                {
+                  "id": "service-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "service-request",
+                    "anchor": "service-request",
+                    "heading": "Service Request Form",
+                    "headingLevel": 2,
+                    "intro": "To schedule service on your vehicle, you may contact us using the form below. If you need immediate assistance, please call us at (800) 421-1576."
+                  }
+                }
+              ]
             },
             {
-              "id": "contact-text",
-              "type": "text",
-              "props": {
-                "text": "Tell us what the job needs and we will spec it, price it and tell you honestly what is in stock.\n\nPrefer the phone? <a href=\"tel:+15551234567\">Call us</a> during business hours."
-              }
-            }
-          ],
-          [
-            {
-              "id": "contact-form",
-              "type": "form",
-              "props": { "formId": "request-info" }
+              "id": "parts-card",
+              "type": "column",
+              "props": { "span": 6, "padding": 7, "background": "card" },
+              "children": [
+                {
+                  "id": "parts-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "parts-request",
+                    "anchor": "parts-request",
+                    "heading": "Parts Request Form",
+                    "headingLevel": 2,
+                    "intro": "To order or learn more about parts, you may contact us using the form below. If you need immediate assistance, please call us at (800) 421-1576."
+                  }
+                }
+              ]
             }
           ]
-        ]
-      }
+        }
+      ]
+    },
+    {
+      "id": "featured-band",
+      "type": "section",
+      "props": { "width": "boxed", "background": "accent", "paddingY": 7 },
+      "children": [
+        { "id": "featured-h", "type": "heading", "props": { "text": "Browse Our Featured Trucks & Trailers", "headingLevel": 2, "align": "center" } },
+        {
+          "id": "featured",
+          "type": "widget",
+          "props": { "widget": "inventory-carousel", "config": { "limit": 8 } }
+        }
+      ]
+    },
+    {
+      "id": "departments",
+      "type": "section",
+      "props": { "width": "boxed", "background": "card", "paddingY": 7, "anchor": "departments" },
+      "children": [
+        {
+          "id": "quick",
+          "type": "iconGrid",
+          "props": {
+            "heading": "Reliable Service Across Every Department",
+            "headingLevel": 2,
+            "items": [
+              {
+                "label": "Sales",
+                "desc": "We sell hard working trucks and trailers that serve hard working people like you. Work with our knowledgeable team to find the best solution for your line of work.",
+                "url": "/store/inventory"
+              },
+              {
+                "label": "Service",
+                "desc": "Our factory-trained technicians and expansive dealership network help reduce the time your trucks sit at our shops, getting them back on the road as quickly and efficiently as possible.",
+                "url": "#service-request"
+              },
+              {
+                "label": "Parts",
+                "desc": "We offer a large selection of OEM parts and a wide range of aftermarket parts and accessories for all makes/models, enabling us to carry what you need, when you need it.",
+                "url": "#parts-request"
+              },
+              {
+                "label": "Lease & Rent",
+                "desc": "Our Ballard Lease & Rent program is offered at all of our dealerships across New England, so you can easily find the perfect truck and financing option for your needs."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "reviews",
+      "type": "section",
+      "props": { "width": "boxed", "background": "accent", "paddingY": 7 },
+      "children": [
+        {
+          "id": "reviews-list",
+          "type": "testimonials",
+          "props": {
+            "heading": "Hear What Our Customers Have to Say",
+            "headingLevel": 2,
+            "items": [
+              {
+                "name": "Rishabh",
+                "role": "Google review",
+                "rating": 5,
+                "quote": "Awesome place. Got here overnight. They open at 6 am and my truck was in a bay at 6:15 am. Truck repaired for a leaky front differential filter. Done and dusted by 8:45 am."
+              },
+              {
+                "name": "Alexander Cabral",
+                "role": "Google review",
+                "rating": 5,
+                "quote": "Excellent quality parts and usually have what you need in stock or can get it fast. Highly recommended."
+              },
+              {
+                "name": "Bruce Maxwell",
+                "role": "Google review",
+                "rating": 5,
+                "quote": "Awesome service and always have the parts needed for any job. Service always has a positive attitude making for a great experience every time. 10/10 recommend"
+              },
+              {
+                "name": "Soban Peng",
+                "role": "Google review",
+                "rating": 5,
+                "quote": "Parts department always gets the stuff I need. Everyone is knowledgeable and if any issues arise they communicate with me. Great parts department."
+              },
+              {
+                "name": "Duane Boucher",
+                "role": "Google review",
+                "rating": 5,
+                "quote": "Great to have this dealer located closer to the Cape for convenience. They are always responsive to our needs."
+              }
+            ]
+          }
+        }
+      ]
     }
   ]
 }

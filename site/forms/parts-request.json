@@ -1,0 +1,30 @@
+{
+  "id": "parts-request",
+  "name": "Parts request",
+  "status": "live",
+  "surfaces": ["page"],
+  "intent": "parts-enquiry",
+  "submitLabel": "Submit",
+  "successMessage": "Thanks — the parts desk will confirm stock and pricing with you shortly.",
+  "consent": { "enabled": false, "required": false, "text": "" },
+  "fields": [
+    { "id": "pr-first", "type": "first_name", "label": "First", "required": true, "width": "half" },
+    { "id": "pr-last", "type": "last_name", "label": "Last", "required": true, "width": "half" },
+    { "id": "pr-phone", "type": "phone", "label": "Phone", "required": true, "width": "half" },
+    { "id": "pr-email", "type": "email", "label": "Email", "required": true, "width": "half" },
+    { "id": "pr-company", "type": "single_line", "label": "Company Name", "required": true, "width": "half" },
+    { "id": "pr-location", "type": "single_line", "label": "Preferred Ballard Location", "required": true, "width": "half" },
+    { "id": "pr-parts", "type": "paragraph", "label": "Part(s) Needed", "required": false }
+  ],
+  "notifications": [
+    {
+      "id": "pr-default",
+      "name": "Parts desk",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "parts-manager",
+      "scopeMode": "dynamic"
+    }
+  ]
+}

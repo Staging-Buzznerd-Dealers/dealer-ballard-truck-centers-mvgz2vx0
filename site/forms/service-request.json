@@ -1,0 +1,34 @@
+{
+  "id": "service-request",
+  "name": "Service request",
+  "status": "live",
+  "surfaces": ["page"],
+  "intent": "book-service",
+  "submitLabel": "Submit",
+  "successMessage": "Thanks — our service team will contact you to confirm your appointment.",
+  "consent": { "enabled": false, "required": false, "text": "" },
+  "fields": [
+    { "id": "sr-first", "type": "first_name", "label": "First", "required": true, "width": "half" },
+    { "id": "sr-last", "type": "last_name", "label": "Last", "required": true, "width": "half" },
+    { "id": "sr-phone", "type": "phone", "label": "Phone", "required": true, "width": "half" },
+    { "id": "sr-email", "type": "email", "label": "Email", "required": true, "width": "half" },
+    { "id": "sr-company", "type": "single_line", "label": "Company Name", "required": true, "width": "half" },
+    { "id": "sr-location", "type": "single_line", "label": "Preferred Ballard Location", "required": true, "width": "half" },
+    { "id": "sr-make", "name": "vehicleMake", "type": "single_line", "label": "Make", "required": true, "width": "half" },
+    { "id": "sr-model", "name": "vehicleModel", "type": "single_line", "label": "Model", "required": true, "width": "half" },
+    { "id": "sr-year", "name": "vehicleYear", "type": "number", "label": "Year", "required": false },
+    { "id": "sr-services", "type": "paragraph", "label": "What services do you need performed?", "required": false },
+    { "id": "sr-date", "type": "date", "label": "When would you like your appointment?", "required": true }
+  ],
+  "notifications": [
+    {
+      "id": "sr-default",
+      "name": "Service advisors",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "service-advisor",
+      "scopeMode": "dynamic"
+    }
+  ]
+}
