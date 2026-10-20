@@ -5,7 +5,7 @@
 [data-bz-node="brands"] { padding-block: 49px 0; }
 [data-bz-node="brands-strip"] .bz-logos { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); align-items: center; justify-items: center; border: 0; padding: 0; gap: 24px 0; }
 [data-bz-node="brands-strip"] .bz-logo { min-height: 80px; width: 100%; justify-content: center; }
-[data-bz-node="brands-strip"] .bz-logo__t { font: 800 1rem/1 var(--font-heading); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); }
+[data-bz-node="brands-strip"] .bz-logo__t { font: 700 1rem/1 var(--font-heading); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); }
 [data-bz-node="brands-strip"] .bz-logo img { display: block; width: auto; max-width: 100%; height: auto; }
 
 /* Service and parts request cards */
@@ -30,7 +30,7 @@
 
 /* Featured inventory */
 [data-bz-node="featured-band"] { padding-block: 80px; color: #fff; background: linear-gradient(180deg, var(--accent) 0%, var(--accent-dark) 55%, var(--ballard-navy) 100%); }
-[data-bz-node="featured-h"] h2 { margin: 0 0 32px; color: #fff; font: var(--weight-heading) var(--text-h2) / 1.2 var(--font-heading); }
+[data-bz-node="featured-h"] h2 { margin: 0 0 32px; color: #fff; font: 700 1.88rem / 1.2 var(--font-heading); }
 [data-bz-node="featured"] .bz-widget { background: none; border: 0; padding: 0; }
 [data-bz-node="featured"] .bz-widget__empty { color: rgba(255, 255, 255, 0.85); text-align: center; }
 [data-bz-node="featured"] .bz-card { background: #fff; border: 0; border-radius: 0; overflow: hidden; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25); }
@@ -46,7 +46,7 @@
 /* Departments. Icons are the reference's own artwork, used as masks so they take
    the brand blue; the Mack lineup sits flush against the band that follows. */
 [data-bz-node="departments"] { padding-block: 72px 0; }
-[data-bz-node="quick"] > .bz-container > h2 { margin: 0 0 54px; text-align: center; font: 900 1.93rem / 1.2 var(--font-heading); color: #000; }
+[data-bz-node="quick"] > .bz-container > h2 { margin: 0 0 54px; text-align: center; font: 700 1.88rem / 1.2 var(--font-heading); color: #000; }
 [data-bz-node="quick"] .bz-grid { gap: 0; padding-inline: 2.8%; }
 [data-bz-node="quick"] .bz-quick { border: 0; padding: 0; text-align: center; }
 [data-bz-node="quick"] .bz-quick::before {
@@ -59,9 +59,9 @@
 [data-bz-node="quick"] .bz-quick:nth-child(2) { --ico: url("/icons/dept-service.png"); --iw: 49px; --ih: 48px; }
 [data-bz-node="quick"] .bz-quick:nth-child(3) { --ico: url("/icons/dept-parts.png"); --iw: 49px; --ih: 51px; }
 [data-bz-node="quick"] .bz-quick:nth-child(4) { --ico: url("/icons/dept-lease-rent.png"); --iw: 54px; --ih: 54px; }
-[data-bz-node="quick"] .bz-quick__t { margin: 0 0 13px; font: 900 1.915rem / 1.2 var(--font-heading); color: var(--accent); }
+[data-bz-node="quick"] .bz-quick__t { margin: 0 0 13px; font: 700 1.86rem / 1.2 var(--font-heading); color: var(--accent); }
 [data-bz-node="quick"] a.bz-quick:hover .bz-quick__t { color: var(--accent-dark); }
-[data-bz-node="quick"] .bz-quick__d { margin: 0 auto; max-width: 289px; font: 400 0.875rem / 1.6 var(--font-body); color: #333; }
+[data-bz-node="quick"] .bz-quick__d { margin: 0 auto; max-width: 300px; font: 400 0.956rem / 1.47 var(--font-body); color: #333; }
 @media (min-width: 1400px) {
   [data-bz-node="quick"] .bz-quick__d { max-width: none; white-space: pre-line; }
 }
@@ -72,7 +72,7 @@
 
 /* Customer reviews */
 [data-bz-node="reviews"] { padding-block: 72px 80px; background: var(--ballard-navy); color: #fff; }
-[data-bz-node="reviews-list"] > .bz-container > h2 { margin: 0 0 40px; text-align: center; color: #fff; font: var(--weight-heading) var(--text-h2) / 1.2 var(--font-heading); }
+[data-bz-node="reviews-list"] > .bz-container > h2 { margin: 0 0 40px; text-align: center; color: #fff; font: 700 1.88rem / 1.2 var(--font-heading); }
 [data-bz-node="reviews-list"] .bz-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; border-top: 4px solid var(--accent); padding-top: 0; }
 [data-bz-node="reviews-list"] .bz-quote { position: relative; display: flex; flex-direction: column; padding: 22px 18px 28px; background: var(--ballard-sky); border: 0; border-radius: 0 0 var(--radius-card) var(--radius-card); color: var(--ink); min-height: 230px; }
 [data-bz-node="reviews-list"] .bz-quote figcaption { order: 1; padding-right: 28px; }
