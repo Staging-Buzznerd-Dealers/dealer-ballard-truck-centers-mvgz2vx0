@@ -2,14 +2,15 @@
    overrides (site/templates/home.json), so nothing here is a brand literal. */
 
 /* Brand logos */
-[data-bz-node="brands"] { padding-block: 48px 40px; }
-[data-bz-node="brands-strip"] .bz-logos { border: 0; padding: 0; justify-content: space-between; gap: 24px 32px; }
-[data-bz-node="brands-strip"] .bz-logo { min-height: 56px; }
+[data-bz-node="brands"] { padding-block: 49px 0; }
+[data-bz-node="brands-strip"] .bz-logos { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); align-items: center; justify-items: center; border: 0; padding: 0; gap: 24px 0; }
+[data-bz-node="brands-strip"] .bz-logo { min-height: 80px; width: 100%; justify-content: center; }
 [data-bz-node="brands-strip"] .bz-logo__t { font: 800 1rem/1 var(--font-heading); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); }
-[data-bz-node="brands-strip"] .bz-logo img { max-height: 56px; width: auto; }
+[data-bz-node="brands-strip"] .bz-logo img { display: block; width: auto; max-width: 100%; height: auto; }
 
 /* Service and parts request cards */
-[data-bz-node="requests"] { padding-block: 32px 64px; }
+[data-bz-node="requests"] { padding-block: 66px 64px; }
+[data-bz-node="requests-row"] { column-gap: clamp(48px, 4.63vw, 90px); }
 [data-bz-node="requests-row"] > .bz-col { min-width: 0; box-shadow: 0 1px 12px rgba(0, 0, 0, 0.16); padding: 64px; }
 [data-bz-node="requests-row"] .bz-block { padding: 0; }
 [data-bz-node="requests-row"] .bz-formblock { max-width: none; }
@@ -75,16 +76,16 @@
   [data-bz-node="quick"] .bz-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   [data-bz-node="reviews-list"] .bz-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 0; }
   [data-bz-node="reviews-list"] .bz-quote { border-top: 4px solid var(--accent); border-radius: var(--radius-card); }
-  [data-bz-node="brands-strip"] .bz-logos { justify-content: center; }
+  [data-bz-node="brands-strip"] .bz-logos { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
 /* Mobile */
 @media (max-width: 640px) {
-  [data-bz-node="brands"] { padding-block: 40px; }
-  [data-bz-node="brands-strip"] .bz-logos { gap: 18px 24px; }
-  [data-bz-node="brands-strip"] .bz-logo { min-height: 40px; }
+  [data-bz-node="brands"] { padding-block: 40px 0; }
+  [data-bz-node="brands-strip"] .bz-logos { gap: 8px 0; }
+  [data-bz-node="brands-strip"] .bz-logo { min-height: 72px; }
   [data-bz-node="brands-strip"] .bz-logo__t { font-size: 0.8125rem; }
-  [data-bz-node="requests"] { padding-block: 16px 40px; }
+  [data-bz-node="requests"] { padding-block: 24px 40px; }
   [data-bz-node="requests-row"] { gap: 24px; }
   [data-bz-node="requests-row"] > .bz-col { padding: 24px; }
   [data-bz-node="requests-row"] .bz-field--half { flex-basis: 100%; }
