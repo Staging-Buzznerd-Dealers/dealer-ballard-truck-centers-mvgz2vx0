@@ -5,36 +5,86 @@
       "id": "main",
       "name": "Main menu",
       "items": [
-        { "id": "home", "label": "Home", "type": "page", "ref": "home" },
-        { "id": "inventory", "label": "Inventory", "type": "inventory", "ref": "inventory" },
+        {
+          "id": "home",
+          "label": "Home",
+          "type": "page",
+          "ref": "home"
+        },
+        {
+          "id": "inventory",
+          "label": "Inventory",
+          "type": "inventory",
+          "ref": "inventory"
+        },
         {
           "id": "about",
           "label": "About",
           "type": "url",
           "url": "/about",
           "children": [
-            { "id": "about-team", "label": "Our team", "type": "url", "url": "/about#team" },
-            { "id": "about-history", "label": "History", "type": "url", "url": "/about#history" }
+            {
+              "id": "about-team",
+              "label": "Our team",
+              "type": "url",
+              "url": "/about#team"
+            },
+            {
+              "id": "about-history",
+              "label": "History",
+              "type": "url",
+              "url": "/about#history"
+            }
           ]
         },
-        { "id": "contact", "label": "Contact", "type": "url", "url": "/contact" }
+        {
+          "id": "contact",
+          "label": "Contact",
+          "type": "url",
+          "url": "/contact"
+        }
       ]
     },
     {
       "id": "footer",
       "name": "Footer menu",
       "items": [
-        { "id": "f-inventory", "label": "Inventory", "type": "inventory", "ref": "inventory" },
-        { "id": "f-about", "label": "About", "type": "url", "url": "/about" },
-        { "id": "f-contact", "label": "Contact", "type": "url", "url": "/contact" }
+        {
+          "id": "f-inventory",
+          "label": "Inventory",
+          "type": "inventory",
+          "ref": "inventory"
+        },
+        {
+          "id": "f-about",
+          "label": "About",
+          "type": "url",
+          "url": "/about"
+        },
+        {
+          "id": "f-contact",
+          "label": "Contact",
+          "type": "url",
+          "url": "/contact"
+        }
       ]
     },
     {
       "id": "legal",
       "name": "Legal",
       "items": [
-        { "id": "privacy", "label": "Privacy", "type": "url", "url": "/privacy" },
-        { "id": "terms", "label": "Terms", "type": "url", "url": "/terms" }
+        {
+          "id": "privacy",
+          "label": "Privacy",
+          "type": "url",
+          "url": "/privacy"
+        },
+        {
+          "id": "terms",
+          "label": "Terms",
+          "type": "url",
+          "url": "/terms"
+        }
       ]
     },
     {
@@ -178,6 +228,67 @@
           "label": "Careers",
           "type": "url",
           "url": "mailto:drive@ballardtrucks.com"
+        },
+        {
+          "id": "bc-jobs",
+          "label": "Job Openings",
+          "type": "url",
+          "url": "mailto:drive@ballardtrucks.com"
+        }
+      ]
+    },
+    {
+      "id": "ballard-social",
+      "name": "Homepage footer — Social",
+      "items": [
+        {
+          "id": "bs-facebook",
+          "label": "Facebook",
+          "type": "label"
+        },
+        {
+          "id": "bs-instagram",
+          "label": "Instagram",
+          "type": "label"
+        },
+        {
+          "id": "bs-linkedin",
+          "label": "LinkedIn",
+          "type": "label"
+        },
+        {
+          "id": "bs-youtube",
+          "label": "YouTube",
+          "type": "label"
+        },
+        {
+          "id": "bs-tiktok",
+          "label": "TikTok",
+          "type": "label"
+        }
+      ]
+    },
+    {
+      "id": "ballard-legal",
+      "name": "Homepage footer — Legal",
+      "items": [
+        {
+          "id": "bl-privacy",
+          "label": "Privacy Policy",
+          "type": "url",
+          "url": "/privacy"
+        },
+        {
+          "id": "bl-terms",
+          "label": "Terms Of Service",
+          "type": "url",
+          "url": "/terms"
+        },
+        {
+          "id": "bl-access",
+          "label": "Accessibility",
+          "type": "url",
+          "url": "/accessibility"
         }
       ]
     }
