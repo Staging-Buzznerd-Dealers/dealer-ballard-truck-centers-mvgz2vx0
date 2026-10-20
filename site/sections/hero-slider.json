@@ -1,0 +1,127 @@
+{
+  "version": 2,
+  "id": "hero-slider",
+  "name": "Hero slider",
+  "props": [
+    {
+      "key": "autoplay",
+      "type": "number",
+      "label": "Seconds per slide (0 to stop autoplay)",
+      "default": 6
+    },
+    {
+      "key": "slides",
+      "type": "list",
+      "label": "Slides",
+      "fields": [
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Photo (wide, subject on the right)"
+        },
+        {
+          "key": "titleTop",
+          "type": "text",
+          "label": "Headline, white line"
+        },
+        {
+          "key": "titleBottom",
+          "type": "text",
+          "label": "Headline, blue line"
+        },
+        {
+          "key": "body",
+          "type": "textarea",
+          "label": "Text"
+        },
+        {
+          "key": "link",
+          "type": "url",
+          "label": "Photo links to (optional)"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "hs-band",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "background": "ink",
+        "paddingY": 0,
+        "behaviour": "rotator",
+        "behaviourOptions": "{\"autoplay\":\"{{autoplay}}000\"}"
+      },
+      "children": [
+        {
+          "id": "hs-slide",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "center",
+            "stackOn": "mobile",
+            "part": "slide",
+            "repeat": "slides"
+          },
+          "children": [
+            {
+              "id": "hs-copy",
+              "type": "column",
+              "props": {
+                "span": 5,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "hs-title",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{titleTop}}\n{{titleBottom}}",
+                    "headingLevel": 1
+                  }
+                },
+                {
+                  "id": "hs-body",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "hs-media",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "hs-photo",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "url": "{{link}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hs-dots",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "part": "dots"
+          },
+          "children": []
+        }
+      ]
+    }
+  ],
+  "css": "/* Hero slider. Each slide's photo fills the right of the band and fades into\n   the black behind the copy; the copy sits on the page grid. Without script\n   (and on the Design canvas) every slide is in flow, one under the other. */\n[data-bz-section=\"hero-slider\"] > .bz-container { padding: 0; }\n[data-bz-section=\"hero-slider\"] [data-bz-part~=\"slide\"] {\n  position: relative;\n  min-height: clamp(460px, 41.5vw, 800px);\n  background: var(--ink-dark);\n  overflow: hidden;\n}\n[data-bz-section=\"hero-slider\"] [data-bz-part~=\"slide\"] > .bz-col:first-child {\n  position: relative;\n  z-index: 2;\n  grid-column: 1 / span 6;\n  padding: 48px 0 64px max(16px, calc((100vw - var(--container)) / 2 + 16px));\n}\n[data-bz-section=\"hero-slider\"] [data-bz-part~=\"slide\"] > .bz-col:last-child {\n  position: absolute;\n  inset: 0 0 0 auto;\n  width: 64%;\n}\n[data-bz-section=\"hero-slider\"] [data-bz-part~=\"slide\"] > .bz-col:last-child::after {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  background: linear-gradient(90deg, var(--ink-dark) 0%, rgba(0, 0, 0, 0.6) 14%, rgba(0, 0, 0, 0) 38%);\n  pointer-events: none;\n}\n[data-bz-section=\"hero-slider\"] [data-bz-part~=\"slide\"] > .bz-col:last-child .bz-block,\n[data-bz-section=\"hero-slider\"] [data-bz-part~=\"slide\"] > .bz-col:last-child .bz-container,\n[data-bz-section=\"hero-slider\"] [data-bz-part~=\"slide\"] > .bz-col:last-child figure,\n[data-bz-section=\"hero-slider\"] [data-bz-part~=\"slide\"] > .bz-col:last-child a { display: block; height: 100%; margin: 0; padding: 0; }\n[data-bz-section=\"hero-slider\"] [data-bz-part~=\"slide\"] img {\n  display: block;\n  width: 100%;\n  height: 100%;\n  max-width: none;\n  object-fit: cover;\n  object-position: right center;\n  border-radius: 0;\n}\n[data-bz-section=\"hero-slider\"] h1 {\n  margin: 0 0 22px;\n  white-space: pre-line;\n  font: 900 clamp(2.25rem, 3.4vw, 4rem) / 1.08 var(--font-heading);\n  letter-spacing: -0.01em;\n  color: var(--accent);\n}\n[data-bz-section=\"hero-slider\"] h1::first-line { color: #fff; }\n[data-bz-section=\"hero-slider\"] .bz-text p {\n  margin: 0;\n  max-width: 24em;\n  font: 500 clamp(0.9375rem, 1.03vw, 1.1875rem) / 1.42 var(--font-body);\n  color: #fff;\n}\n[data-bz-section=\"hero-slider\"] [data-bz-part~=\"dots\"] {\n  position: absolute;\n  left: 0;\n  right: 0;\n  bottom: 6px;\n  z-index: 3;\n  display: flex;\n  justify-content: center;\n  gap: 12px;\n  padding: 0;\n}\n[data-bz-section=\"hero-slider\"] [data-bz-part~=\"dots\"]:empty { display: none; }\n[data-bz-section=\"hero-slider\"] .bz-dot {\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  background: #fff;\n  opacity: 0.95;\n}\n[data-bz-section=\"hero-slider\"] .bz-dot[aria-current=\"true\"] { width: 10px; background: var(--accent); }\n[data-bz-section=\"hero-slider\"] .bz-dot:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }\n@media (max-width: 1100px) {\n  [data-bz-section=\"hero-slider\"] [data-bz-part~=\"slide\"] > .bz-col:first-child { grid-column: 1 / span 7; }\n  [data-bz-section=\"hero-slider\"] [data-bz-part~=\"slide\"] > .bz-col:last-child { width: 72%; }\n}\n@media (max-width: 640px) {\n  [data-bz-section=\"hero-slider\"] [data-bz-part~=\"slide\"] { display: flex; flex-direction: column; min-height: 0; }\n  [data-bz-section=\"hero-slider\"] [data-bz-part~=\"slide\"] > .bz-col:last-child { position: relative; order: -1; width: 100%; aspect-ratio: 1178 / 741; }\n  [data-bz-section=\"hero-slider\"] [data-bz-part~=\"slide\"] > .bz-col:last-child::after { background: linear-gradient(0deg, var(--ink-dark) 0%, rgba(0, 0, 0, 0) 35%); }\n  [data-bz-section=\"hero-slider\"] [data-bz-part~=\"slide\"] > .bz-col:first-child { padding: 8px 16px 48px; }\n  [data-bz-section=\"hero-slider\"] h1 { margin-bottom: 16px; }\n}\n"
+}

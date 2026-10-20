@@ -2,42 +2,23 @@
   "version": 2,
   "nodes": [
     {
-      "id": "hero-band",
-      "type": "section",
+      "id": "hero-slider",
+      "type": "sharedSection",
       "props": {
-        "width": "boxed",
-        "background": "ink",
-        "paddingY": 0,
-        "align": "center",
-        "behaviour": "rotator",
-        "behaviourOptions": "{\"autoplay\":7000}"
-      },
-      "children": [
-        {
-          "id": "hero-slide-vnx",
-          "type": "row",
-          "props": { "gap": 6, "align": "center", "part": "slide" },
-          "children": [
+        "sectionId": "hero-slider",
+        "values": {
+          "autoplay": 6,
+          "slides": [
             {
-              "id": "hero-vnx-copy",
-              "type": "column",
-              "props": { "span": 5, "align": "center" },
-              "children": [
-                { "id": "hero-vnx-h", "type": "heading", "props": { "text": "The All-New\nVolvo VNX", "headingLevel": 1 } },
-                {
-                  "id": "hero-vnx-t",
-                  "type": "text",
-                  "props": {
-                    "text": "The all-new Volvo VNX combines rugged capability, advanced safety, and enhanced driver comfort for the toughest jobs.",
-                    "width": "full"
-                  }
-                }
-              ]
-            },
-            { "id": "hero-vnx-space", "type": "column", "props": { "span": 7 }, "children": [] }
+              "image": { "src": "/hero/volvo-vnx.jpg", "alt": "The all-new Volvo VNX dump truck", "width": 1178, "height": 741 },
+              "titleTop": "The All-New",
+              "titleBottom": "Volvo VNX",
+              "body": "The all-new Volvo VNX combines rugged capability, advanced safety, and enhanced driver comfort for the toughest jobs.",
+              "link": ""
+            }
           ]
         }
-      ]
+      }
     },
     {
       "id": "brands",
