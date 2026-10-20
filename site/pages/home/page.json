@@ -42,7 +42,7 @@
               {
                 "name": "Mack",
                 "image": {
-                  "src": "/brands/mack.png",
+                  "src": "/brands/mack.svg",
                   "alt": "Mack Trucks",
                   "width": 121,
                   "height": 63
@@ -51,7 +51,7 @@
               {
                 "name": "Volvo",
                 "image": {
-                  "src": "/brands/volvo.png",
+                  "src": "/brands/volvo.svg",
                   "alt": "Volvo Trucks",
                   "width": 136,
                   "height": 18
@@ -60,7 +60,7 @@
               {
                 "name": "Isuzu",
                 "image": {
-                  "src": "/brands/isuzu.png",
+                  "src": "/brands/isuzu.svg",
                   "alt": "Isuzu Trucks",
                   "width": 73,
                   "height": 73
@@ -69,7 +69,7 @@
               {
                 "name": "Hino",
                 "image": {
-                  "src": "/brands/hino.png",
+                  "src": "/brands/hino.svg",
                   "alt": "Hino Trucks",
                   "width": 90,
                   "height": 75
@@ -78,7 +78,7 @@
               {
                 "name": "Tico",
                 "image": {
-                  "src": "/brands/tico.png",
+                  "src": "/brands/tico.svg",
                   "alt": "Tico",
                   "width": 113,
                   "height": 21
@@ -87,7 +87,7 @@
               {
                 "name": "Reitnouer",
                 "image": {
-                  "src": "/brands/reitnouer.png",
+                  "src": "/brands/reitnouer.svg",
                   "alt": "Reitnouer Aluminum Trailers",
                   "width": 124,
                   "height": 38
@@ -96,7 +96,7 @@
               {
                 "name": "Trail King",
                 "image": {
-                  "src": "/brands/trail-king.png",
+                  "src": "/brands/trail-king.svg",
                   "alt": "Trail King Industries",
                   "width": 65,
                   "height": 88
@@ -105,7 +105,7 @@
               {
                 "name": "XL Specialized",
                 "image": {
-                  "src": "/brands/xl-specialized.png",
+                  "src": "/brands/xl-specialized.svg",
                   "alt": "XL Specialized Trailers",
                   "width": 124,
                   "height": 54
@@ -231,24 +231,37 @@
             "items": [
               {
                 "label": "Sales",
-                "desc": "We sell hard working trucks and trailers that serve hard working people like you. Work with our knowledgeable team to find the best solution for your line of work.",
+                "desc": "We sell hard working trucks and trailers that\nserve hard working people like you. Work\nwith our knowledgeable team to find the best\nsolution for your line of work.",
                 "url": "/store/inventory"
               },
               {
                 "label": "Service",
-                "desc": "Our factory-trained technicians and expansive dealership network help reduce the time your trucks sit at our shops, getting them back on the road as quickly and efficiently as possible.",
+                "desc": "Our factory-trained technicians and\nexpansive dealership network help reduce\nthe time your trucks sit at our shops, getting\nthem back on the road as quickly and\nefficiently as possible.",
                 "url": "#service-request"
               },
               {
                 "label": "Parts",
-                "desc": "We offer a large selection of OEM parts and a wide range of aftermarket parts and accessories for all makes/models, enabling us to carry what you need, when you need it.",
+                "desc": "We offer a large selection of OEM parts and\na wide range of aftermarket parts and\naccessories for all makes/models,\nenabling us to carry what you need,\nwhen you need it.",
                 "url": "#parts-request"
               },
               {
                 "label": "Lease & Rent",
-                "desc": "Our Ballard Lease & Rent program is offered at all of our dealerships across New England, so you can easily find the perfect truck and financing option for your needs."
+                "desc": "Our Ballard Lease & Rent program is offered\nat all of our dealerships across New England,\nso you can easily find the perfect truck and\nfinancing option for your needs."
               }
             ]
+          }
+        },
+        {
+          "id": "lineup",
+          "type": "image",
+          "props": {
+            "image": {
+              "src": "/home/mack-lineup.jpg",
+              "alt": "A lineup of Mack trucks",
+              "width": 1361,
+              "height": 414
+            },
+            "width": "full"
           }
         }
       ]
