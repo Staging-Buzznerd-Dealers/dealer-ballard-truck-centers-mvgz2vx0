@@ -10,7 +10,12 @@
           "autoplay": 6,
           "slides": [
             {
-              "image": { "src": "/hero/volvo-vnx.jpg", "alt": "The all-new Volvo VNX dump truck", "width": 1178, "height": 741 },
+              "image": {
+                "src": "/hero/volvo-vnx.jpg",
+                "alt": "The all-new Volvo VNX dump truck",
+                "width": 1178,
+                "height": 741
+              },
               "titleTop": "The All-New",
               "titleBottom": "Volvo VNX",
               "body": "The all-new Volvo VNX combines rugged capability,\nadvanced safety, and enhanced driver comfort\nfor the toughest jobs.",
@@ -23,21 +28,89 @@
     {
       "id": "brands",
       "type": "section",
-      "props": { "width": "boxed", "background": "card", "paddingY": 6 },
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 6
+      },
       "children": [
         {
           "id": "brands-strip",
           "type": "logoStrip",
           "props": {
             "logos": [
-              { "name": "Mack" },
-              { "name": "Volvo" },
-              { "name": "Isuzu" },
-              { "name": "Hino" },
-              { "name": "Tico" },
-              { "name": "Reitnouer" },
-              { "name": "Trail King" },
-              { "name": "XL Specialized" }
+              {
+                "name": "Mack",
+                "image": {
+                  "src": "/brands/mack.png",
+                  "alt": "Mack Trucks",
+                  "width": 121,
+                  "height": 63
+                }
+              },
+              {
+                "name": "Volvo",
+                "image": {
+                  "src": "/brands/volvo.png",
+                  "alt": "Volvo Trucks",
+                  "width": 136,
+                  "height": 18
+                }
+              },
+              {
+                "name": "Isuzu",
+                "image": {
+                  "src": "/brands/isuzu.png",
+                  "alt": "Isuzu Trucks",
+                  "width": 73,
+                  "height": 73
+                }
+              },
+              {
+                "name": "Hino",
+                "image": {
+                  "src": "/brands/hino.png",
+                  "alt": "Hino Trucks",
+                  "width": 90,
+                  "height": 75
+                }
+              },
+              {
+                "name": "Tico",
+                "image": {
+                  "src": "/brands/tico.png",
+                  "alt": "Tico",
+                  "width": 113,
+                  "height": 21
+                }
+              },
+              {
+                "name": "Reitnouer",
+                "image": {
+                  "src": "/brands/reitnouer.png",
+                  "alt": "Reitnouer Aluminum Trailers",
+                  "width": 124,
+                  "height": 38
+                }
+              },
+              {
+                "name": "Trail King",
+                "image": {
+                  "src": "/brands/trail-king.png",
+                  "alt": "Trail King Industries",
+                  "width": 65,
+                  "height": 88
+                }
+              },
+              {
+                "name": "XL Specialized",
+                "image": {
+                  "src": "/brands/xl-specialized.png",
+                  "alt": "XL Specialized Trailers",
+                  "width": 124,
+                  "height": 54
+                }
+              }
             ]
           }
         }
@@ -46,17 +119,29 @@
     {
       "id": "requests",
       "type": "section",
-      "props": { "width": "boxed", "background": "card", "paddingY": 6 },
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 6
+      },
       "children": [
         {
           "id": "requests-row",
           "type": "row",
-          "props": { "gap": 7, "align": "start", "stackOn": "tablet" },
+          "props": {
+            "gap": 7,
+            "align": "start",
+            "stackOn": "tablet"
+          },
           "children": [
             {
               "id": "service-card",
               "type": "column",
-              "props": { "span": 6, "padding": 7, "background": "card" },
+              "props": {
+                "span": 6,
+                "padding": 7,
+                "background": "card"
+              },
               "children": [
                 {
                   "id": "service-form",
@@ -74,7 +159,11 @@
             {
               "id": "parts-card",
               "type": "column",
-              "props": { "span": 6, "padding": 7, "background": "card" },
+              "props": {
+                "span": 6,
+                "padding": 7,
+                "background": "card"
+              },
               "children": [
                 {
                   "id": "parts-form",
@@ -96,20 +185,42 @@
     {
       "id": "featured-band",
       "type": "section",
-      "props": { "width": "boxed", "background": "accent", "paddingY": 7 },
+      "props": {
+        "width": "boxed",
+        "background": "accent",
+        "paddingY": 7
+      },
       "children": [
-        { "id": "featured-h", "type": "heading", "props": { "text": "Browse Our Featured Trucks & Trailers", "headingLevel": 2, "align": "center" } },
+        {
+          "id": "featured-h",
+          "type": "heading",
+          "props": {
+            "text": "Browse Our Featured Trucks & Trailers",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
         {
           "id": "featured",
           "type": "widget",
-          "props": { "widget": "inventory-carousel", "config": { "limit": 8 } }
+          "props": {
+            "widget": "inventory-carousel",
+            "config": {
+              "limit": 8
+            }
+          }
         }
       ]
     },
     {
       "id": "departments",
       "type": "section",
-      "props": { "width": "boxed", "background": "card", "paddingY": 7, "anchor": "departments" },
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 7,
+        "anchor": "departments"
+      },
       "children": [
         {
           "id": "quick",
@@ -145,7 +256,11 @@
     {
       "id": "reviews",
       "type": "section",
-      "props": { "width": "boxed", "background": "accent", "paddingY": 7 },
+      "props": {
+        "width": "boxed",
+        "background": "accent",
+        "paddingY": 7
+      },
       "children": [
         {
           "id": "reviews-list",
