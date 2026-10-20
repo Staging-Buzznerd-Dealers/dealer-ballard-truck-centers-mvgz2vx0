@@ -36,6 +36,150 @@
         { "id": "privacy", "label": "Privacy", "type": "url", "url": "/privacy" },
         { "id": "terms", "label": "Terms", "type": "url", "url": "/terms" }
       ]
+    },
+    {
+      "id": "ballard-utility",
+      "name": "Homepage utility bar",
+      "items": [
+        {
+          "id": "bu-call",
+          "label": "Call Now",
+          "type": "url",
+          "url": "tel:+18004211576"
+        },
+        {
+          "id": "bu-login",
+          "label": "Login",
+          "type": "inventory",
+          "ref": "sign-in"
+        }
+      ]
+    },
+    {
+      "id": "ballard-main",
+      "name": "Homepage main navigation",
+      "items": [
+        {
+          "id": "bm-trucks",
+          "label": "Trucks",
+          "type": "inventory",
+          "ref": "inventory",
+          "children": [
+            {
+              "id": "bm-trucks-new",
+              "label": "New Trucks",
+              "type": "inventory",
+              "ref": "inventory?condition=new"
+            },
+            {
+              "id": "bm-trucks-used",
+              "label": "Used Trucks",
+              "type": "inventory",
+              "ref": "inventory?condition=used"
+            }
+          ]
+        },
+        {
+          "id": "bm-trailers",
+          "label": "Trailers",
+          "type": "inventory",
+          "ref": "search?q=trailer"
+        },
+        {
+          "id": "bm-municipal",
+          "label": "Municipal",
+          "type": "inventory",
+          "ref": "search?q=municipal"
+        },
+        {
+          "id": "bm-lease",
+          "label": "Lease",
+          "type": "url",
+          "url": "#departments"
+        },
+        {
+          "id": "bm-rent",
+          "label": "Rent",
+          "type": "url",
+          "url": "#departments"
+        },
+        {
+          "id": "bm-service",
+          "label": "Service",
+          "type": "url",
+          "url": "#service-request",
+          "children": [
+            {
+              "id": "bm-service-form",
+              "label": "Schedule Service",
+              "type": "url",
+              "url": "#service-request"
+            }
+          ]
+        },
+        {
+          "id": "bm-parts",
+          "label": "Parts",
+          "type": "inventory",
+          "ref": "parts",
+          "children": [
+            {
+              "id": "bm-parts-shop",
+              "label": "Shop Parts",
+              "type": "inventory",
+              "ref": "parts"
+            },
+            {
+              "id": "bm-parts-form",
+              "label": "Request a Part",
+              "type": "url",
+              "url": "#parts-request"
+            }
+          ]
+        },
+        {
+          "id": "bm-about",
+          "label": "About Us",
+          "type": "url",
+          "url": "/about"
+        },
+        {
+          "id": "bm-careers",
+          "label": "Careers",
+          "type": "url",
+          "url": "mailto:drive@ballardtrucks.com"
+        },
+        {
+          "id": "bm-contact",
+          "label": "Contact Us",
+          "type": "url",
+          "url": "/contact"
+        }
+      ]
+    },
+    {
+      "id": "ballard-connect",
+      "name": "Homepage footer — Connect with us",
+      "items": [
+        {
+          "id": "bc-phone",
+          "label": "(800) 421-1576",
+          "type": "url",
+          "url": "tel:+18004211576"
+        },
+        {
+          "id": "bc-email",
+          "label": "drive@ballardtrucks.com",
+          "type": "url",
+          "url": "mailto:drive@ballardtrucks.com"
+        },
+        {
+          "id": "bc-careers",
+          "label": "Careers",
+          "type": "url",
+          "url": "mailto:drive@ballardtrucks.com"
+        }
+      ]
     }
   ]
 }

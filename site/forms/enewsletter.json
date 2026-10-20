@@ -1,0 +1,35 @@
+{
+  "id": "enewsletter",
+  "name": "Ballard eNewsletters",
+  "status": "live",
+  "surfaces": ["page"],
+  "intent": "newsletter",
+  "submitLabel": "Subscribe",
+  "successMessage": "Thanks — you're subscribed.",
+  "consent": { "enabled": false, "required": false, "text": "" },
+  "fields": [
+    {
+      "id": "nl-lists",
+      "type": "checkboxes",
+      "label": "Newsletters",
+      "required": false,
+      "options": [
+        { "value": "parts-service", "label": "Parts & Service" },
+        { "value": "trucks-trailers-lease-rent", "label": "Trucks, Trailers, Lease & Rent" },
+        { "value": "all", "label": "Subscribe to All" }
+      ]
+    },
+    { "id": "nl-email", "type": "email", "label": "Email", "required": true }
+  ],
+  "notifications": [
+    {
+      "id": "nl-default",
+      "name": "Marketing",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "marketing-manager",
+      "scopeMode": "dynamic"
+    }
+  ]
+}
