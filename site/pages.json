@@ -37,5 +37,24 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "lease",
+    "title": "Lease",
+    "description": "Lease a truck from Ballard: flexible purchase options, NationaLease partnership, 24/7 roadside service and a Lease Request Form.",
+    "path": "/lease",
+    "out": "lease/index.html",
+    "dir": "lease",
+    "group": "ballard",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

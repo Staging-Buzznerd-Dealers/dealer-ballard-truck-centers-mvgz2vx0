@@ -152,8 +152,16 @@
         {
           "id": "bm-lease",
           "label": "Lease",
-          "type": "url",
-          "url": "#departments"
+          "type": "page",
+          "ref": "lease",
+          "children": [
+            {
+              "id": "bm-lease-request",
+              "label": "Lease Request Form",
+              "type": "page",
+              "ref": "lease"
+            }
+          ]
         },
         {
           "id": "bm-rent",
