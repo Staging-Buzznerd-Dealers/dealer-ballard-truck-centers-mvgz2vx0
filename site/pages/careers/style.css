@@ -1,0 +1,132 @@
+/* Careers. Measured from the reference screenshot, a 1920px window scaled to 674px wide
+   (one screenshot pixel is about 2.85 CSS pixels). Colours and fonts come from the Ballard
+   template and the design system. */
+
+[data-bz-node="cr-title"] > .bz-container,
+[data-bz-node="cr-hero"] > .bz-container,
+[data-bz-node="cr-interest"] > .bz-container { max-width: calc(min(90vw, 1440px) + 32px); }
+[data-bz-node^="cr-"] .bz-block { padding-block: 0; }
+
+/* Active item in the main navigation */
+[data-bz-node="hm-main-nav"] a[href="/careers"] { color: var(--accent); }
+
+/* Page title band */
+[data-bz-node="cr-title"] { background: #003550; padding-block: 34px 17px; }
+[data-bz-node="cr-title-h"] h1 { margin: 0; font: 700 2.8rem / 1.2 var(--font-heading); color: #fff; }
+
+/* Hero. The photo is set on this section in the Styles panel (Background image). The photo that
+   ships here was cut from the reference, so it is already navy and the layer below is at 0%. When
+   the original photo is uploaded, set the 0% to about 80% to tone it the same way. */
+[data-bz-node="cr-hero"] { display: flex; align-items: center; min-height: 370px; background-color: #0b3b57; background-size: cover; background-position: center; position: relative; }
+[data-bz-node="cr-hero"]::before { content: ""; position: absolute; inset: 0; background: rgb(0 53 80 / 0%); pointer-events: none; }
+[data-bz-node="cr-hero"] > .bz-container { position: relative; width: 100%; text-align: center; }
+[data-bz-node="cr-hero-icon"] .bz-figure { display: flex; justify-content: center; margin: 0; }
+[data-bz-node="cr-hero-icon"] img { width: auto; max-width: 100%; height: auto; border-radius: 0; }
+[data-bz-node="cr-hero-h"] h2 { margin: 28px 0 0; text-align: center; text-transform: uppercase; font: 700 1.9rem / 1.2 var(--font-heading); color: #fff; }
+[data-bz-node="cr-hero-t"] .bz-text p { margin: 20px 0 0; text-align: center; white-space: pre-line; font: 400 1.2rem / 1.5 var(--font-body); color: #fff; max-width: none; }
+[data-bz-node="cr-hero-cta"] { margin-top: 36px; }
+[data-bz-node="cr-hero-cta"] .bz-btns { gap: 40px; }
+[data-bz-node="cr-hero-cta"] .bz-btn { height: 41px; padding: 0 22px; border-radius: 0; font: 700 1.05rem / 41px var(--font-body); background: var(--accent); color: #fff; }
+[data-bz-node="cr-hero-cta"] .bz-btn[data-bz-cta="careers-view-openings-apply"] { background: #f3fd9a; color: #000; }
+
+/* Culture: a pale panel, copy beside the aerial photo, then five photos with captions */
+[data-bz-node="cr-culture"], [data-bz-node="cr-culture-photos"], [data-bz-node="cr-general"], [data-bz-node="cr-diesel"], [data-bz-node="cr-trio"], [data-bz-node="cr-interest"] { background: #fff; }
+[data-bz-node="cr-culture"] > .bz-container, [data-bz-node="cr-culture-photos"] [data-bz-node="pc-band"] > .bz-container { max-width: min(90vw, 1440px); background: #ebf7ff; }
+[data-bz-node="cr-culture"] > .bz-container { padding: 71px 31px 0 0; }
+[data-bz-node="cr-culture-copy"] { padding: 0 100px; }
+[data-bz-node="cr-culture-h"] h2 { margin: 0; text-align: center; font: 700 1.875rem / 1.2 var(--font-heading); color: #000; letter-spacing: 0; }
+[data-bz-node="cr-culture-t"] .bz-text p { margin: 18px 0 0; text-align: center; font: 400 1.1rem / 1.6 var(--font-body); color: #000; max-width: none; }
+[data-bz-node="cr-culture-img"] .bz-figure { margin: 0; }
+[data-bz-node="cr-culture-img"] img { display: block; width: 100%; height: auto; border-radius: 0; }
+[data-bz-node="cr-culture-photos"] [data-bz-node="pc-band"] > .bz-container { padding: 90px 55px 48px; }
+
+/* General and diesel benefits */
+[data-bz-node="cr-general"] { padding-block: 70px 0; }
+[data-bz-node="cr-general"] [data-bz-node="bs-text-col"] { order: 2; }
+[data-bz-node="cr-general"] [data-bz-node="bs-photo-col"] { order: 1; padding-right: 30px; }
+[data-bz-node="cr-general"] [data-bz-node="bs-items"] { --bs-cols: 3; }
+[data-bz-node="cr-general"] { padding-bottom: 60px; }
+[data-bz-node="cr-diesel"] [data-bz-node="bs-band"] > .bz-container { max-width: min(90vw, 1440px); }
+[data-bz-node="cr-diesel"] [data-bz-node="bs-text-col"] { padding: 0 90px; }
+[data-bz-node="cr-general"] [data-bz-node="bs-text-col"] { padding: 0 30px; }
+[data-bz-node="cr-diesel"] [data-bz-node="bs-band"] > .bz-container { background: #ebf7ff; padding: 71px 31px 71px 0; }
+[data-bz-node="cr-diesel"] { padding-top: 0; }
+[data-bz-node="cr-trio"] { padding-block: 27px 0; }
+[data-bz-node="cr-trio"] [data-bz-node="pc-band"] > .bz-container { padding-block: 0 70px; }
+
+/* Veteran-ready: a pale band as wide as the page */
+[data-bz-node="cr-veteran"] { background: #ebf7ff; padding-block: 77px 79px; }
+[data-bz-node="cr-veteran"] > .bz-container { max-width: min(90vw, 1440px); }
+[data-bz-node="cr-vet-media"] { padding-right: 0; }
+[data-bz-node="cr-vet-media"] .bz-figure { margin: 0; }
+[data-bz-node="cr-vet-media"] img { display: block; width: 100%; height: auto; border-radius: 0; }
+[data-bz-node="cr-vet-copy"] { padding: 0 60px; }
+[data-bz-node="cr-vet-logos"] .bz-logo:nth-child(1) img { height: 114px; }
+[data-bz-node="cr-vet-logos"] .bz-logo:nth-child(2) img { height: 85px; }
+[data-bz-node="cr-vet-logos"] .bz-logos { display: flex; justify-content: center; align-items: center; gap: 45px; border: 0; padding: 0; }
+[data-bz-node="cr-vet-logos"] .bz-logo img { display: block; width: auto; max-width: 100%; height: auto; border-radius: 0; }
+[data-bz-node="cr-vet-h"] h2 { margin: 24px 0 0; text-align: center; font: 700 1.875rem / 1.2 var(--font-heading); color: #000; letter-spacing: 0; }
+[data-bz-node="cr-vet-t"] .bz-text p { margin: 18px 0 0; text-align: center; font: 400 1.1rem / 1.6 var(--font-body); color: #000; max-width: none; }
+
+/* Interested in working at Ballard */
+[data-bz-node="cr-interest"] { padding-block: 110px 94px; }
+[data-bz-node="cr-interest-h"] h2 { margin: 0; text-align: center; font: 700 1.875rem / 1.2 var(--font-heading); color: #000; letter-spacing: 0; }
+[data-bz-node="cr-interest-t"] .bz-text p { margin: 14px 0 0; white-space: pre-line; text-align: center; font: 400 1.175rem / 1.7 var(--font-body); color: #000; max-width: none; }
+[data-bz-node="cr-interest-cta"] { margin-top: 32px; }
+[data-bz-node="cr-interest-cta"] .bz-btns { gap: 34px; justify-content: center; }
+[data-bz-node="cr-interest-cta"] .bz-btn { height: 41px; padding: 0 22px; border-radius: 0; font: 700 1.05rem / 41px var(--font-body); background: var(--accent); color: #fff; }
+
+/* Careers form: a navy band as wide as the page, photo beside a white card */
+[data-bz-node="cr-form"] { background: #003650; padding-block: 185px 105px; }
+[data-bz-node="cr-form-row"] { width: 100%; max-width: min(90vw, 1440px); margin-inline: auto; align-items: flex-end; }
+[data-bz-node="cr-form-media"] .bz-figure { margin: 0; }
+[data-bz-node="cr-form-media"] img { display: block; width: 100%; height: auto; border-radius: 0; }
+[data-bz-node="cr-form-card"] { background: #fafafa; align-self: stretch; padding: 75px 61px 70px; box-sizing: border-box; margin-top: -120px; }
+[data-bz-node="cr-form-form"] .bz-formblock { max-width: none; }
+[data-bz-node="cr-form-form"] .bz-form { background: none; border: 0; padding: 0; max-width: none; gap: 11px 16px; }
+[data-bz-node="cr-form-form"] .bz-form__t { display: none; }
+[data-bz-node="cr-form-form"] .bz-label { font: 400 0.9rem / 1.3 var(--font-body); color: #000; }
+[data-bz-node="cr-form-form"] .bz-req { font-size: 0; }
+[data-bz-node="cr-form-form"] .bz-req::after { content: "(Required)"; margin-left: 3px; font: italic 400 0.62rem / 1 var(--font-body); color: #c02b0a; }
+[data-bz-node="cr-form-form"] .bz-input, [data-bz-node="cr-form-form"] textarea, [data-bz-node="cr-form-form"] select { padding: 0 8px; line-height: 36px; border: 1px solid #8d9199; border-radius: 3px; background: #fff; font: 400 0.9rem / 1.3 var(--font-body); }
+[data-bz-node="cr-form-form"] .bz-input { height: 38px; min-height: 0; }
+[data-bz-node="cr-form-form"] select.bz-input { padding: 0 8px; line-height: normal; }
+[data-bz-node="cr-form-form"] textarea.bz-input { height: 180px; min-height: 180px; width: 100%; box-sizing: border-box; }
+[data-bz-node="cr-form-form"] .bz-form > .bz-btn { flex: 0 0 auto; width: auto; height: 41px; margin-top: 18px; padding: 0 24px; border-radius: 0; font: 700 0.95rem / 1 var(--font-body); }
+/* "Name" group label above First / Last, with each sub-label below its input */
+[data-bz-node="cr-form-form"] [data-bz-field="cf-first"], [data-bz-node="cr-form-form"] [data-bz-field="cf-last"] { display: flex; flex-direction: column; }
+[data-bz-node="cr-form-form"] [data-bz-field="cf-first"] .bz-input, [data-bz-node="cr-form-form"] [data-bz-field="cf-last"] .bz-input { order: 2; }
+[data-bz-node="cr-form-form"] [data-bz-field="cf-first"] .bz-label, [data-bz-node="cr-form-form"] [data-bz-field="cf-last"] .bz-label { order: 3; margin: -4px 0 7px; font-size: 0.72rem; }
+[data-bz-node="cr-form-form"] [data-bz-field="cf-first"] .bz-req, [data-bz-node="cr-form-form"] [data-bz-field="cf-last"] .bz-req { display: none; }
+[data-bz-node="cr-form-form"] [data-bz-field="cf-first"]::before, [data-bz-node="cr-form-form"] [data-bz-field="cf-last"]::before { content: "Name"; order: 1; margin-bottom: -2px; padding-bottom: 4px; border-bottom: 1px solid #e1e1e1; font: 400 0.9rem / 1.3 var(--font-body); color: #000; }
+[data-bz-node="cr-form-form"] [data-bz-field="cf-first"]::before { margin-right: -16px; }
+[data-bz-node="cr-form-form"] [data-bz-field="cf-last"]::before { color: transparent; }
+[data-bz-node="cr-form-form"] [data-bz-field="cf-first"] { position: relative; }
+[data-bz-node="cr-form-form"] [data-bz-field="cf-first"]::after { content: "(Required)"; position: absolute; left: 40px; top: 3px; font: italic 400 0.62rem / 1 var(--font-body); color: #c02b0a; }
+
+
+
+[data-bz-node="cr-form-form"] .bz-formblock > h2 { margin: 0 0 12px; text-transform: uppercase; font: 700 1.5rem / 1.2 var(--font-heading); color: #000; }
+
+@media (max-width: 1100px) {
+  [data-bz-node="cr-diesel"] [data-bz-node="bs-text-col"], [data-bz-node="cr-general"] [data-bz-node="bs-text-col"] { padding: 0; }
+  [data-bz-node="cr-hero"] { min-height: 340px; padding-block: 36px; }
+  [data-bz-node="cr-hero-cta"] .bz-btns { flex-direction: column; gap: 14px; align-items: center; }
+  [data-bz-node="cr-culture"] > .bz-container { padding: 40px 24px 0; }
+  [data-bz-node="cr-culture-copy"] { padding: 0 0 28px; }
+  [data-bz-node="cr-culture-photos"] .bz-container { padding: 28px 24px 40px; }
+  [data-bz-node="cr-diesel"] [data-bz-node="bs-band"] > .bz-container { padding: 40px 24px; }
+  [data-bz-node="cr-general"] [data-bz-node="bs-photo-col"] { padding-right: 0; }
+  [data-bz-node="cr-veteran"] { padding-block: 40px; }
+  [data-bz-node="cr-vet-copy"] { padding: 32px 0 0; }
+  [data-bz-node="cr-interest"] { padding-block: 60px; }
+  [data-bz-node="cr-form"] { padding-block: 40px; }
+  [data-bz-node="cr-form-card"] { margin-block: 0; padding: 40px 28px; }
+}
+@media (max-width: 640px) {
+  [data-bz-node="cr-title-h"] h1 { font-size: 2rem; }
+  [data-bz-node="cr-hero-h"] h2 { font-size: 1.3rem; }
+  [data-bz-node="cr-hero-cta"] .bz-btn, [data-bz-node="cr-interest-cta"] .bz-btn { width: 100%; }
+  [data-bz-node="cr-interest-cta"] .bz-btns { flex-direction: column; gap: 14px; }
+  [data-bz-node="cr-culture-h"] h2, [data-bz-node="cr-vet-h"] h2, [data-bz-node="cr-interest-h"] h2 { font-size: 1.4rem; }
+}

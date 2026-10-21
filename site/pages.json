@@ -132,5 +132,24 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "careers",
+    "title": "Careers",
+    "description": "Join the Ballard family: an award-winning, family-owned commercial truck and trailer dealership with locations across New England. View job openings and apply online.",
+    "path": "/careers",
+    "out": "careers/index.html",
+    "dir": "careers",
+    "group": "ballard",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

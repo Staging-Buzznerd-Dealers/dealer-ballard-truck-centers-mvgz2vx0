@@ -1,0 +1,591 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "cr-title",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "cr-title-h",
+          "type": "heading",
+          "props": {
+            "text": "Careers",
+            "headingLevel": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "cr-hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center"
+      },
+      "children": [
+        {
+          "id": "cr-hero-icon",
+          "type": "image",
+          "props": {
+            "image": {
+              "src": "/careers/toolbox.svg",
+              "alt": "Careers",
+              "width": 77,
+              "height": 94
+            },
+            "width": "full"
+          }
+        },
+        {
+          "id": "cr-hero-h",
+          "type": "heading",
+          "props": {
+            "text": "Join the Ballard Family",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "cr-hero-t",
+          "type": "text",
+          "props": {
+            "text": "Ballard is an award winning, family-owned commercial truck and trailer dealership with locations across New England.\nWe have been keeping the community rolling for over 100 years. Join the Ballard family and be a part of The Ballard Difference.",
+            "align": "center",
+            "width": "full"
+          }
+        },
+        {
+          "id": "cr-hero-cta",
+          "type": "buttons",
+          "props": {
+            "items": [
+              {
+                "ctaId": "careers-view-openings-apply"
+              },
+              {
+                "ctaId": "careers-veteran-ready"
+              }
+            ],
+            "align": "center"
+          }
+        }
+      ],
+      "styles": {
+        "base": {
+          "backgroundImage": "/careers/hero-team.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center"
+        }
+      }
+    },
+    {
+      "id": "cr-culture",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "cr-culture-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "cr-culture-copy",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "cr-culture-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Culture at Ballard Truck Centers",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "cr-culture-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Treating everyone, staff and customers, like family is the Ballard standard. In this business, it’s about relationships. When everyone feels supported, the rest takes care of itself.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cr-culture-media",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "cr-culture-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/careers/aerial.jpg",
+                      "alt": "An aerial view of a Ballard dealership and its lot",
+                      "width": 976,
+                      "height": 548
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cr-culture-photos",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "photo-captions",
+        "values": {
+          "items": [
+            {
+              "image": {
+                "src": "/careers/culture-sunset.jpg",
+                "alt": "We understand that sometimes, “life” happens.",
+                "width": 375,
+                "height": 370
+              },
+              "caption": "We understand that sometimes, “life” happens."
+            },
+            {
+              "image": {
+                "src": "/careers/culture-trophies.jpg",
+                "alt": "We are a little competitive… with company-wide staff competitions.",
+                "width": 375,
+                "height": 370
+              },
+              "caption": "We are a little competitive… with company-wide staff competitions."
+            },
+            {
+              "image": {
+                "src": "/careers/culture-drivers.jpg",
+                "alt": "We are a transparent business, because our success is your success.",
+                "width": 370,
+                "height": 370
+              },
+              "caption": "We are a transparent business, because our success is your success."
+            },
+            {
+              "image": {
+                "src": "/careers/culture-trailer.jpg",
+                "alt": "We are big believers in staff appreciation.",
+                "width": 375,
+                "height": 370
+              },
+              "caption": "We are big believers in staff appreciation."
+            },
+            {
+              "image": {
+                "src": "/careers/culture-toys.jpg",
+                "alt": "We are passionate about giving back to our communities.",
+                "width": 370,
+                "height": 370
+              },
+              "caption": "We are passionate about giving back to our communities."
+            }
+          ]
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "cr-general",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "benefits-split",
+        "values": {
+          "heading": "General Benefits",
+          "photo": {
+            "src": "/careers/team-trucks.jpg",
+            "alt": "Two Ballard employees standing in front of Mack trucks",
+            "width": 976,
+            "height": 656
+          },
+          "items": [
+            {
+              "icon": {
+                "src": "/careers/pay.svg",
+                "alt": "Competitive Pay",
+                "width": 37,
+                "height": 54
+              },
+              "label": "Competitive Pay"
+            },
+            {
+              "icon": {
+                "src": "/careers/vacation.svg",
+                "alt": "Paid Vacation, Sick Time, & 10 Paid Holidays a Calendar Year",
+                "width": 51,
+                "height": 57
+              },
+              "label": "Paid Vacation, Sick Time, & 10 Paid Holidays a Calendar Year"
+            },
+            {
+              "icon": {
+                "src": "/careers/retirement.svg",
+                "alt": "401(k) Retirement Plan",
+                "width": 46,
+                "height": 57
+              },
+              "label": "401(k) Retirement Plan"
+            },
+            {
+              "icon": {
+                "src": "/careers/medical.svg",
+                "alt": "Medical & Dental Insurance",
+                "width": 57,
+                "height": 57
+              },
+              "label": "Medical & Dental Insurance"
+            },
+            {
+              "icon": {
+                "src": "/careers/insurance.svg",
+                "alt": "Voluntary Short-Term, Long-Term, & Life Insurance",
+                "width": 68,
+                "height": 60
+              },
+              "label": "Voluntary Short-Term, Long-Term, & Life Insurance"
+            },
+            {
+              "icon": {
+                "src": "/careers/uniform.svg",
+                "alt": "Provided Uniforms",
+                "width": 68,
+                "height": 60
+              },
+              "label": "Provided Uniforms"
+            }
+          ]
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "cr-diesel",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "benefits-split",
+        "values": {
+          "heading": "Additional Benefits for Diesel Tech Careers",
+          "photo": {
+            "src": "/careers/diesel-tech.jpg",
+            "alt": "A Ballard technician working on a diesel engine",
+            "width": 976,
+            "height": 660
+          },
+          "items": [
+            {
+              "icon": {
+                "src": "/careers/boots.svg",
+                "alt": "$200 Boot Allowance",
+                "width": 68,
+                "height": 57
+              },
+              "label": "$200 Boot Allowance"
+            },
+            {
+              "icon": {
+                "src": "/careers/tools.svg",
+                "alt": "$1,000 Annual Tool Allowance",
+                "width": 57,
+                "height": 57
+              },
+              "label": "$1,000 Annual Tool Allowance"
+            },
+            {
+              "icon": {
+                "src": "/careers/bonus.svg",
+                "alt": "Up to $5,000 Sign-On Bonus (Location Dependent)",
+                "width": 68,
+                "height": 54
+              },
+              "label": "Up to $5,000 Sign-On Bonus (Location Dependent)"
+            },
+            {
+              "icon": {
+                "src": "/careers/tools2.svg",
+                "alt": "For those completing tech school or college, Ballard will cover $2,000 in tools and gift them to the employee after 2 years of employment.",
+                "width": 57,
+                "height": 57
+              },
+              "label": "For those completing tech school or college, Ballard will cover $2,000 in tools and gift them to the employee after 2 years of employment."
+            }
+          ]
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "cr-trio",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "photo-captions",
+        "values": {
+          "items": [
+            {
+              "image": {
+                "src": "/careers/training-room.jpg",
+                "alt": "Further your expertise in diesel and/or electric trucks with training.",
+                "width": 440,
+                "height": 435
+              },
+              "caption": "Further your expertise in diesel and/or electric trucks with training."
+            },
+            {
+              "image": {
+                "src": "/careers/competition.jpg",
+                "alt": "Participate in world-class competitions and team building activities.",
+                "width": 440,
+                "height": 435
+              },
+              "caption": "Participate in world-class competitions and team building activities."
+            },
+            {
+              "image": {
+                "src": "/careers/growth.jpg",
+                "alt": "Regardless of your starting position, there are opportunities for growth and advancement.",
+                "width": 385,
+                "height": 435
+              },
+              "caption": "Regardless of your starting position, there are opportunities for growth and advancement."
+            }
+          ]
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "cr-veteran",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "anchor": "veteran-ready"
+      },
+      "children": [
+        {
+          "id": "cr-vet-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "cr-vet-media",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "cr-vet-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/careers/flag-truck.jpg",
+                      "alt": "A Ballard truck painted with military service emblems parked beside an American flag",
+                      "width": 1016,
+                      "height": 676
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cr-vet-copy",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "cr-vet-logos",
+                  "type": "logoStrip",
+                  "props": {
+                    "logos": [
+                      {
+                        "name": "Veteran Ready Business",
+                        "image": {
+                          "src": "/careers/veteran-ready.png",
+                          "alt": "Veteran Ready Business accreditation seal",
+                          "width": 117,
+                          "height": 114
+                        }
+                      },
+                      {
+                        "name": "ESGR",
+                        "image": {
+                          "src": "/careers/esgr.png",
+                          "alt": "Employer Support of the Guard and Reserve (ESGR)",
+                          "width": 148,
+                          "height": 85
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "cr-vet-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ballard is a Veteran-Ready Business",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "cr-vet-t",
+                  "type": "text",
+                  "props": {
+                    "text": "As we continue to support veterans of our communities, Ballard has partnered with the Employer Support of the Guard and Reserve (ESGR) and has been accredited as a Veteran Ready Business through the state of Massachusetts. Both allow us to connect with more veterans that are transitioning from service to civilian life, recruiting them for our open positions within our growing organization. For those who have served, or continue to serve, we thank you for your service.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cr-interest",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "cr-interest-h",
+          "type": "heading",
+          "props": {
+            "text": "Interested in Working at Ballard?",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "cr-interest-t",
+          "type": "text",
+          "props": {
+            "text": "Click either button below to apply online. You can view all of our job openings, including their location and salary ranges, all in one place.\n\nDon’t see a role that fits you? No problem. You can select the General Application button below and share your information with us.\nIf we believe you may be a good fit for any future positions, we will be sure to connect with you.",
+            "align": "center",
+            "width": "full"
+          }
+        },
+        {
+          "id": "cr-interest-cta",
+          "type": "buttons",
+          "props": {
+            "items": [
+              {
+                "ctaId": "careers-view-openings"
+              },
+              {
+                "ctaId": "careers-general-application"
+              }
+            ],
+            "align": "center"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cr-form",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "paddingY": 0,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "cr-form-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "cr-form-media",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "cr-form-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/careers/careers-form.jpg",
+                      "alt": "Two Ballard technicians smiling in front of a truck, one giving a thumbs up",
+                      "width": 1060,
+                      "height": 860
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cr-form-card",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "start"
+              },
+              "children": [
+                {
+                  "id": "cr-form-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "careers-request",
+                    "heading": "Careers Form",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

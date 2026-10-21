@@ -1,0 +1,77 @@
+{
+  "version": 2,
+  "id": "photo-captions",
+  "name": "Photo captions",
+  "props": [
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Photos",
+      "fields": [
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Photo"
+        },
+        {
+          "key": "caption",
+          "type": "textarea",
+          "label": "Caption"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "pc-band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "pc-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "start",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "pc-col",
+              "type": "column",
+              "props": {
+                "span": 2,
+                "align": "start",
+                "repeat": "items"
+              },
+              "children": [
+                {
+                  "id": "pc-photo",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pc-caption",
+                  "type": "text",
+                  "props": {
+                    "text": "{{caption}}",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Photo captions: a row of photographs with a short caption under each, centred. */\n[data-bz-node=\"pc-band\"] > .bz-container { max-width: calc(min(90vw, 1440px) + 32px); }\n[data-bz-section=\"photo-captions\"] .bz-block { padding-block: 0; }\n[data-bz-section=\"photo-captions\"] [data-bz-node=\"pc-row\"] { display: flex; flex-wrap: wrap; justify-content: center; }\n[data-bz-section=\"photo-captions\"] [data-bz-node=\"pc-row\"] > .bz-col { flex: 1 1 0; min-width: 0; grid-column: auto; }\n[data-bz-section=\"photo-captions\"] .bz-figure { margin: 0; display: flex; justify-content: center; }\n[data-bz-section=\"photo-captions\"] .bz-figure img { display: block; width: 100%; max-width: 213px; height: auto; border-radius: 0; }\n[data-bz-section=\"photo-captions\"] [data-bz-node=\"pc-row\"] > .bz-col:first-child:nth-last-child(3) .bz-figure img, [data-bz-section=\"photo-captions\"] [data-bz-node=\"pc-row\"] > .bz-col:first-child:nth-last-child(3) ~ .bz-col .bz-figure img { max-width: 250px; }\n[data-bz-section=\"photo-captions\"] [data-bz-node^=\"pc-caption\"] .bz-text p { margin: 20px auto 0; max-width: 200px; text-align: center; font: 400 0.8rem / 1.7 var(--font-body); color: #000; }\n@media (max-width: 1100px) { [data-bz-section=\"photo-captions\"] [data-bz-node=\"pc-row\"] > .bz-col { flex: 0 0 33.333%; margin-bottom: 28px; } }\n@media (max-width: 640px) { [data-bz-section=\"photo-captions\"] [data-bz-node=\"pc-row\"] > .bz-col { flex-basis: 50%; } }\n[data-bz-section=\"photo-captions\"] [data-bz-node=\"pc-row\"] .bz-container { padding: 0; }\n"
+}
