@@ -4,11 +4,7 @@
   "name": "Ballard template",
   "conditions": [
     {
-      "type": "pageGroup",
-      "ref": "ballard"
-    },
-    {
-      "type": "inventory",
+      "type": "entireSite",
       "ref": null
     }
   ],
