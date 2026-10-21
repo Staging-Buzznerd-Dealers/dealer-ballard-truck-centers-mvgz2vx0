@@ -110,130 +110,193 @@
     },
     {
       "id": "ab-awards",
-      "type": "sharedSection",
+      "type": "section",
       "props": {
-        "sectionId": "award-badges",
-        "values": {
-          "heading": "The Ballard Difference Backed by Award-Winning Service",
-          "items": [
-            {
-              "label": "North America <em>Customer\nExperience for Sales,</em>\nDealer of the Year",
-              "year": "2025",
-              "logo": {
-                "src": "/about/awards/mack.svg",
-                "alt": "Mack Trucks",
-                "width": 58,
-                "height": 30
-              }
-            },
-            {
-              "label": "<em>Circle of\nExcellence</em> Award",
-              "year": "2024",
-              "logo": {
-                "src": "/about/awards/isuzu-truck.png",
-                "alt": "Isuzu Truck",
-                "width": 45,
-                "height": 45
-              }
-            },
-            {
-              "label": "North America <em>Customer\nExperience for Sales,</em>\nDealer of the Year",
-              "year": "2024",
-              "logo": {
-                "src": "/about/awards/mack.svg",
-                "alt": "Mack Trucks",
-                "width": 58,
-                "height": 30
-              }
-            },
-            {
-              "label": "Northeast\n<em>Dealer of the Year</em>",
-              "year": "2023",
-              "logo": {
-                "src": "/about/awards/mack.svg",
-                "alt": "Mack Trucks",
-                "width": 58,
-                "height": 30
-              }
-            },
-            {
-              "label": "<em>Circle of\nExcellence</em> Award",
-              "year": "2023",
-              "logo": {
-                "src": "/about/awards/isuzu-truck.png",
-                "alt": "Isuzu Truck",
-                "width": 45,
-                "height": 45
-              }
-            },
-            {
-              "label": "United States\n<em>Dealer of the Year</em>",
-              "year": "2022",
-              "logo": {
-                "src": "/about/awards/volvo.svg",
-                "alt": "Volvo",
-                "width": 75,
-                "height": 10
-              }
-            },
-            {
-              "label": "North America\n<em>Dealer of the Year</em>",
-              "year": "2022",
-              "logo": {
-                "src": "/about/awards/mack.svg",
-                "alt": "Mack Trucks",
-                "width": 58,
-                "height": 30
-              }
-            },
-            {
-              "label": "<em>[Award not legible in the reference]</em>",
-              "year": "[Year]"
-            },
-            {
-              "label": "<em>[Award not legible in the reference]</em>",
-              "year": "[Year]"
-            },
-            {
-              "label": "<em>[Award not legible in the reference]</em>",
-              "year": "[Year]"
-            },
-            {
-              "label": "<em>[Award not legible in the reference]</em>",
-              "year": "[Year]"
-            },
-            {
-              "label": "<em>[Award not legible in the reference]</em>",
-              "year": "[Year]"
-            },
-            {
-              "label": "<em>[Award not legible in the reference]</em>",
-              "year": "[Year]"
-            },
-            {
-              "label": "<em>[Award not legible in the reference]</em>",
-              "year": "[Year]"
-            },
-            {
-              "label": "<em>[Award not legible in the reference]</em>",
-              "year": "[Year]"
-            },
-            {
-              "label": "<em>[Award not legible in the reference]</em>",
-              "year": "[Year]"
-            },
-            {
-              "label": "<em>[Award not legible in the reference]</em>",
-              "year": "[Year]"
-            },
-            {
-              "label": "<em>[Award not legible in the reference]</em>",
-              "year": "[Year]"
-            }
-          ]
-        }
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card"
       },
-      "children": []
+      "children": [
+        {
+          "id": "ab-awards-h",
+          "type": "heading",
+          "props": {
+            "text": "The Ballard Difference Backed by Award-Winning Service",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "ab-awards-logos",
+          "type": "logoStrip",
+          "props": {
+            "logos": [
+              {
+                "name": "North America Customer Experience for Sales, Dealer of the Year 2025 (Mack)",
+                "image": {
+                  "src": "/about/awards/award-01.png",
+                  "alt": "North America Customer Experience for Sales, Dealer of the Year 2025 (Mack)",
+                  "width": 180,
+                  "height": 260
+                }
+              },
+              {
+                "name": "Circle of Excellence Award 2024 (Isuzu Truck)",
+                "image": {
+                  "src": "/about/awards/award-02.png",
+                  "alt": "Circle of Excellence Award 2024 (Isuzu Truck)",
+                  "width": 180,
+                  "height": 260
+                }
+              },
+              {
+                "name": "North America Customer Experience for Sales, Dealer of the Year 2024 (Mack)",
+                "image": {
+                  "src": "/about/awards/award-03.png",
+                  "alt": "North America Customer Experience for Sales, Dealer of the Year 2024 (Mack)",
+                  "width": 180,
+                  "height": 260
+                }
+              },
+              {
+                "name": "Northeast Dealer of the Year 2023 (Mack)",
+                "image": {
+                  "src": "/about/awards/award-04.png",
+                  "alt": "Northeast Dealer of the Year 2023 (Mack)",
+                  "width": 180,
+                  "height": 260
+                }
+              },
+              {
+                "name": "Circle of Excellence Award 2023 (Isuzu Truck)",
+                "image": {
+                  "src": "/about/awards/award-05.png",
+                  "alt": "Circle of Excellence Award 2023 (Isuzu Truck)",
+                  "width": 180,
+                  "height": 260
+                }
+              },
+              {
+                "name": "United States Dealer of the Year 2022 (Volvo)",
+                "image": {
+                  "src": "/about/awards/award-06.png",
+                  "alt": "United States Dealer of the Year 2022 (Volvo)",
+                  "width": 180,
+                  "height": 260
+                }
+              },
+              {
+                "name": "North America Dealer of the Year 2022 (Mack)",
+                "image": {
+                  "src": "/about/awards/award-07.png",
+                  "alt": "North America Dealer of the Year 2022 (Mack)",
+                  "width": 180,
+                  "height": 260
+                }
+              },
+              {
+                "name": "Ballard award badge",
+                "image": {
+                  "src": "/about/awards/award-08.png",
+                  "alt": "Ballard award badge",
+                  "width": 180,
+                  "height": 260
+                }
+              },
+              {
+                "name": "Ballard award badge",
+                "image": {
+                  "src": "/about/awards/award-09.png",
+                  "alt": "Ballard award badge",
+                  "width": 180,
+                  "height": 260
+                }
+              },
+              {
+                "name": "Ballard award badge",
+                "image": {
+                  "src": "/about/awards/award-10.png",
+                  "alt": "Ballard award badge",
+                  "width": 180,
+                  "height": 260
+                }
+              },
+              {
+                "name": "Ballard award badge",
+                "image": {
+                  "src": "/about/awards/award-11.png",
+                  "alt": "Ballard award badge",
+                  "width": 180,
+                  "height": 260
+                }
+              },
+              {
+                "name": "Ballard award badge",
+                "image": {
+                  "src": "/about/awards/award-12.png",
+                  "alt": "Ballard award badge",
+                  "width": 180,
+                  "height": 260
+                }
+              },
+              {
+                "name": "Ballard award badge",
+                "image": {
+                  "src": "/about/awards/award-13.png",
+                  "alt": "Ballard award badge",
+                  "width": 180,
+                  "height": 260
+                }
+              },
+              {
+                "name": "Ballard award badge",
+                "image": {
+                  "src": "/about/awards/award-14.png",
+                  "alt": "Ballard award badge",
+                  "width": 180,
+                  "height": 260
+                }
+              },
+              {
+                "name": "Ballard award badge",
+                "image": {
+                  "src": "/about/awards/award-15.png",
+                  "alt": "Ballard award badge",
+                  "width": 180,
+                  "height": 260
+                }
+              },
+              {
+                "name": "Ballard award badge",
+                "image": {
+                  "src": "/about/awards/award-16.png",
+                  "alt": "Ballard award badge",
+                  "width": 180,
+                  "height": 260
+                }
+              },
+              {
+                "name": "Ballard award badge",
+                "image": {
+                  "src": "/about/awards/award-17.png",
+                  "alt": "Ballard award badge",
+                  "width": 180,
+                  "height": 260
+                }
+              },
+              {
+                "name": "Ballard award badge",
+                "image": {
+                  "src": "/about/awards/award-18.png",
+                  "alt": "Ballard award badge",
+                  "width": 180,
+                  "height": 260
+                }
+              }
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "ab-stats",

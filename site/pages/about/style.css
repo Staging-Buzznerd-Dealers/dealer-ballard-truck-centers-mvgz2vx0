@@ -36,7 +36,19 @@
 [data-bz-section="icon-card-grid"] [data-bz-node^="icg-desc"] .bz-text p { margin: 18px auto 0; color: #fff; font: 400 1.05rem / 1.7 var(--font-body); max-width: 340px; white-space: normal; }
 
 /* Awards */
-[data-bz-section="award-badges"] { background: #fff; padding-block: 90px 94px; }
+[data-bz-node="ab-awards"] { background: #fff; padding-block: 90px 94px; }
+[data-bz-node="ab-awards"] > .bz-container { max-width: calc(min(90vw, 1440px) + 32px); }
+[data-bz-node="ab-awards-h"] h2 { margin: 0; text-align: center; font: 700 1.9rem / 1.2 var(--font-heading); color: #000; letter-spacing: 0; }
+[data-bz-node="ab-awards"] [data-bz-node="ab-awards-logos"] .bz-logos { display: grid; grid-template-columns: repeat(7, 180px); justify-content: center; justify-items: center; column-gap: 26px; row-gap: 57px; grid-auto-rows: auto; border: 0; padding: 0; margin: 54px auto 0; }
+[data-bz-node="ab-awards"] [data-bz-node="ab-awards-logos"] .bz-logo { display: block; padding: 0; }
+[data-bz-node="ab-awards"] [data-bz-node="ab-awards-logos"] .bz-logo img { display: block; width: 180px; max-width: 100%; height: auto; border-radius: 0; }
+[data-bz-node="ab-awards"] [data-bz-node="ab-awards-logos"] .bz-logo:nth-child(15) { grid-column: 2; }
+[data-bz-node="ab-awards"] [data-bz-node="ab-awards-logos"] .bz-logo:nth-child(17) { grid-column: 5; }
+@media (max-width: 1500px) { [data-bz-node="ab-awards"] [data-bz-node="ab-awards-logos"] .bz-logos { grid-template-columns: repeat(6, 180px); } [data-bz-node="ab-awards"] [data-bz-node="ab-awards-logos"] .bz-logo:nth-child(15), [data-bz-node="ab-awards"] [data-bz-node="ab-awards-logos"] .bz-logo:nth-child(17) { grid-column: auto; } }
+@media (max-width: 1300px) { [data-bz-node="ab-awards"] [data-bz-node="ab-awards-logos"] .bz-logos { grid-template-columns: repeat(5, 180px); } }
+@media (max-width: 1100px) { [data-bz-node="ab-awards"] [data-bz-node="ab-awards-logos"] .bz-logos { grid-template-columns: repeat(4, 180px); } }
+@media (max-width: 880px) { [data-bz-node="ab-awards"] [data-bz-node="ab-awards-logos"] .bz-logos { grid-template-columns: repeat(3, 180px); } }
+@media (max-width: 640px) { [data-bz-node="ab-awards"] [data-bz-node="ab-awards-logos"] .bz-logos { grid-template-columns: repeat(2, 1fr); column-gap: 16px; row-gap: 28px; } [data-bz-node="ab-awards-h"] h2 { font-size: 1.5rem; } }
 
 /* Stats on the same texture */
 [data-bz-node="ab-stats"] { background: #06121a url("/about/asphalt.jpg") center / cover; min-height: 275px; display: flex; align-items: center; padding-block: 0; }
@@ -75,7 +87,7 @@
   [data-bz-node="ab-hero"] { min-height: 420px; padding-block: 40px; }
   [data-bz-node="ab-hero-h"] h2 { font-size: 2.6rem; }
   [data-bz-section="icon-card-grid"] [data-bz-node="icg-row"] { padding: 40px 16px; row-gap: 36px; }
-  [data-bz-section="award-badges"] { padding-block: 60px; }
+  [data-bz-node="ab-awards"] { padding-block: 60px; }
   [data-bz-node="ab-partners-logos"] .bz-logos { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 640px) {
