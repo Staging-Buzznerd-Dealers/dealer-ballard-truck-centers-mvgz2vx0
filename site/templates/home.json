@@ -64,7 +64,16 @@
                       "placeholder": "Search Inventory or Keywords"
                     },
                     "snapshot": {
-                      "types": []
+                      "types": [
+                        {
+                          "slug": "truck",
+                          "label": "Truck"
+                        },
+                        {
+                          "slug": "trailer",
+                          "label": "Trailer"
+                        }
+                      ]
                     }
                   }
                 }

@@ -98,5 +98,553 @@
       },
       "children": []
     }
+  ],
+  "locationSnapshots": {
+    "main": {
+      "ld-header": {
+        "snapshots": {
+          "bh-map": {
+            "locations": [
+              {
+                "id": "11",
+                "name": "Avon, MA",
+                "subtitle": "",
+                "slug": "main",
+                "num": "01",
+                "href": null,
+                "streetAddress": "1 Mack Drive, Avon, MA 02322",
+                "city": "Avon",
+                "region": "MA",
+                "postalCode": "02322",
+                "country": null,
+                "latitude": null,
+                "longitude": null,
+                "phone": null,
+                "phoneUrl": null,
+                "mapUrl": "https://www.google.com/maps/search/?api=1&query=1%20Mack%20Drive%2C%20Avon%2C%20MA%2002322%2C%20Avon%2C%20MA%2C%2002322",
+                "email": null,
+                "brands": "",
+                "services": "",
+                "perks": "",
+                "brandKeys": "",
+                "perkKeys": "",
+                "perk1": null,
+                "perk2": null,
+                "perk3": null,
+                "departments": "",
+                "hours": "",
+                "phone2": null,
+                "phone2Url": null,
+                "phone3": null,
+                "phone3Url": null,
+                "group": null,
+                "groupKey": null,
+                "photo": {
+                  "src": "",
+                  "alt": ""
+                },
+                "banner": {
+                  "src": "",
+                  "alt": ""
+                },
+                "brandRows": [],
+                "serviceRows": [],
+                "perkRows": [],
+                "departmentRows": [],
+                "hoursRows": []
+              }
+            ],
+            "brandFacets": [],
+            "perkFacets": []
+          }
+        },
+        "data": {
+          "rooftop": [
+            {
+              "id": "11",
+              "name": "Avon, MA",
+              "subtitle": "",
+              "slug": "main",
+              "num": "01",
+              "href": null,
+              "streetAddress": "1 Mack Drive, Avon, MA 02322",
+              "city": "Avon",
+              "region": "MA",
+              "postalCode": "02322",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": null,
+              "phoneUrl": null,
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=1%20Mack%20Drive%2C%20Avon%2C%20MA%2002322%2C%20Avon%2C%20MA%2C%2002322",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            }
+          ]
+        }
+      },
+      "ld-hours": {
+        "snapshots": {},
+        "data": {
+          "rooftop": [
+            {
+              "id": "11",
+              "name": "Avon, MA",
+              "subtitle": "",
+              "slug": "main",
+              "num": "01",
+              "href": null,
+              "streetAddress": "1 Mack Drive, Avon, MA 02322",
+              "city": "Avon",
+              "region": "MA",
+              "postalCode": "02322",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": null,
+              "phoneUrl": null,
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=1%20Mack%20Drive%2C%20Avon%2C%20MA%2002322%2C%20Avon%2C%20MA%2C%2002322",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            }
+          ]
+        }
+      },
+      "ld-staff": {
+        "snapshots": {},
+        "data": {
+          "people": []
+        }
+      }
+    },
+    "bangor-me": {
+      "ld-header": {
+        "snapshots": {
+          "bh-map": {
+            "locations": [
+              {
+                "id": "12",
+                "name": "Bangor, ME",
+                "subtitle": "",
+                "slug": "bangor-me",
+                "num": "01",
+                "href": null,
+                "streetAddress": "2245 Odlin Road",
+                "city": "Hermon,",
+                "region": "ME",
+                "postalCode": "04401",
+                "country": null,
+                "latitude": null,
+                "longitude": null,
+                "phone": "",
+                "phoneUrl": null,
+                "mapUrl": "https://www.google.com/maps/search/?api=1&query=2245%20Odlin%20Road%2C%20Hermon%2C%2C%20ME%2C%2004401",
+                "email": null,
+                "brands": "",
+                "services": "",
+                "perks": "",
+                "brandKeys": "",
+                "perkKeys": "",
+                "perk1": null,
+                "perk2": null,
+                "perk3": null,
+                "departments": "",
+                "hours": "",
+                "phone2": null,
+                "phone2Url": null,
+                "phone3": null,
+                "phone3Url": null,
+                "group": null,
+                "groupKey": null,
+                "photo": {
+                  "src": "",
+                  "alt": ""
+                },
+                "banner": {
+                  "src": "",
+                  "alt": ""
+                },
+                "brandRows": [],
+                "serviceRows": [],
+                "perkRows": [],
+                "departmentRows": [],
+                "hoursRows": []
+              }
+            ],
+            "brandFacets": [],
+            "perkFacets": []
+          }
+        },
+        "data": {
+          "rooftop": [
+            {
+              "id": "12",
+              "name": "Bangor, ME",
+              "subtitle": "",
+              "slug": "bangor-me",
+              "num": "01",
+              "href": null,
+              "streetAddress": "2245 Odlin Road",
+              "city": "Hermon,",
+              "region": "ME",
+              "postalCode": "04401",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=2245%20Odlin%20Road%2C%20Hermon%2C%2C%20ME%2C%2004401",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            }
+          ]
+        }
+      },
+      "ld-hours": {
+        "snapshots": {},
+        "data": {
+          "rooftop": [
+            {
+              "id": "12",
+              "name": "Bangor, ME",
+              "subtitle": "",
+              "slug": "bangor-me",
+              "num": "01",
+              "href": null,
+              "streetAddress": "2245 Odlin Road",
+              "city": "Hermon,",
+              "region": "ME",
+              "postalCode": "04401",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=2245%20Odlin%20Road%2C%20Hermon%2C%2C%20ME%2C%2004401",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            }
+          ]
+        }
+      },
+      "ld-staff": {
+        "snapshots": {},
+        "data": {
+          "people": []
+        }
+      }
+    },
+    "johnston-ri": {
+      "ld-header": {
+        "snapshots": {
+          "bh-map": {
+            "locations": [
+              {
+                "id": "13",
+                "name": "Johnston, RI",
+                "subtitle": "",
+                "slug": "johnston-ri",
+                "num": "01",
+                "href": null,
+                "streetAddress": "280 Scituate Avenue",
+                "city": "Johnston",
+                "region": "RI",
+                "postalCode": "02919",
+                "country": null,
+                "latitude": null,
+                "longitude": null,
+                "phone": "(401) 821-4800",
+                "phoneUrl": "tel:4018214800",
+                "mapUrl": "https://www.google.com/maps/search/?api=1&query=280%20Scituate%20Avenue%2C%20Johnston%2C%20RI%2C%2002919",
+                "email": null,
+                "brands": "",
+                "services": "",
+                "perks": "",
+                "brandKeys": "",
+                "perkKeys": "",
+                "perk1": null,
+                "perk2": null,
+                "perk3": null,
+                "departments": "",
+                "hours": "",
+                "phone2": null,
+                "phone2Url": null,
+                "phone3": null,
+                "phone3Url": null,
+                "group": null,
+                "groupKey": null,
+                "photo": {
+                  "src": "",
+                  "alt": ""
+                },
+                "banner": {
+                  "src": "",
+                  "alt": ""
+                },
+                "brandRows": [],
+                "serviceRows": [],
+                "perkRows": [],
+                "departmentRows": [],
+                "hoursRows": []
+              }
+            ],
+            "brandFacets": [],
+            "perkFacets": []
+          }
+        },
+        "data": {
+          "rooftop": [
+            {
+              "id": "13",
+              "name": "Johnston, RI",
+              "subtitle": "",
+              "slug": "johnston-ri",
+              "num": "01",
+              "href": null,
+              "streetAddress": "280 Scituate Avenue",
+              "city": "Johnston",
+              "region": "RI",
+              "postalCode": "02919",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "(401) 821-4800",
+              "phoneUrl": "tel:4018214800",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=280%20Scituate%20Avenue%2C%20Johnston%2C%20RI%2C%2002919",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            }
+          ]
+        }
+      },
+      "ld-hours": {
+        "snapshots": {},
+        "data": {
+          "rooftop": [
+            {
+              "id": "13",
+              "name": "Johnston, RI",
+              "subtitle": "",
+              "slug": "johnston-ri",
+              "num": "01",
+              "href": null,
+              "streetAddress": "280 Scituate Avenue",
+              "city": "Johnston",
+              "region": "RI",
+              "postalCode": "02919",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "(401) 821-4800",
+              "phoneUrl": "tel:4018214800",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=280%20Scituate%20Avenue%2C%20Johnston%2C%20RI%2C%2002919",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            }
+          ]
+        }
+      },
+      "ld-staff": {
+        "snapshots": {},
+        "data": {
+          "people": []
+        }
+      }
+    }
+  },
+  "locations": [
+    {
+      "slug": "main",
+      "name": "Avon, MA",
+      "city": "Avon",
+      "region": "MA",
+      "streetAddress": "1 Mack Drive, Avon, MA 02322",
+      "postalCode": "02322"
+    },
+    {
+      "slug": "bangor-me",
+      "name": "Bangor, ME",
+      "city": "Hermon,",
+      "region": "ME",
+      "streetAddress": "2245 Odlin Road",
+      "postalCode": "04401"
+    },
+    {
+      "slug": "johnston-ri",
+      "name": "Johnston, RI",
+      "city": "Johnston",
+      "region": "RI",
+      "streetAddress": "280 Scituate Avenue",
+      "postalCode": "02919",
+      "phone": "(401) 821-4800"
+    }
   ]
 }

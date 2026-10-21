@@ -284,7 +284,112 @@
               "limit": 8
             },
             "snapshot": {
-              "listings": []
+              "listings": [
+                {
+                  "slug": "7-2024-isuzu-npr-hd",
+                  "href": "products/7-2024-isuzu-npr-hd",
+                  "title": "2024 ISUZU NPR HD",
+                  "price": "$0",
+                  "facts": [],
+                  "image": {
+                    "src": "preview/ef/dms-8054711990__02__preview.jpg",
+                    "alt": "2024 ISUZU NPR HD",
+                    "width": 600,
+                    "height": 400
+                  }
+                },
+                {
+                  "slug": "7-2024-volvo-vnl64t300",
+                  "href": "products/7-2024-volvo-vnl64t300",
+                  "title": "2024 VOLVO VNL64T300",
+                  "price": "$0",
+                  "facts": [],
+                  "image": {
+                    "src": "preview/89/dms-9027810657__02__preview.jpg",
+                    "alt": "2024 VOLVO VNL64T300",
+                    "width": 600,
+                    "height": 400
+                  }
+                },
+                {
+                  "slug": "7-2026-isuzu-npr-hd",
+                  "href": "products/7-2026-isuzu-npr-hd",
+                  "title": "2026 ISUZU NPR HD",
+                  "price": "$0",
+                  "facts": [],
+                  "image": {
+                    "src": "preview/62/dms-9048019410__02__preview.jpg",
+                    "alt": "2026 ISUZU NPR HD",
+                    "width": 600,
+                    "height": 400
+                  }
+                },
+                {
+                  "slug": "7-2024-isuzu-npr-hd-2",
+                  "href": "products/7-2024-isuzu-npr-hd-2",
+                  "title": "2024 ISUZU NPR HD",
+                  "price": "$0",
+                  "facts": [],
+                  "image": {
+                    "src": "preview/72/dms-8031918324__02__preview.jpg",
+                    "alt": "2024 ISUZU NPR HD",
+                    "width": 600,
+                    "height": 400
+                  }
+                },
+                {
+                  "slug": "7-2024-volvo-vnl64t300-2",
+                  "href": "products/7-2024-volvo-vnl64t300-2",
+                  "title": "2024 VOLVO VNL64T300",
+                  "price": "$0",
+                  "facts": [],
+                  "image": {
+                    "src": "preview/94/dms-9027810657__02__preview.webp",
+                    "alt": "2024 VOLVO VNL64T300",
+                    "width": 600,
+                    "height": 400
+                  }
+                },
+                {
+                  "slug": "7-2025-volvo-vhd84b300",
+                  "href": "products/7-2025-volvo-vhd84b300",
+                  "title": "2025 VOLVO VHD84B300",
+                  "price": "$0",
+                  "facts": [],
+                  "image": {
+                    "src": "preview/ac/dms-9037446332__02__preview.jpg",
+                    "alt": "2025 VOLVO VHD84B300",
+                    "width": 600,
+                    "height": 400
+                  }
+                },
+                {
+                  "slug": "7-2025-volvo-vhd84b300-2",
+                  "href": "products/7-2025-volvo-vhd84b300-2",
+                  "title": "2025 VOLVO VHD84B300",
+                  "price": "$0",
+                  "facts": [],
+                  "image": {
+                    "src": "preview/1c/dms-9037446303__04__preview.webp",
+                    "alt": "2025 VOLVO VHD84B300",
+                    "width": 600,
+                    "height": 400
+                  }
+                },
+                {
+                  "slug": "7-2026-volvo-vhd84b300",
+                  "href": "products/7-2026-volvo-vhd84b300",
+                  "title": "2026 VOLVO VHD84B300",
+                  "price": "$0",
+                  "facts": [],
+                  "image": {
+                    "src": "preview/f6/dms-9043657655__02__preview.jpg",
+                    "alt": "2026 VOLVO VHD84B300",
+                    "width": 600,
+                    "height": 400
+                  }
+                }
+              ]
             }
           }
         }
