@@ -189,7 +189,7 @@
               {
                 "name": "Massachusetts Highway Association",
                 "image": {
-                  "src": "/municipal/seal-mha.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/d4/mha-300x268-1.jpg",
                   "alt": "Massachusetts Highway Association, 1893",
                   "width": 79,
                   "height": 79
@@ -198,7 +198,7 @@
               {
                 "name": "Berkshire County Highway Superintendents Association",
                 "image": {
-                  "src": "/municipal/seal-berkshire.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/00/rsw_900h_450cg_true-300x268-1.jpg",
                   "alt": "Berkshire County Highway Superintendents Association, District 1",
                   "width": 83,
                   "height": 83
@@ -207,7 +207,7 @@
               {
                 "name": "Worcester County Highway Association",
                 "image": {
-                  "src": "/municipal/seal-wcha.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/8b/wcha-300x268-1.jpg",
                   "alt": "WCHA, Worcester County Highway Association",
                   "width": 89,
                   "height": 61
