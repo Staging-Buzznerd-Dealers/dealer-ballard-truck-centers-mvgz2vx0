@@ -1,0 +1,111 @@
+{
+  "version": 2,
+  "id": "before-after",
+  "name": "Before / after",
+  "props": [
+    {
+      "key": "before",
+      "type": "image",
+      "label": "Before photo"
+    },
+    {
+      "key": "after",
+      "type": "image",
+      "label": "After photo"
+    },
+    {
+      "key": "beforeLabel",
+      "type": "text",
+      "label": "Before label",
+      "default": "Before"
+    },
+    {
+      "key": "afterLabel",
+      "type": "text",
+      "label": "After label",
+      "default": "After"
+    },
+    {
+      "key": "caption",
+      "type": "text",
+      "label": "Caption",
+      "default": "Scroll over the image to reveal the before and after pictures."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ba-band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "ba-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "start",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "ba-stage",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "ba-before",
+                  "type": "image",
+                  "props": {
+                    "image": "{{before}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ba-after",
+                  "type": "image",
+                  "props": {
+                    "image": "{{after}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ba-before-label",
+                  "type": "text",
+                  "props": {
+                    "text": "{{beforeLabel}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ba-after-label",
+                  "type": "text",
+                  "props": {
+                    "text": "{{afterLabel}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ba-caption",
+          "type": "text",
+          "props": {
+            "text": "{{caption}}",
+            "align": "center",
+            "width": "full"
+          }
+        }
+      ]
+    }
+  ],
+  "css": "/* Before / after: two photos stacked, the \"after\" one clipped at --ba-pos. With no script (and on the\n   Design canvas) it sits at 50%, which is the resting state. The script only moves --ba-pos. */\n[data-bz-node=\"ba-band\"] > .bz-container { max-width: min(90vw, 1440px); background: #ebf7ff; padding: 42px 0 26px; }\n[data-bz-section=\"before-after\"] .bz-block { padding-block: 0; }\n[data-bz-section=\"before-after\"] [data-bz-node=\"ba-stage\"] { --ba-pos: 50%; position: relative; width: 100%; max-width: 719px; margin: 0 auto; aspect-ratio: 3 / 2; overflow: hidden; background: #000; touch-action: pan-y; }\n[data-bz-section=\"before-after\"] [data-bz-node=\"ba-stage\"] > .bz-block, [data-bz-section=\"before-after\"] [data-bz-node=\"ba-stage\"] .bz-container { position: absolute; inset: 0; margin: 0; padding: 0; max-width: none; }\n[data-bz-section=\"before-after\"] [data-bz-node=\"ba-stage\"] .bz-figure, [data-bz-section=\"before-after\"] [data-bz-node=\"ba-stage\"] img { display: block; width: 100%; height: 100%; margin: 0; object-fit: cover; border-radius: 0; }\n[data-bz-section=\"before-after\"] [data-bz-node=\"ba-after\"] { clip-path: inset(0 0 0 var(--ba-pos)); }\n[data-bz-section=\"before-after\"] [data-bz-node=\"ba-before-label\"], [data-bz-section=\"before-after\"] [data-bz-node=\"ba-after-label\"] { inset: 26px auto auto 25px; z-index: 2; pointer-events: none; }\n[data-bz-section=\"before-after\"] [data-bz-node=\"ba-after-label\"] { inset: 26px 25px auto auto; }\n[data-bz-section=\"before-after\"] [data-bz-node=\"ba-before-label\"] .bz-text p, [data-bz-section=\"before-after\"] [data-bz-node=\"ba-after-label\"] .bz-text p { margin: 0; font: 400 0.7rem / 1 var(--font-body); color: #fff; text-shadow: 0 0 3px rgba(0, 0, 0, 0.7); }\n[data-bz-section=\"before-after\"] [data-bz-node=\"ba-stage\"]::before { content: \"\"; position: absolute; z-index: 3; top: 0; bottom: 0; left: var(--ba-pos); width: 3px; margin-left: -1px; background: #fff; pointer-events: none; }\n[data-bz-section=\"before-after\"] [data-bz-node=\"ba-stage\"]::after { content: \"\\25C2\\25B8\"; position: absolute; z-index: 3; top: 50%; left: var(--ba-pos); width: 38px; height: 38px; margin: -19px 0 0 -19px; box-sizing: border-box; border: 2px solid #fff; border-radius: 50%; background: rgba(0, 0, 0, 0.25); color: #fff; font: 400 0.7rem / 34px var(--font-body); letter-spacing: 1px; text-align: center; pointer-events: none; }\n[data-bz-section=\"before-after\"] [data-bz-node=\"ba-caption\"] .bz-text p { margin: 37px 0 0; text-align: center; font: italic 400 0.84rem / 1.4 var(--font-body); color: #222; max-width: none; }\n",
+  "js": "/* Before / after: follow the pointer (or arrow keys) across the photo. */\n(function () {\n  document.querySelectorAll('[data-bz-section=\"before-after\"] [data-bz-node=\"ba-stage\"]').forEach(function (stage) {\n    if (stage.__bzBA) return;\n    stage.__bzBA = true;\n    var pos = 50;\n    function set(p) {\n      pos = Math.max(0, Math.min(100, p));\n      stage.style.setProperty('--ba-pos', pos + '%');\n      stage.setAttribute('aria-valuenow', String(Math.round(pos)));\n    }\n    stage.setAttribute('role', 'slider');\n    stage.setAttribute('tabindex', '0');\n    stage.setAttribute('aria-label', 'Before and after');\n    stage.setAttribute('aria-valuemin', '0');\n    stage.setAttribute('aria-valuemax', '100');\n    stage.setAttribute('aria-valuenow', '50');\n    function fromEvent(e) {\n      var r = stage.getBoundingClientRect();\n      set(((e.clientX - r.left) / r.width) * 100);\n    }\n    stage.addEventListener('pointermove', fromEvent);\n    stage.addEventListener('pointerdown', fromEvent);\n    stage.addEventListener('keydown', function (e) {\n      if (e.key === 'ArrowLeft') { set(pos - 5); e.preventDefault(); }\n      if (e.key === 'ArrowRight') { set(pos + 5); e.preventDefault(); }\n    });\n  });\n})();\n"
+}

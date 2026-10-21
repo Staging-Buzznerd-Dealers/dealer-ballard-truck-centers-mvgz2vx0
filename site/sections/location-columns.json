@@ -1,0 +1,106 @@
+{
+  "version": 2,
+  "id": "location-columns",
+  "name": "Location columns",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Locations with DPF Services"
+    },
+    {
+      "key": "background",
+      "type": "image",
+      "label": "Background photo"
+    },
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Locations",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "details",
+          "type": "textarea",
+          "label": "Phone and address (links allowed)"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "lc-band",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "background": "ink",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "lc-bg",
+          "type": "image",
+          "props": {
+            "image": "{{background}}",
+            "width": "full"
+          }
+        },
+        {
+          "id": "lc-head",
+          "type": "heading",
+          "props": {
+            "text": "{{heading}}",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "lc-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "start",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "lc-col",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "align": "start",
+                "repeat": "items"
+              },
+              "children": [
+                {
+                  "id": "lc-name",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{name}}",
+                    "headingLevel": 3,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "lc-details",
+                  "type": "text",
+                  "props": {
+                    "text": "{{details}}",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Location columns: a photo behind a centred heading and a row of branch details. */\n[data-bz-node=\"lc-band\"] { position: relative; overflow: hidden; background: #0b3b57; padding-block: 125px 0; min-height: 455px; box-sizing: border-box; }\n[data-bz-node=\"lc-head\"], [data-bz-node=\"lc-row\"] { position: relative; z-index: 1; }\n[data-bz-section=\"location-columns\"] .bz-block { padding-block: 0; }\n[data-bz-node=\"lc-bg\"] { position: absolute; inset: 0; z-index: 0; }\n[data-bz-node=\"lc-bg\"] .bz-container, [data-bz-node=\"lc-bg\"] .bz-figure { position: absolute; inset: 0; max-width: none; margin: 0; padding: 0; }\n[data-bz-node=\"lc-bg\"] img { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 0; }\n[data-bz-node=\"lc-row\"] { width: 100%; max-width: min(90vw, 1440px); margin-inline: auto; }\n[data-bz-section=\"location-columns\"] h2 { margin: 0; text-align: center; font: 700 1.875rem / 1.2 var(--font-heading); color: #fff; letter-spacing: 0; }\n[data-bz-section=\"location-columns\"] [data-bz-node=\"lc-row\"] { margin-top: 83px; }\n[data-bz-section=\"location-columns\"] h3 { margin: 0; text-align: center; font: 700 1.38rem / 1.2 var(--font-body); color: #fff; letter-spacing: 0; }\n[data-bz-section=\"location-columns\"] [data-bz-node^=\"lc-details\"] .bz-text p { margin: 14px 0 0; text-align: center; font: 400 1.01rem / 1.43 var(--font-body); color: #fff; max-width: none; }\n[data-bz-section=\"location-columns\"] [data-bz-node^=\"lc-details\"] a { color: var(--accent); text-decoration: none; }\n@media (max-width: 1100px) { [data-bz-node=\"lc-band\"] { padding-block: 72px 56px; min-height: 0; } [data-bz-section=\"location-columns\"] [data-bz-node=\"lc-row\"] > .bz-col { grid-column: span 6; } [data-bz-section=\"location-columns\"] [data-bz-node=\"lc-row\"] { row-gap: 36px; } }\n@media (max-width: 640px) { [data-bz-section=\"location-columns\"] [data-bz-node=\"lc-row\"] > .bz-col { grid-column: 1 / -1; } [data-bz-section=\"location-columns\"] h2 { font-size: 1.5rem; } }\n"
+}

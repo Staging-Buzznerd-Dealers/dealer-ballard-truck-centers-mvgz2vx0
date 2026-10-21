@@ -81,5 +81,41 @@
     "intent": "rental-request",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "service-flyer",
+    "label": "View Service Flyer",
+    "url": "/service-flyer.pdf",
+    "style": "primary",
+    "intent": "service-flyer",
+    "newTab": true,
+    "active": true
+  },
+  {
+    "id": "service-credit-application",
+    "label": "Credit Application",
+    "url": "#service-credit",
+    "style": "primary",
+    "intent": "credit-application",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "service-request-form",
+    "label": "Service Request Form",
+    "url": "#service-request",
+    "style": "primary",
+    "intent": "book-service",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "service-get-started",
+    "label": "Let's Get Started",
+    "url": "/credit-application",
+    "style": "primary",
+    "intent": "credit-application",
+    "newTab": false,
+    "active": true
   }
 ]
