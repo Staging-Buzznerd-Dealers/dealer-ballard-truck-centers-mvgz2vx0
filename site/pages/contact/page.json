@@ -100,7 +100,60 @@
               "pagePathPrefix": "/locations"
             }
           }
-        }
+        },
+        "data": {
+          "locations": [
+            {
+              "id": "11",
+              "name": "Avon, MA",
+              "subtitle": "",
+              "slug": "main",
+              "num": "01",
+              "href": "/locations/main",
+              "streetAddress": "1 Mack Drive, Avon, MA 02322",
+              "city": "Avon",
+              "region": "MA",
+              "postalCode": "02322",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": null,
+              "phoneUrl": null,
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=1%20Mack%20Drive%2C%20Avon%2C%20MA%2002322%2C%20Avon%2C%20MA%2C%2002322",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            }
+          ]
+        },
+        "snapshots": {}
       },
       "children": []
     },
