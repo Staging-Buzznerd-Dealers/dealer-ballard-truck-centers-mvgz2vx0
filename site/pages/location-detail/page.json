@@ -1,0 +1,102 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "ld-header",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "branch-header",
+        "values": {
+          "rooftop": {
+            "source": "locations",
+            "config": {
+              "locationSlug": "{{locationSlug}}"
+            }
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "ld-hours",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "branch-hours",
+        "values": {
+          "rooftop": {
+            "source": "locations",
+            "config": {
+              "locationSlug": "{{locationSlug}}"
+            }
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "ld-staff",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "branch-staff",
+        "values": {
+          "heading": "Key Location Contacts",
+          "people": {
+            "source": "staff",
+            "config": {
+              "locationSlug": "{{locationSlug}}"
+            }
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "ld-features",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-split",
+        "values": {
+          "items": [
+            {
+              "heading": "Commercial Truck Sales",
+              "text": "Our sales team has been outfitting businesses big and small with new fleet vehicles. Whether it's 1 dump truck or 10 tractors, we've got you covered.",
+              "ctaLabel": "View All Inventory",
+              "ctaUrl": "/store/inventory",
+              "image": {
+                "src": "/location/sales.jpg",
+                "alt": "Two men shaking hands at a truck dealership",
+                "width": 870,
+                "height": 591
+              }
+            },
+            {
+              "heading": "Parts Department",
+              "text": "Our parts team boasts one of the largest warehouses of truck parts in the Northeast. Our representatives are here to help you find the part you need to get rolling. Stop in and visit our showroom or call ahead and have your order waiting for you, or ask us about delivery.\n\nGet competitive pricing on genuine parts for Mack, Volvo, Isuzu, Fuso and UD trucks + accessories and all-make aftermarket parts.",
+              "ctaLabel": "Request Parts",
+              "ctaUrl": "/parts#parts-request",
+              "image": {
+                "src": "/location/parts.jpg",
+                "alt": "A technician holding Mack oil filters",
+                "width": 870,
+                "height": 588
+              }
+            },
+            {
+              "heading": "Service Department",
+              "text": "Our award-winning technicians are some of the best there are. Your trucks are more than your business, they're your livelihood – and keeping them running is ours.\n\nSchedule maintenance or repairs on <em>any make and model</em> medium and heavy duty vehicle.\n\nAs a <strong><em>Mack Certified Uptime Center</em></strong>, you can count on fast, communicative service. Call now to let us know you're on your way.\n\n<strong>Inspections:</strong> State and DOT Commercial Vehicle and Trailer Inspections.",
+              "ctaLabel": "Schedule Service",
+              "ctaUrl": "/service#service-request",
+              "image": {
+                "src": "/location/service.jpg",
+                "alt": "A technician working on an engine",
+                "width": 870,
+                "height": 588
+              }
+            }
+          ]
+        }
+      },
+      "children": []
+    }
+  ]
+}

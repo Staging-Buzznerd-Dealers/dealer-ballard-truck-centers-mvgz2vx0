@@ -1,0 +1,136 @@
+{
+  "version": 2,
+  "id": "branch-hours",
+  "name": "Branch hours",
+  "props": [
+    {
+      "key": "locationSlug",
+      "type": "text",
+      "label": "Location slug (filled in per page)",
+      "default": ""
+    },
+    {
+      "key": "rooftop",
+      "type": "list",
+      "label": "This location (From Locations)",
+      "fields": [
+        {
+          "key": "mapUrl",
+          "type": "url",
+          "label": "Directions link"
+        },
+        {
+          "key": "hoursRows",
+          "type": "list",
+          "label": "Hours",
+          "fields": [
+            {
+              "key": "department",
+              "type": "text",
+              "label": "Department"
+            },
+            {
+              "key": "key",
+              "type": "text",
+              "label": "Code"
+            },
+            {
+              "key": "summary",
+              "type": "textarea",
+              "label": "Summary"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "hr-band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "none",
+        "paddingY": 0,
+        "repeat": "rooftop"
+      },
+      "children": [
+        {
+          "id": "hr-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "start",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "hr-dept",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "align": "auto",
+                "repeat": "hoursRows"
+              },
+              "children": [
+                {
+                  "id": "hr-icon",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/location/dept-sales.svg",
+                      "alt": "Department",
+                      "width": 54,
+                      "height": 54
+                    },
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hr-name",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{department}}",
+                    "headingLevel": 3,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "hr-sum",
+                  "type": "text",
+                  "props": {
+                    "text": "{{summary}}",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hr-note-band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "none",
+        "paddingY": 0,
+        "repeat": "rooftop"
+      },
+      "children": [
+        {
+          "id": "hr-note",
+          "type": "text",
+          "props": {
+            "text": "For holiday hours and branch closures, please refer to our profile on <a href=\"{{mapUrl}}\">Google</a>.",
+            "align": "center",
+            "width": "full"
+          }
+        }
+      ]
+    }
+  ],
+  "css": "/* Branch hours: a navy band over a road photograph with each department's hours under its icon, then a\n   holiday note. Departments and hours come from Admin -> Locations -> Hours. */\n[data-bz-section=\"branch-hours\"] .bz-block { padding-block: 0; }\n[data-bz-node^=\"hr-band\"] { background: #003652 url(\"/contact/hero-road.jpg\") center / cover; }\n[data-bz-node^=\"hr-band\"] > .bz-container { max-width: min(90vw, 1440px); padding: 0; }\n[data-bz-node^=\"hr-row\"] { display: flex; justify-content: center; padding: 62px 20px 52px; }\n[data-bz-node^=\"hr-row\"] > .bz-col { flex: 1 1 0; grid-column: auto; padding-inline: 10px; text-align: center; }\n[data-bz-node^=\"hr-icon\"] .bz-figure { margin: 0; display: flex; justify-content: center; }\n[data-bz-node^=\"hr-icon\"] img { width: 54px; height: 54px; border-radius: 0; }\n[data-bz-node^=\"hr-row\"] > .bz-col:nth-child(2) [data-bz-node^=\"hr-icon\"] img { content: url(\"/location/dept-service.svg\"); }\n[data-bz-node^=\"hr-row\"] > .bz-col:nth-child(3) [data-bz-node^=\"hr-icon\"] img { content: url(\"/location/dept-parts.svg\"); }\n[data-bz-node^=\"hr-row\"] > .bz-col:nth-child(4) [data-bz-node^=\"hr-icon\"] img { content: url(\"/location/dept-inspections.svg\"); }\n[data-bz-section=\"branch-hours\"] h3 { margin: 27px 0 0; text-align: center; font: 700 1.4rem / 1.2 var(--font-heading); color: #fff; letter-spacing: 0; }\n[data-bz-node^=\"hr-sum\"] .bz-text p { margin: 16px 0 0; text-align: center; white-space: pre-line; font: 600 0.95rem / 1.5 var(--font-body); color: #fff; max-width: none; }\n[data-bz-node^=\"hr-note-band\"] { background: #003652; padding: 28px 0 26px; }\n[data-bz-node^=\"hr-note-band\"] > .bz-container { max-width: min(90vw, 1440px); }\n[data-bz-node^=\"hr-note\"] .bz-text p { margin: 0; text-align: center; font: 400 1rem / 1.4 var(--font-body); color: #fff; max-width: none; }\n[data-bz-node^=\"hr-note\"] a { color: var(--accent); text-decoration: none; }\n@media (max-width: 1100px) { [data-bz-node^=\"hr-row\"] { flex-wrap: wrap; row-gap: 32px; } [data-bz-node^=\"hr-row\"] > .bz-col { flex: 0 0 50%; } }\n@media (max-width: 520px) { [data-bz-node^=\"hr-row\"] > .bz-col { flex-basis: 100%; } }\n"
+}

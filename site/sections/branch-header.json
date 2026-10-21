@@ -1,0 +1,300 @@
+{
+  "version": 2,
+  "id": "branch-header",
+  "name": "Branch header",
+  "props": [
+    {
+      "key": "locationSlug",
+      "type": "text",
+      "label": "Location slug (filled in per page)",
+      "default": ""
+    },
+    {
+      "key": "rooftop",
+      "type": "list",
+      "label": "This location (From Locations)",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "city",
+          "type": "text",
+          "label": "City"
+        },
+        {
+          "key": "region",
+          "type": "text",
+          "label": "State"
+        },
+        {
+          "key": "postalCode",
+          "type": "text",
+          "label": "Postal code"
+        },
+        {
+          "key": "streetAddress",
+          "type": "text",
+          "label": "Street address"
+        },
+        {
+          "key": "mapUrl",
+          "type": "url",
+          "label": "Directions link"
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Phone"
+        },
+        {
+          "key": "phoneUrl",
+          "type": "url",
+          "label": "Phone link"
+        },
+        {
+          "key": "banner",
+          "type": "image",
+          "label": "Banner"
+        },
+        {
+          "key": "serviceRows",
+          "type": "list",
+          "label": "Services",
+          "fields": [
+            {
+              "key": "name",
+              "type": "text",
+              "label": "Name"
+            },
+            {
+              "key": "description",
+              "type": "text",
+              "label": "Description"
+            }
+          ]
+        },
+        {
+          "key": "brandRows",
+          "type": "list",
+          "label": "Brands",
+          "fields": [
+            {
+              "key": "name",
+              "type": "text",
+              "label": "Name"
+            },
+            {
+              "key": "key",
+              "type": "text",
+              "label": "Key"
+            }
+          ]
+        },
+        {
+          "key": "hoursRows",
+          "type": "list",
+          "label": "Hours",
+          "fields": [
+            {
+              "key": "department",
+              "type": "text",
+              "label": "Department"
+            },
+            {
+              "key": "key",
+              "type": "text",
+              "label": "Code"
+            },
+            {
+              "key": "summary",
+              "type": "textarea",
+              "label": "Summary"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "bh-title",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "none",
+        "paddingY": 0,
+        "repeat": "rooftop"
+      },
+      "children": [
+        {
+          "id": "bh-title-h",
+          "type": "heading",
+          "props": {
+            "text": "{{city}}, {{region}}",
+            "headingLevel": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "bh-main",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "none",
+        "paddingY": 0,
+        "repeat": "rooftop"
+      },
+      "children": [
+        {
+          "id": "bh-bg",
+          "type": "image",
+          "props": {
+            "image": "{{banner}}",
+            "width": "full"
+          }
+        },
+        {
+          "id": "bh-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "bh-info",
+              "type": "column",
+              "props": {
+                "span": 7,
+                "align": "auto"
+              },
+              "children": [
+                {
+                  "id": "bh-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Branch Information",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "bh-addr",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"{{mapUrl}}\">{{streetAddress}}, {{city}}, {{region}} {{postalCode}}</a>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "bh-phone",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"{{phoneUrl}}\">{{phone}}</a>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "bh-svc",
+                  "type": "text",
+                  "props": {
+                    "text": "{{name}}",
+                    "width": "full",
+                    "repeat": "serviceRows"
+                  }
+                },
+                {
+                  "id": "bh-m-head",
+                  "type": "heading",
+                  "props": {
+                    "text": "Manufacturers",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "bh-brandrow",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "align": "center"
+                  },
+                  "children": [
+                    {
+                      "id": "bh-brand",
+                      "type": "column",
+                      "props": {
+                        "span": 3,
+                        "align": "auto",
+                        "repeat": "brandRows"
+                      },
+                      "children": [
+                        {
+                          "id": "bh-logo",
+                          "type": "image",
+                          "props": {
+                            "image": {
+                              "src": "/brands/clear/{{key}}.svg",
+                              "alt": "{{name}}"
+                            },
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "bh-share",
+                  "type": "heading",
+                  "props": {
+                    "text": "Share Your Experience",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "bh-review",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Review us on Google",
+                        "url": "{{mapUrl}}"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "bh-mapcol",
+              "type": "column",
+              "props": {
+                "span": 5,
+                "align": "auto"
+              },
+              "children": [
+                {
+                  "id": "bh-map",
+                  "type": "widget",
+                  "props": {
+                    "widget": "locations-map",
+                    "config": {
+                      "locationSlug": "{{locationSlug}}",
+                      "mapProvider": "google"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Branch header: the branch's name on a navy band, then its details on its banner photo beside a map card.\n   Every fact is bound to Admin -> Locations through the rooftop list, scoped to this page's location. */\n[data-bz-section=\"branch-header\"] .bz-block { padding-block: 0; }\n[data-bz-node^=\"bh-title\"] { background: #003550; padding-block: 34px 17px; }\n[data-bz-node^=\"bh-title\"] > .bz-container, [data-bz-node^=\"bh-main\"] > .bz-container { max-width: calc(min(90vw, 1440px) + 32px); }\n[data-bz-node^=\"bh-title\"] h1 { margin: 0; font: 700 2.8rem / 1.2 var(--font-heading); color: #fff; }\n[data-bz-node^=\"bh-main\"] { position: relative; background: #fff; padding-block: 0; }\n[data-bz-node^=\"bh-main\"] > .bz-container { position: relative; }\n[data-bz-node^=\"bh-main\"] > .bz-container { background: #e9f4fb; }\n[data-bz-node^=\"bh-bg\"] { position: absolute; inset: 0 auto 0 50%; width: min(90vw, 1440px); transform: translateX(-50%); z-index: 0; pointer-events: none; }\n[data-bz-node^=\"bh-bg\"] .bz-container, [data-bz-node^=\"bh-bg\"] .bz-figure { position: absolute; inset: 0; max-width: none; margin: 0; padding: 0; }\n[data-bz-node^=\"bh-bg\"] img { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 0; opacity: 0.35; }\n[data-bz-node^=\"bh-main\"] .bz-photo--empty { display: none; }\n[data-bz-node^=\"bh-row\"] { position: relative; z-index: 1; min-height: 750px; align-items: start; }\n[data-bz-node^=\"bh-info\"] { padding: 62px 40px 70px 58px; box-sizing: border-box; }\n[data-bz-section=\"branch-header\"] h2 { margin: 0 0 22px; text-transform: uppercase; font: 700 1.9rem / 1.2 var(--font-heading); color: #000; letter-spacing: 0; }\n[data-bz-section=\"branch-header\"] h3 { margin: 0; font: 700 1.2rem / 1.2 var(--font-heading); color: #000; letter-spacing: 0; }\n[data-bz-node^=\"bh-addr\"] .bz-text p, [data-bz-node^=\"bh-phone\"] .bz-text p, [data-bz-node^=\"bh-svc\"] .bz-text p { position: relative; margin: 0 0 17px; padding-left: 38px; font: 400 0.95rem / 1.4 var(--font-body); color: #000; max-width: none; }\n[data-bz-node^=\"bh-addr\"] a, [data-bz-node^=\"bh-phone\"] a { color: var(--accent); text-decoration: none; }\n[data-bz-node^=\"bh-addr\"] .bz-text p::before, [data-bz-node^=\"bh-phone\"] .bz-text p::before, [data-bz-node^=\"bh-svc\"] .bz-text p::before { content: \"\"; position: absolute; left: 4px; top: 0.12em; width: 17px; height: 17px; background: var(--accent); -webkit-mask: var(--bh-icon) center / contain no-repeat; mask: var(--bh-icon) center / contain no-repeat; }\n[data-bz-node^=\"bh-addr\"] .bz-text p { --bh-icon: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 18'%3E%3Cpath d='M7 0a6 6 0 0 0-6 6c0 4.500 6 12 6 12s6-7.500 6-12a6 6 0 0 0-6-6zm0 8.300A2.300 2.300 0 1 1 7 3.700a2.300 2.300 0 0 1 0 4.600z'/%3E%3C/svg%3E\"); } [data-bz-node^=\"bh-phone\"] .bz-text p { --bh-icon: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath d='M13.300 10.200l-2.700-1.200a.7.700 0 0 0-.8.200l-1.100 1.400a8.200 8.200 0 0 1-3.900-3.900l1.400-1.100a.7.700 0 0 0 .2-.8L3.800.1a.7.700 0 0 0-.8-.4L.5.300A.7.700 0 0 0 0 1c0 7 5.700 12.700 12.700 12.700a.7.700 0 0 0 .7-.5l.6-2.500a.7.700 0 0 0-.7-.9z'/%3E%3C/svg%3E\"); } [data-bz-node^=\"bh-svc\"] .bz-text p { --bh-icon: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath d='M2 0h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm1.600 7l2.200 2.200L10.500 4.500 9.400 3.400 5.800 7 4.700 5.900z'/%3E%3C/svg%3E\"); }\n[data-bz-node^=\"bh-m-head\"] { margin-top: 54px; }\n[data-bz-node^=\"bh-brandrow\"] { margin-top: 72px; align-items: center; }\n[data-bz-node^=\"bh-brandrow\"] > .bz-col { flex: 0 0 auto; grid-column: auto; padding-right: 36px; }\n[data-bz-node^=\"bh-brandrow\"] { display: flex; }\n[data-bz-node^=\"bh-brand\"] .bz-figure { margin: 0; }\n[data-bz-node^=\"bh-brand\"] img { display: block; width: auto; max-width: 150px; max-height: 60px; height: auto; border-radius: 0; }\n[data-bz-node^=\"bh-share\"] { margin-top: 85px; }\n[data-bz-node^=\"bh-review\"] { margin-top: 48px; }\n[data-bz-node^=\"bh-review\"] .bz-btn { height: 41px; padding: 0 22px; border-radius: 0; font: 700 0.85rem / 41px var(--font-body); background: var(--accent); color: #fff; }\n[data-bz-node^=\"bh-mapcol\"] { position: relative; z-index: 2; margin-top: -48px; margin-bottom: 0; background: #fff; box-shadow: 0 2px 14px rgba(0, 0, 0, 0.18); padding: 18px; box-sizing: border-box; height: 750px; }\n[data-bz-node^=\"bh-mapcol\"] .bz-container { padding: 0; max-width: none; height: 100%; }\n[data-bz-node^=\"bh-mapcol\"] .bz-widget, [data-bz-node^=\"bh-mapcol\"] .bz-map { height: 100%; }\n[data-bz-node^=\"bh-mapcol\"] .bz-widget__h, [data-bz-node^=\"bh-mapcol\"] .bz-loclist { display: none; }\n@media (max-width: 1100px) { [data-bz-node^=\"bh-info\"] { padding: 40px 24px; } [data-bz-node^=\"bh-mapcol\"] { margin: 0; height: 420px; } [data-bz-node^=\"bh-row\"] { min-height: 0; } }\n@media (max-width: 640px) { [data-bz-node^=\"bh-title\"] h1 { font-size: 2rem; } [data-bz-section=\"branch-header\"] h2 { font-size: 1.35rem; } [data-bz-node^=\"bh-mapcol\"] { height: 320px; } }\n"
+}
