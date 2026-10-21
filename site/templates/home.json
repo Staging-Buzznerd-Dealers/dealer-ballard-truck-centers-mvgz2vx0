@@ -62,6 +62,9 @@
                     "widget": "inventory-search",
                     "config": {
                       "placeholder": "Search Inventory or Keywords"
+                    },
+                    "snapshot": {
+                      "types": []
                     }
                   }
                 }

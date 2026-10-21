@@ -243,6 +243,9 @@
             "widget": "inventory-carousel",
             "config": {
               "limit": 8
+            },
+            "snapshot": {
+              "listings": []
             }
           }
         }
