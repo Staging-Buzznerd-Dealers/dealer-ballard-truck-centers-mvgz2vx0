@@ -9,31 +9,45 @@
           "id": "home",
           "label": "Home",
           "type": "page",
-          "ref": "home"
+          "ref": "home",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "inventory",
           "label": "Inventory",
           "type": "inventory",
-          "ref": "inventory"
+          "ref": "inventory",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "about",
           "label": "About",
           "type": "url",
+          "ref": null,
           "url": "/about",
+          "newTab": false,
           "children": [
             {
               "id": "about-team",
               "label": "Our team",
               "type": "url",
-              "url": "/about#team"
+              "ref": null,
+              "url": "/about#team",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "about-history",
               "label": "History",
               "type": "url",
-              "url": "/about#history"
+              "ref": null,
+              "url": "/about#history",
+              "newTab": false,
+              "children": []
             }
           ]
         },
@@ -41,7 +55,10 @@
           "id": "contact",
           "label": "Contact",
           "type": "url",
-          "url": "/contact"
+          "ref": null,
+          "url": "/contact",
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -53,19 +70,28 @@
           "id": "f-inventory",
           "label": "Inventory",
           "type": "inventory",
-          "ref": "inventory"
+          "ref": "inventory",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "f-about",
           "label": "About",
           "type": "url",
-          "url": "/about"
+          "ref": null,
+          "url": "/about",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "f-contact",
           "label": "Contact",
           "type": "url",
-          "url": "/contact"
+          "ref": null,
+          "url": "/contact",
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -77,13 +103,19 @@
           "id": "privacy",
           "label": "Privacy",
           "type": "url",
-          "url": "/privacy"
+          "ref": null,
+          "url": "/privacy",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "terms",
           "label": "Terms",
           "type": "url",
-          "url": "/terms"
+          "ref": null,
+          "url": "/terms",
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -95,13 +127,19 @@
           "id": "bu-call",
           "label": "Call Now",
           "type": "url",
-          "url": "tel:+18004211576"
+          "ref": null,
+          "url": "tel:+18004211576",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "bu-login",
           "label": "Login",
           "type": "inventory",
-          "ref": "sign-in"
+          "ref": "sign-in",
+          "url": null,
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -114,18 +152,26 @@
           "label": "Trucks",
           "type": "inventory",
           "ref": "inventory",
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "bm-trucks-new",
               "label": "New Trucks",
               "type": "inventory",
-              "ref": "inventory?condition=new"
+              "ref": "inventory?condition=new",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "bm-trucks-used",
               "label": "Used Trucks",
               "type": "inventory",
-              "ref": "inventory?condition=used"
+              "ref": "inventory?condition=used",
+              "url": null,
+              "newTab": false,
+              "children": []
             }
           ]
         },
@@ -133,33 +179,36 @@
           "id": "bm-trailers",
           "label": "Trailers",
           "type": "inventory",
-          "ref": "search?q=trailer"
+          "ref": "search?q=trailer",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "bm-municipal",
           "label": "Municipal",
           "type": "page",
           "ref": "municipal-services",
-          "children": [
-            {
-              "id": "bm-municipal-services",
-              "label": "Municipal Services",
-              "type": "page",
-              "ref": "municipal-services"
-            }
-          ]
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "bm-lease",
           "label": "Lease",
           "type": "page",
           "ref": "lease",
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "bm-lease-request",
               "label": "Lease Request Form",
               "type": "page",
-              "ref": "lease"
+              "ref": "lease",
+              "url": null,
+              "newTab": false,
+              "children": []
             }
           ]
         },
@@ -168,12 +217,17 @@
           "label": "Rent",
           "type": "page",
           "ref": "rent",
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "bm-rent-request",
               "label": "Rental Request Form",
               "type": "page",
-              "ref": "rent"
+              "ref": "rent",
+              "url": null,
+              "newTab": false,
+              "children": []
             }
           ]
         },
@@ -182,12 +236,17 @@
           "label": "Service",
           "type": "page",
           "ref": "service",
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "bm-service-form",
               "label": "Schedule Service",
               "type": "page",
-              "ref": "service"
+              "ref": "service",
+              "url": null,
+              "newTab": false,
+              "children": []
             }
           ]
         },
@@ -196,38 +255,36 @@
           "label": "Parts",
           "type": "page",
           "ref": "parts",
-          "children": [
-            {
-              "id": "bm-parts-shop",
-              "label": "Shop Parts",
-              "type": "inventory",
-              "ref": "parts"
-            },
-            {
-              "id": "bm-parts-form",
-              "label": "Request a Part",
-              "type": "page",
-              "ref": "parts"
-            }
-          ]
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "bm-about",
           "label": "About Us",
           "type": "page",
-          "ref": "about"
+          "ref": "about",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "bm-careers",
           "label": "Careers",
           "type": "page",
-          "ref": "careers"
+          "ref": "careers",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "bm-contact",
           "label": "Contact Us",
           "type": "page",
-          "ref": "contact"
+          "ref": "contact",
+          "url": null,
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -239,25 +296,37 @@
           "id": "bc-phone",
           "label": "(800) 421-1576",
           "type": "url",
-          "url": "tel:+18004211576"
+          "ref": null,
+          "url": "tel:+18004211576",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "bc-email",
           "label": "drive@ballardtrucks.com",
           "type": "url",
-          "url": "mailto:drive@ballardtrucks.com"
+          "ref": null,
+          "url": "mailto:drive@ballardtrucks.com",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "bc-careers",
           "label": "Careers",
           "type": "url",
-          "url": "mailto:drive@ballardtrucks.com"
+          "ref": null,
+          "url": "mailto:drive@ballardtrucks.com",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "bc-jobs",
           "label": "Job Openings",
           "type": "url",
-          "url": "mailto:drive@ballardtrucks.com"
+          "ref": null,
+          "url": "mailto:drive@ballardtrucks.com",
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -268,27 +337,47 @@
         {
           "id": "bs-facebook",
           "label": "Facebook",
-          "type": "label"
+          "type": "label",
+          "ref": null,
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "bs-instagram",
           "label": "Instagram",
-          "type": "label"
+          "type": "label",
+          "ref": null,
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "bs-linkedin",
           "label": "LinkedIn",
-          "type": "label"
+          "type": "label",
+          "ref": null,
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "bs-youtube",
           "label": "YouTube",
-          "type": "label"
+          "type": "label",
+          "ref": null,
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "bs-tiktok",
           "label": "TikTok",
-          "type": "label"
+          "type": "label",
+          "ref": null,
+          "url": null,
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -300,19 +389,28 @@
           "id": "bl-privacy",
           "label": "Privacy Policy",
           "type": "url",
-          "url": "/privacy"
+          "ref": null,
+          "url": "/privacy",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "bl-terms",
           "label": "Terms Of Service",
           "type": "url",
-          "url": "/terms"
+          "ref": null,
+          "url": "/terms",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "bl-access",
           "label": "Accessibility",
           "type": "url",
-          "url": "/accessibility"
+          "ref": null,
+          "url": "/accessibility",
+          "newTab": false,
+          "children": []
         }
       ]
     }
