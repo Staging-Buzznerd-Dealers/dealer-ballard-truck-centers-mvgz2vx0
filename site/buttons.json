@@ -54,5 +54,23 @@
     "intent": "municipal-info",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "lease-credit-application",
+    "label": "Credit Application",
+    "url": "/credit-application",
+    "style": "primary",
+    "intent": "credit-application",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "lease-request-form",
+    "label": "Lease Request Form",
+    "url": "#lease-form",
+    "style": "primary",
+    "intent": "lease-request",
+    "newTab": false,
+    "active": true
   }
 ]

@@ -1,0 +1,83 @@
+/* Lease. Measured from the reference screenshot, a 1920px window scaled to 1248px wide
+   (one screenshot pixel is about 1.54 CSS pixels). Colours and fonts come from the Ballard
+   template and the design system. */
+
+[data-bz-node="ls-title"] > .bz-container,
+[data-bz-node="ls-hero"] > .bz-container,
+[data-bz-node="ls-contact"] > .bz-container { max-width: calc(min(90vw, 1440px) + 32px); }
+[data-bz-node^="ls-"] .bz-block { padding-block: 0; }
+
+/* Active item in the main navigation */
+[data-bz-node="hm-main-nav"] a[href="/lease"] { color: var(--accent); }
+
+/* Page title band */
+[data-bz-node="ls-title"] { background: #003550; padding-block: 34px 17px; }
+[data-bz-node="ls-title-h"] h1 { margin: 0; font: 700 2.8rem / 1.2 var(--font-heading); color: #fff; }
+
+/* Hero. The photo is set on this section in the Styles panel (Background image); the navy
+   layer over it is this rule. Change the 80% to make the photo show more or less. */
+[data-bz-node="ls-hero"] { display: flex; align-items: center; min-height: 421px; padding-top: 14px; background-color: #0b3b57; background-size: cover; background-position: center; position: relative; }
+[data-bz-node="ls-hero"]::before { content: ""; position: absolute; inset: 0; background: rgb(0 53 80 / 80%); pointer-events: none; }
+[data-bz-node="ls-hero"] > .bz-container { position: relative; width: 100%; text-align: center; }
+[data-bz-node="ls-hero-icon"] .bz-figure { display: flex; justify-content: center; margin: 0; }
+[data-bz-node="ls-hero-icon"] img { width: auto; max-width: 100%; height: auto; border-radius: 0; }
+[data-bz-node="ls-hero-h"] h2 { margin: 29px 0 0; text-align: center; text-transform: uppercase; font: 700 1.875rem / 1.2 var(--font-heading); color: #fff; }
+[data-bz-node="ls-hero-t"] .bz-text p { margin: 16px 0 0; text-align: center; font: 400 1.175rem / 1.4 var(--font-body); color: #fff; max-width: none; }
+[data-bz-node="ls-hero-cta"] { margin-top: 42px; }
+[data-bz-node="ls-hero-cta"] .bz-btns { gap: 48px; }
+[data-bz-node="ls-hero-cta"] .bz-btn { height: 41px; padding: 0 22px; border-radius: 0; font: 700 1.09rem / 41px var(--font-body); background: var(--accent); color: #fff; }
+
+/* Benefits (the benefit grid component carries the rest of its styling) */
+[data-bz-section="benefit-grid"] { padding-block: 76px 0; background: #fff; }
+
+/* Contact band: navy copy on the left, white form card on the right, the photograph under both */
+[data-bz-node="ls-contact"] { padding-block: 118px 55px; }
+[data-bz-node="ls-contact-row"] { align-items: stretch; }
+[data-bz-node="ls-contact-copy"] { background: #003650; min-height: 725px; display: flex; flex-direction: column; justify-content: center; padding: 0 99px; box-sizing: border-box; }
+[data-bz-node="ls-contact-logo"] .bz-figure { margin: 0; }
+[data-bz-node="ls-contact-logo"] img { display: block; width: 171px; max-width: 100%; height: auto; border-radius: 0; }
+[data-bz-node="ls-contact-h"] h2 { margin: 64px 0 16px; font: 700 1.875rem / 1.2 var(--font-heading); color: var(--accent); }
+[data-bz-node="ls-contact-t"] .bz-text p { margin: 0 0 14px; font: 400 1.175rem / 1.5 var(--font-body); color: #fff; max-width: 560px; }
+[data-bz-node="ls-contact-t"] .bz-text a { color: var(--accent); text-decoration: none; }
+[data-bz-node="ls-contact-card"] { position: relative; z-index: 1; margin: -48px 0 0; align-self: stretch; background: #fdfdfd; box-shadow: 0 2px 14px rgba(0, 0, 0, 0.22); padding: 151px 77px 40px; box-sizing: border-box; }
+[data-bz-node="ls-photo"] .bz-figure { margin: 0; }
+[data-bz-node="ls-photo"] img { display: block; width: 100%; height: auto; border-radius: 0; }
+[data-bz-node="ls-contact-form"] .bz-formblock { max-width: none; }
+[data-bz-node="ls-contact-form"] .bz-formblock > h2 { margin: 0 0 12px; text-transform: uppercase; font: 700 1.875rem / 1.2 var(--font-heading); color: #000; }
+[data-bz-node="ls-contact-form"] .bz-form { background: none; border: 0; padding: 0; max-width: none; gap: 11px 16px; }
+[data-bz-node="ls-contact-form"] .bz-form__t { display: none; }
+[data-bz-node="ls-contact-form"] .bz-label { font: 400 0.9rem / 1.3 var(--font-body); color: #000; }
+[data-bz-node="ls-contact-form"] .bz-req { font-size: 0; }
+[data-bz-node="ls-contact-form"] .bz-req::after { content: "(Required)"; margin-left: 3px; font: italic 400 0.62rem / 1 var(--font-body); color: #c02b0a; }
+[data-bz-node="ls-contact-form"] .bz-input, [data-bz-node="ls-contact-form"] textarea, [data-bz-node="ls-contact-form"] select { padding: 0 8px; line-height: 36px; border: 1px solid #8d9199; border-radius: 3px; background: #fff; font: 400 0.9rem / 1.3 var(--font-body); }
+[data-bz-node="ls-contact-form"] .bz-input { height: 38px; min-height: 0; }
+[data-bz-node="ls-contact-form"] select.bz-input { padding: 0 8px; line-height: normal; }
+[data-bz-node="ls-contact-form"] textarea.bz-input { height: 91px; min-height: 91px; width: 100%; box-sizing: border-box; }
+[data-bz-node="ls-contact-form"] .bz-form > .bz-btn { flex: 0 0 auto; width: auto; height: 41px; margin-top: 18px; padding: 0 24px; border-radius: 0; font: 700 0.95rem / 1 var(--font-body); }
+/* "Name" group label above First / Last, with each sub-label below its input */
+[data-bz-node="ls-contact-form"] [data-bz-field="lf-first"], [data-bz-node="ls-contact-form"] [data-bz-field="lf-last"] { display: flex; flex-direction: column; }
+[data-bz-node="ls-contact-form"] [data-bz-field="lf-first"] .bz-input, [data-bz-node="ls-contact-form"] [data-bz-field="lf-last"] .bz-input { order: 2; }
+[data-bz-node="ls-contact-form"] [data-bz-field="lf-first"] .bz-label, [data-bz-node="ls-contact-form"] [data-bz-field="lf-last"] .bz-label { order: 3; margin: -4px 0 7px; font-size: 0.72rem; }
+[data-bz-node="ls-contact-form"] [data-bz-field="lf-first"] .bz-req, [data-bz-node="ls-contact-form"] [data-bz-field="lf-last"] .bz-req { display: none; }
+[data-bz-node="ls-contact-form"] [data-bz-field="lf-first"]::before, [data-bz-node="ls-contact-form"] [data-bz-field="lf-last"]::before { content: "Name"; order: 1; margin-bottom: -2px; padding-bottom: 4px; border-bottom: 1px solid #e1e1e1; font: 400 0.9rem / 1.3 var(--font-body); color: #000; }
+[data-bz-node="ls-contact-form"] [data-bz-field="lf-first"]::before { margin-right: -16px; }
+[data-bz-node="ls-contact-form"] [data-bz-field="lf-last"]::before { color: transparent; }
+[data-bz-node="ls-contact-form"] [data-bz-field="lf-first"] { position: relative; }
+[data-bz-node="ls-contact-form"] [data-bz-field="lf-first"]::after { content: "(Required)"; position: absolute; left: 40px; top: 3px; font: italic 400 0.62rem / 1 var(--font-body); color: #c02b0a; }
+
+@media (max-width: 1100px) {
+  [data-bz-node="ls-hero"] { min-height: 340px; padding-block: 36px; }
+  [data-bz-node="ls-hero-h"] h2 { font-size: 1.6rem; }
+  [data-bz-node="ls-contact"] { padding-block: 48px 40px; }
+  [data-bz-node="ls-contact-copy"] { min-height: 0; padding: 48px 32px; }
+  [data-bz-node="ls-contact-card"] { margin: 0; padding: 40px 28px; }
+  [data-bz-node="ls-hero"] { padding-top: 36px; }
+}
+@media (max-width: 640px) {
+  [data-bz-node="ls-contact-form"] [data-bz-field="lf-last"]::before { display: none; }
+  [data-bz-node="ls-title-h"] h1 { font-size: 2rem; }
+  [data-bz-node="ls-hero-h"] h2 { font-size: 1.3rem; }
+  [data-bz-node="ls-hero-t"] .bz-text p, [data-bz-node="ls-contact-t"] .bz-text p { font-size: 1rem; }
+  [data-bz-node="ls-hero-cta"] .bz-btn { width: 100%; }
+  [data-bz-node="ls-contact-h"] h2, [data-bz-node="ls-contact-form"] .bz-formblock > h2 { font-size: 1.5rem; }
+}

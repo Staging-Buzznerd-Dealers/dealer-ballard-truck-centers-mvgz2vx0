@@ -1,0 +1,294 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "ls-title",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "ls-title-h",
+          "type": "heading",
+          "props": {
+            "text": "Lease",
+            "headingLevel": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "ls-hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center"
+      },
+      "children": [
+        {
+          "id": "ls-hero-icon",
+          "type": "image",
+          "props": {
+            "image": {
+              "src": "/lease/hero-icon.svg",
+              "alt": "Lease",
+              "width": 55,
+              "height": 55
+            },
+            "width": "full"
+          }
+        },
+        {
+          "id": "ls-hero-h",
+          "type": "heading",
+          "props": {
+            "text": "Leasing backed by the Ballard Difference",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "ls-hero-t",
+          "type": "text",
+          "props": {
+            "text": "Flexible purchase options to help you get into the truck you need, all backed by top-grade customer service.",
+            "align": "center",
+            "width": "full"
+          }
+        },
+        {
+          "id": "ls-hero-cta",
+          "type": "buttons",
+          "props": {
+            "items": [
+              {
+                "ctaId": "lease-credit-application"
+              },
+              {
+                "ctaId": "lease-request-form"
+              }
+            ],
+            "align": "center"
+          }
+        }
+      ],
+      "styles": {
+        "base": {
+          "backgroundImage": "/lease/polar-park-mack-bw.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center"
+        }
+      }
+    },
+    {
+      "id": "ls-benefits",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "benefit-grid",
+        "values": {
+          "heading": "Benefits of Leasing With Ballard",
+          "items": [
+            {
+              "icon": {
+                "src": "/lease/nationalease-partnership.svg",
+                "alt": "NationaLease Partnership",
+                "width": 57,
+                "height": 55
+              },
+              "title": "NationaLease\nPartnership",
+              "desc": "A partnership network that has\nyou covered across the country."
+            },
+            {
+              "icon": {
+                "src": "/lease/roadside-service.svg",
+                "alt": "24/7 Emergency Roadside Service",
+                "width": 48,
+                "height": 51
+              },
+              "title": "24/7 Emergency\nRoadside Service",
+              "desc": "Enjoy peace-of-mind with\nincluded, 24/7 roadside support."
+            },
+            {
+              "icon": {
+                "src": "/lease/no-capital.svg",
+                "alt": "No Capital Investment",
+                "width": 52,
+                "height": 52
+              },
+              "title": "No Capital\nInvestment",
+              "desc": "Save some money upfront and\nget into a vehicle quickly."
+            },
+            {
+              "icon": {
+                "src": "/lease/fuel-economy.svg",
+                "alt": "Get Better Fuel Economy",
+                "width": 48,
+                "height": 51
+              },
+              "title": "Get Better Fuel\nEconomy",
+              "desc": "Leasing keeps you in the latest\ntrucks with better fuel efficiency."
+            },
+            {
+              "icon": {
+                "src": "/lease/easy-in-out.svg",
+                "alt": "Easy In. Easy Out.",
+                "width": 54,
+                "height": 43
+              },
+              "title": "Easy In.\nEasy Out.",
+              "desc": "Walk away at lease-end and step\ninto a brand new truck."
+            },
+            {
+              "icon": {
+                "src": "/lease/maintenance.svg",
+                "alt": "Convenient Maintenance",
+                "width": 52,
+                "height": 49
+              },
+              "title": "Convenient\nMaintenance",
+              "desc": "We'll help setup recurring\nmaintenance."
+            },
+            {
+              "icon": {
+                "src": "/lease/dealerships.svg",
+                "alt": "Dealerships Across New England",
+                "width": 65,
+                "height": 63
+              },
+              "title": "Dealerships\nAcross New\nEngland",
+              "desc": "With locations across New\nEngland, finding service is easy."
+            },
+            {
+              "icon": {
+                "src": "/lease/replacements.svg",
+                "alt": "Replacements & Rental Discounts",
+                "width": 55,
+                "height": 55
+              },
+              "title": "Replacements &\nRental Discounts",
+              "desc": "Things happen, and when they\ndo, we have you covered to help\navoid downtime."
+            },
+            {
+              "icon": {
+                "src": "/lease/satisfaction.svg",
+                "alt": "#1 in Customer Satisfaction",
+                "width": 46,
+                "height": 48
+              },
+              "title": "#1 in Customer\nSatisfaction",
+              "desc": "Ballard is rated #1 in U.S.\nCustomer Satisfaction by\nVolvo Trucks."
+            },
+            {
+              "icon": {
+                "src": "/lease/paperwork.svg",
+                "alt": "We Handle the Paperwork",
+                "width": 52,
+                "height": 55
+              },
+              "title": "We Handle the\nPaperwork",
+              "desc": "We'll handle the licensing,\npermitting, and fuel tax reporting."
+            }
+          ]
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "ls-contact",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "ls-contact-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "ls-contact-copy",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "ls-contact-logo",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/lease/nationalease.svg",
+                      "alt": "NationaLease",
+                      "width": 171,
+                      "height": 94
+                    },
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ls-contact-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why lease?",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "ls-contact-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Leasing can provide a flexible alternative to growing your fleet and getting into a new truck, while mitigating some of the additional expenses involved with ownership. Save on taxes, fees, maintenance, and repairs.\n\nWith the Ballard Rent & Lease program, you won't have to worry about your trucks breaking down or aging over time. Easily walk away from one truck at lease-end and step into a new one.\n\nIf leasing sounds like the solution for you and your business, or if you have questions about the program, reach out to us through the Lease Request Form on the right, or call <a href=\"tel:+18882032701\">(888) 203-2701</a>.",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ls-contact-card",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "start"
+              },
+              "children": [
+                {
+                  "id": "ls-contact-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "lease-request",
+                    "heading": "Lease Request Form",
+                    "headingLevel": 2,
+                    "anchor": "lease-form"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ls-photo",
+          "type": "image",
+          "props": {
+            "image": {
+              "src": "/lease/polar-park-mack.jpg",
+              "alt": "A white Mack truck with a Polar Park delivery wrap parked outside Polar Park",
+              "width": 939,
+              "height": 244
+            },
+            "width": "full"
+          }
+        }
+      ]
+    }
+  ]
+}

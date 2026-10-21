@@ -1,0 +1,106 @@
+{
+  "version": 2,
+  "id": "benefit-grid",
+  "name": "Benefit grid",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Benefits of Leasing With Ballard"
+    },
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Cards",
+      "fields": [
+        {
+          "key": "icon",
+          "type": "image",
+          "label": "Icon (blue, transparent)"
+        },
+        {
+          "key": "title",
+          "type": "textarea",
+          "label": "Title (a line break is kept)"
+        },
+        {
+          "key": "desc",
+          "type": "textarea",
+          "label": "Text (a line break is kept on wide screens)"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "bg-band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "bg-head",
+          "type": "heading",
+          "props": {
+            "text": "{{heading}}",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "bg-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "start",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "bg-card",
+              "type": "column",
+              "props": {
+                "span": 4,
+                "align": "start",
+                "repeat": "items"
+              },
+              "children": [
+                {
+                  "id": "bg-icon",
+                  "type": "image",
+                  "props": {
+                    "image": "{{icon}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "bg-title",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 3,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "bg-desc",
+                  "type": "text",
+                  "props": {
+                    "text": "{{desc}}",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Benefit grid: a centred heading, then icon, title and text cards, five across. */\n[data-bz-node=\"bg-band\"] > .bz-container { max-width: calc(min(90vw, 1440px) + 32px); }\n[data-bz-section=\"benefit-grid\"] .bz-block { padding-block: 0; }\n[data-bz-section=\"benefit-grid\"] h2 { margin: 0; text-align: center; font: 700 1.875rem / 1.2 var(--font-heading); color: #000; }\n[data-bz-section=\"benefit-grid\"] [data-bz-node=\"bg-row\"] { margin-top: 55px; row-gap: 51px; grid-template-columns: repeat(5, minmax(0, 1fr)); }\n[data-bz-section=\"benefit-grid\"] [data-bz-node=\"bg-row\"] > .bz-col { grid-column: auto; }\n[data-bz-section=\"benefit-grid\"] .bz-figure { margin: 0; display: flex; justify-content: center; align-items: center; height: 56px; }\n[data-bz-section=\"benefit-grid\"] .bz-figure img { width: auto; max-width: 100%; height: auto; border-radius: 0; }\n[data-bz-section=\"benefit-grid\"] h3 { margin: 24px 0 0; text-align: center; white-space: pre-line; font: 700 1.5rem / 1.18 var(--font-heading); color: var(--accent); letter-spacing: 0; }\n[data-bz-section=\"benefit-grid\"] [data-bz-node^=\"bg-desc\"] .bz-text p { margin: 14px auto 0; text-align: center; font: 400 0.95rem / 1.46 var(--font-body); color: #333; max-width: 240px; }\n@media (min-width: 1400px) { [data-bz-section=\"benefit-grid\"] [data-bz-node^=\"bg-desc\"] .bz-text p { white-space: pre-line; max-width: none; } }\n@media (max-width: 1100px) { [data-bz-section=\"benefit-grid\"] [data-bz-node=\"bg-row\"] { grid-template-columns: repeat(3, minmax(0, 1fr)); } }\n@media (max-width: 640px) { [data-bz-section=\"benefit-grid\"] [data-bz-node=\"bg-row\"] { grid-template-columns: repeat(2, minmax(0, 1fr)); } [data-bz-section=\"benefit-grid\"] h2 { font-size: 1.5rem; } }\n@media (max-width: 420px) { [data-bz-section=\"benefit-grid\"] [data-bz-node=\"bg-row\"] { grid-template-columns: 1fr; } }\n"
+}

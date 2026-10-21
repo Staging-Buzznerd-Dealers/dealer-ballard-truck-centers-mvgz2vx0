@@ -1,0 +1,79 @@
+{
+  "id": "lease-request",
+  "name": "Lease request",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "lease-request",
+  "submitLabel": "Submit",
+  "successMessage": "Thanks — our lease team will be in touch shortly.",
+  "consent": {
+    "enabled": false,
+    "required": false,
+    "text": ""
+  },
+  "fields": [
+    {
+      "id": "lf-first",
+      "type": "first_name",
+      "label": "First",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "lf-last",
+      "type": "last_name",
+      "label": "Last",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "lf-company",
+      "type": "single_line",
+      "label": "Company Name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "lf-location",
+      "type": "dropdown",
+      "label": "Location",
+      "required": false,
+      "width": "half",
+      "placeholder": "Select Location",
+      "options": []
+    },
+    {
+      "id": "lf-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "lf-email",
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "lf-comments",
+      "type": "paragraph",
+      "label": "Comments",
+      "required": false
+    }
+  ],
+  "notifications": [
+    {
+      "id": "lf-default",
+      "name": "Sales",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "sales-manager",
+      "scopeMode": "dynamic"
+    }
+  ]
+}
