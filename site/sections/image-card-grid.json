@@ -1,0 +1,91 @@
+{
+  "version": 2,
+  "id": "image-card-grid",
+  "name": "Image card grid",
+  "props": [
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Cards",
+      "fields": [
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Photo (3:2)"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "desc",
+          "type": "textarea",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ic-band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "ic-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "ic-card",
+              "type": "column",
+              "props": {
+                "span": 4,
+                "align": "auto",
+                "repeat": "items"
+              },
+              "children": [
+                {
+                  "id": "ic-photo",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ic-title",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 3,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "ic-desc",
+                  "type": "text",
+                  "props": {
+                    "text": "{{desc}}",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Image card grid: a photo over a pale blue panel with a centred title and text, three across. */\n[data-bz-node=\"ic-band\"] > .bz-container { max-width: calc(min(90vw, 1440px) + 32px); }\n[data-bz-section=\"image-card-grid\"] .bz-block { padding-block: 0; }\n[data-bz-section=\"image-card-grid\"] [data-bz-node=\"ic-row\"] { padding-inline: 20px; column-gap: 20px; row-gap: 36px; align-items: stretch; }\n[data-bz-section=\"image-card-grid\"] [data-bz-node^=\"ic-card\"] { background: #ebf7ff; border: 1px solid #a5d3ee; box-sizing: border-box; display: flex; flex-direction: column; }\n[data-bz-section=\"image-card-grid\"] .bz-figure { margin: 0; }\n[data-bz-section=\"image-card-grid\"] .bz-figure img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 0; }\n[data-bz-section=\"image-card-grid\"] h3 { margin: 0; padding: 32px 8px 0; text-align: center; font: 700 1.5rem / 1.2 var(--font-heading); color: var(--accent); letter-spacing: 0; }\n[data-bz-section=\"image-card-grid\"] .bz-text p { margin: 16px 0 0; padding: 0 34px 31px; text-align: center; font: 400 0.945rem / 1.5 var(--font-body); color: #000; max-width: none; }\n@media (max-width: 1100px) { [data-bz-section=\"image-card-grid\"] [data-bz-node=\"ic-row\"] > .bz-col { grid-column: span 6; } }\n@media (max-width: 640px) { [data-bz-section=\"image-card-grid\"] [data-bz-node=\"ic-row\"] { padding-inline: 0; } [data-bz-section=\"image-card-grid\"] [data-bz-node=\"ic-row\"] > .bz-col { grid-column: 1 / -1; } }\n"
+}

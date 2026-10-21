@@ -166,8 +166,16 @@
         {
           "id": "bm-rent",
           "label": "Rent",
-          "type": "url",
-          "url": "#departments"
+          "type": "page",
+          "ref": "rent",
+          "children": [
+            {
+              "id": "bm-rent-request",
+              "label": "Rental Request Form",
+              "type": "page",
+              "ref": "rent"
+            }
+          ]
         },
         {
           "id": "bm-service",
