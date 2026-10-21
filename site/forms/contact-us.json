@@ -1,0 +1,77 @@
+{
+  "id": "contact-us",
+  "name": "Contact us",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "contact",
+  "submitLabel": "Submit",
+  "successMessage": "Thanks — our team will be in touch shortly.",
+  "consent": {
+    "enabled": false,
+    "required": false,
+    "text": ""
+  },
+  "fields": [
+    {
+      "id": "cu-first",
+      "type": "first_name",
+      "label": "First",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "cu-last",
+      "type": "last_name",
+      "label": "Last",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "cu-company",
+      "type": "single_line",
+      "label": "Company Name",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "cu-location",
+      "type": "single_line",
+      "label": "Location",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "cu-email",
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "cu-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "cu-comments",
+      "type": "paragraph",
+      "label": "Comments",
+      "required": false
+    }
+  ],
+  "notifications": [
+    {
+      "id": "cu-default",
+      "name": "Sales",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "sales-manager",
+      "scopeMode": "dynamic"
+    }
+  ]
+}

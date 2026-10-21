@@ -216,5 +216,32 @@
     "intent": "general-application",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "contact-locations",
+    "label": "Locations",
+    "url": "#locations",
+    "style": "primary",
+    "intent": "locations",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "contact-our-team",
+    "label": "Our Team",
+    "url": "#leadership",
+    "style": "primary",
+    "intent": "our-team",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "contact-contact-us",
+    "label": "Contact Us",
+    "url": "#contact-form",
+    "style": "primary",
+    "intent": "contact",
+    "newTab": false,
+    "active": true
   }
 ]

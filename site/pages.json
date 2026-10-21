@@ -151,5 +151,24 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "contact",
+    "title": "Contact Us",
+    "description": "Contact Ballard Truck Centers: nine full-service locations across New England, our leadership and management teams, and a form to send us a message.",
+    "path": "/contact",
+    "out": "contact/index.html",
+    "dir": "contact",
+    "group": "ballard",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

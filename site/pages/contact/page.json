@@ -1,0 +1,382 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "ct-title",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "ct-title-h",
+          "type": "heading",
+          "props": {
+            "text": "Contact Us",
+            "headingLevel": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "ct-hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center"
+      },
+      "children": [
+        {
+          "id": "ct-hero-icon",
+          "type": "image",
+          "props": {
+            "image": {
+              "src": "/contact/hero-handshake.svg",
+              "alt": "Contact",
+              "width": 57,
+              "height": 51
+            },
+            "width": "full"
+          }
+        },
+        {
+          "id": "ct-hero-h",
+          "type": "heading",
+          "props": {
+            "text": "Connect with us",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "ct-hero-t",
+          "type": "text",
+          "props": {
+            "text": "For exceptional service and the best experience in the Northeast, visit us at one of our 9 locations across New England.\n\nFor more detailed information by branch, a list of our leadership and management teams, or to simply send us an email, please see below.",
+            "align": "center",
+            "width": "full"
+          }
+        },
+        {
+          "id": "ct-hero-cta",
+          "type": "buttons",
+          "props": {
+            "items": [
+              {
+                "ctaId": "contact-locations"
+              },
+              {
+                "ctaId": "contact-our-team"
+              },
+              {
+                "ctaId": "contact-contact-us"
+              }
+            ],
+            "align": "center"
+          }
+        }
+      ],
+      "styles": {
+        "base": {
+          "backgroundImage": "/contact/hero-road.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center"
+        }
+      }
+    },
+    {
+      "id": "ct-locations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-cards",
+        "values": {
+          "heading": "Ballard Truck Centers Across New England",
+          "intro": "Experience The Ballard Difference at any one of our 9, full-service commercial truck centers.",
+          "locations": {
+            "source": "locations",
+            "config": {
+              "pagePathPrefix": "/locations"
+            }
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "ct-leader-1",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "team-grid",
+        "values": {
+          "heading": "Leadership",
+          "people": [
+            {
+              "name": "John Picking",
+              "title": "President",
+              "phone": "",
+              "email": ""
+            },
+            {
+              "name": "Robert Picking",
+              "title": "Vice President",
+              "phone": "",
+              "email": ""
+            },
+            {
+              "name": "Samantha Grahn",
+              "title": "CFO",
+              "phone": "",
+              "email": ""
+            }
+          ]
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "ct-leader-2",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "team-grid",
+        "values": {
+          "heading": "",
+          "people": [
+            {
+              "name": "Brian Buckley",
+              "title": "Vice President of Sales",
+              "phone": "",
+              "email": "[email not legible in the reference]"
+            },
+            {
+              "name": "Andrew Hine",
+              "title": "Director of Fixed Operations",
+              "phone": "",
+              "email": "[email not legible in the reference]"
+            },
+            {
+              "name": "Jeremy Whittle",
+              "title": "Director of Parts & Service",
+              "phone": "",
+              "email": "[email not legible in the reference]"
+            },
+            {
+              "name": "Jim Nisbet",
+              "title": "Parts Sales Manager",
+              "phone": "",
+              "email": "<a href=\"mailto:jnisbet@ballardtrucks.com\">jnisbet@ballardtrucks.com</a>"
+            }
+          ]
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "ct-leader-3",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "team-grid",
+        "values": {
+          "heading": "",
+          "people": [
+            {
+              "name": "Tina Baxter",
+              "title": "Human Resources Manager",
+              "phone": "",
+              "email": "[email not legible in the reference]"
+            },
+            {
+              "name": "Dan Foley",
+              "title": "Facilities Manager",
+              "phone": "",
+              "email": "[email not legible in the reference]"
+            },
+            {
+              "name": "Marc Stair",
+              "title": "Brand Manager",
+              "phone": "",
+              "email": "[email not legible in the reference]"
+            }
+          ]
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "ct-sales",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "team-grid",
+        "values": {
+          "heading": "Sales Management",
+          "people": [
+            {
+              "name": "Steven Brown",
+              "title": "Director of Leasing",
+              "phone": "[phone not legible]",
+              "email": "[email not legible in the reference]"
+            },
+            {
+              "name": "Woody Healey",
+              "title": "Used Truck Manager",
+              "phone": "[phone not legible]",
+              "email": "[email not legible in the reference]"
+            },
+            {
+              "name": "John McLaughlin",
+              "title": "Director of Sales",
+              "phone": "[phone not legible]",
+              "email": "[email not legible in the reference]"
+            }
+          ]
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "ct-back",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "team-grid",
+        "values": {
+          "heading": "Back Office",
+          "people": [
+            {
+              "name": "Ashly Germain",
+              "title": "Accounting Manager",
+              "phone": "",
+              "email": "[email not legible in the reference]"
+            },
+            {
+              "name": "Allie MacLaren",
+              "title": "Collections",
+              "phone": "",
+              "email": "[email not legible in the reference]"
+            },
+            {
+              "name": "Jacob DiLeo",
+              "title": "Accounts Receivable",
+              "phone": "",
+              "email": "[email not legible in the reference]"
+            },
+            {
+              "name": "Andres Peschiera",
+              "title": "Reception",
+              "phone": "",
+              "email": "[email not legible in the reference]"
+            }
+          ]
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "ct-contact",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "ct-contact-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "ct-contact-copy",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "ct-contact-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "We'd love to hear from you.",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "ct-contact-phone",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"tel:+18004211576\">(800) 421-1576</a>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ct-contact-email",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"mailto:drive@ballardtrucks.com\">drive@ballardtrucks.com</a>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ct-contact-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you have questions about our inventory, services, or parts, we're here to help. Call us or use the form to the right to send an email — we'll connect with you as soon as possible.",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ct-contact-card",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "start"
+              },
+              "children": [
+                {
+                  "id": "ct-contact-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "contact-us",
+                    "heading": "Contact Us",
+                    "headingLevel": 2,
+                    "anchor": "contact-form"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ct-night",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "ct-night-img",
+          "type": "image",
+          "props": {
+            "image": {
+              "src": "/contact/night-shop.jpg",
+              "alt": "A Ballard dealership at night under a stormy sky",
+              "width": 2276,
+              "height": 468
+            },
+            "width": "full"
+          }
+        }
+      ]
+    }
+  ]
+}
