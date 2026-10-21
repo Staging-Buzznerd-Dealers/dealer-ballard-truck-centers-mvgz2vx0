@@ -27,6 +27,13 @@
         "paddingY": 0,
         "align": "center"
       },
+      "styles": {
+        "base": {
+          "backgroundImage": "https://vendure.ai4dealerships.com/assets/source/a5/municipal-banner-image-black-and-white.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center"
+        }
+      },
       "children": [
         {
           "id": "ms-hero-icon",
@@ -144,7 +151,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "ms-contracts",
