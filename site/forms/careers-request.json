@@ -1,0 +1,63 @@
+{
+  "id": "careers-request",
+  "name": "Careers",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "careers",
+  "submitLabel": "Submit",
+  "successMessage": "Thanks — our team will be in touch shortly.",
+  "consent": {
+    "enabled": false,
+    "required": false,
+    "text": ""
+  },
+  "fields": [
+    {
+      "id": "cf-first",
+      "type": "first_name",
+      "label": "First",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "cf-last",
+      "type": "last_name",
+      "label": "Last",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "cf-email",
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "cf-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "cf-comments",
+      "type": "paragraph",
+      "label": "Comments",
+      "required": false
+    }
+  ],
+  "notifications": [
+    {
+      "id": "cf-default",
+      "name": "Careers",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "marketing-manager",
+      "scopeMode": "dynamic"
+    }
+  ]
+}

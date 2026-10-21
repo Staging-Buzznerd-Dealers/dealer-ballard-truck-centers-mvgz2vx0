@@ -180,5 +180,41 @@
     "intent": "learn-more",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "careers-view-openings-apply",
+    "label": "View Job Openings & Apply Online",
+    "url": "#",
+    "style": "primary",
+    "intent": "view-job-openings",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "careers-veteran-ready",
+    "label": "Learn About Veteran Ready Business",
+    "url": "#veteran-ready",
+    "style": "primary",
+    "intent": "veteran-ready",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "careers-view-openings",
+    "label": "View Job Openings",
+    "url": "#",
+    "style": "primary",
+    "intent": "view-job-openings",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "careers-general-application",
+    "label": "General Application",
+    "url": "#",
+    "style": "primary",
+    "intent": "general-application",
+    "newTab": false,
+    "active": true
   }
 ]

@@ -220,8 +220,8 @@
         {
           "id": "bm-careers",
           "label": "Careers",
-          "type": "url",
-          "url": "mailto:drive@ballardtrucks.com"
+          "type": "page",
+          "ref": "careers"
         },
         {
           "id": "bm-contact",

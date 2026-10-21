@@ -1,0 +1,135 @@
+{
+  "version": 2,
+  "id": "benefits-split",
+  "name": "Benefits split",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "key": "photo",
+      "type": "image",
+      "label": "Photo"
+    },
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Benefits",
+      "fields": [
+        {
+          "key": "icon",
+          "type": "image",
+          "label": "Icon (blue, transparent)"
+        },
+        {
+          "key": "label",
+          "type": "textarea",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "bs-band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "bs-split",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "bs-text-col",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "bs-head",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "bs-items",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "align": "start",
+                    "stackOn": "mobile"
+                  },
+                  "children": [
+                    {
+                      "id": "bs-item",
+                      "type": "column",
+                      "props": {
+                        "span": 4,
+                        "align": "start",
+                        "repeat": "items"
+                      },
+                      "children": [
+                        {
+                          "id": "bs-icon",
+                          "type": "image",
+                          "props": {
+                            "image": "{{icon}}",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "bs-label",
+                          "type": "text",
+                          "props": {
+                            "text": "{{label}}",
+                            "align": "center",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bs-photo-col",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "bs-photo",
+                  "type": "image",
+                  "props": {
+                    "image": "{{photo}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Benefits split: a heading and a grid of icon, label items beside one photograph. The photo is on the\n   right by default; a placement can flip it and set the number of columns in the page's CSS. */\n[data-bz-node=\"bs-band\"] > .bz-container { max-width: calc(min(90vw, 1440px) + 32px); }\n[data-bz-section=\"benefits-split\"] .bz-block { padding-block: 0; }\n[data-bz-section=\"benefits-split\"] [data-bz-node=\"bs-split\"] { align-items: center; }\n[data-bz-section=\"benefits-split\"] h2 { margin: 0; text-align: center; font: 700 1.875rem / 1.2 var(--font-heading); color: #000; letter-spacing: 0; }\n[data-bz-section=\"benefits-split\"] [data-bz-node=\"bs-items\"] { display: grid; grid-template-columns: repeat(var(--bs-cols, 2), minmax(0, 1fr)); margin-top: 50px; row-gap: 40px; }\n[data-bz-section=\"benefits-split\"] [data-bz-node=\"bs-items\"] > .bz-col { grid-column: auto; padding-inline: 10px; }\n[data-bz-section=\"benefits-split\"] .bz-figure { margin: 0; }\n[data-bz-section=\"benefits-split\"] [data-bz-node^=\"bs-icon\"] .bz-figure { display: flex; justify-content: center; align-items: center; height: 60px; }\n[data-bz-section=\"benefits-split\"] [data-bz-node^=\"bs-icon\"] img { width: auto; max-width: 100%; height: auto; border-radius: 0; }\n[data-bz-section=\"benefits-split\"] [data-bz-node=\"bs-photo\"] img { display: block; width: 100%; height: auto; border-radius: 0; }\n[data-bz-section=\"benefits-split\"] [data-bz-node^=\"bs-label\"] .bz-text p { margin: 16px auto 0; max-width: 220px; text-align: center; font: 400 0.8rem / 1.7 var(--font-body); color: #000; }\n@media (max-width: 1100px) { [data-bz-section=\"benefits-split\"] [data-bz-node=\"bs-split\"] > [data-bz-node=\"bs-photo-col\"] { order: -1; margin-bottom: 32px; } }\n@media (max-width: 640px) { [data-bz-section=\"benefits-split\"] [data-bz-node=\"bs-items\"] { grid-template-columns: repeat(2, minmax(0, 1fr)); } [data-bz-section=\"benefits-split\"] h2 { font-size: 1.5rem; } }\n[data-bz-section=\"benefits-split\"] [data-bz-node=\"bs-items\"] .bz-container { padding-inline: 0; }\n[data-bz-section=\"benefits-split\"] [data-bz-node=\"bs-text-col\"] .bz-container { padding-inline: 0; }\n"
+}
