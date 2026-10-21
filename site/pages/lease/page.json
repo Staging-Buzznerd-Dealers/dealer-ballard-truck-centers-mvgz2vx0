@@ -27,6 +27,13 @@
         "paddingY": 0,
         "align": "center"
       },
+      "styles": {
+        "base": {
+          "backgroundImage": "/lease/polar-park-mack-bw.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center"
+        }
+      },
       "children": [
         {
           "id": "ls-hero-icon",
@@ -74,14 +81,7 @@
             "align": "center"
           }
         }
-      ],
-      "styles": {
-        "base": {
-          "backgroundImage": "/lease/polar-park-mack-bw.jpg",
-          "backgroundSize": "cover",
-          "backgroundPosition": "center"
-        }
-      }
+      ]
     },
     {
       "id": "ls-benefits",
@@ -280,7 +280,7 @@
           "type": "image",
           "props": {
             "image": {
-              "src": "/lease/polar-park-mack.jpg",
+              "src": "https://vendure.ai4dealerships.com/assets/source/ff/leasing-polar-truck.jpg",
               "alt": "A white Mack truck with a Polar Park delivery wrap parked outside Polar Park",
               "width": 939,
               "height": 244
