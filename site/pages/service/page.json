@@ -1,0 +1,308 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "sv-title",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "sv-title-h",
+          "type": "heading",
+          "props": {
+            "text": "Service",
+            "headingLevel": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "sv-hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center"
+      },
+      "children": [
+        {
+          "id": "sv-hero-icon",
+          "type": "image",
+          "props": {
+            "image": {
+              "src": "/service/hero-tools.svg",
+              "alt": "Service",
+              "width": 51,
+              "height": 49
+            },
+            "width": "full"
+          }
+        },
+        {
+          "id": "sv-hero-h",
+          "type": "heading",
+          "props": {
+            "text": "Over 100 years of reliable service",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "sv-hero-t",
+          "type": "text",
+          "props": {
+            "text": "Your equipment is a big part of your livelihood. Helping you keep your trucks running smoothly is ours.",
+            "align": "center",
+            "width": "full"
+          }
+        },
+        {
+          "id": "sv-hero-cta",
+          "type": "buttons",
+          "props": {
+            "items": [
+              {
+                "ctaId": "service-flyer"
+              },
+              {
+                "ctaId": "service-credit-application"
+              },
+              {
+                "ctaId": "service-request-form"
+              }
+            ],
+            "align": "center"
+          }
+        }
+      ],
+      "styles": {
+        "base": {
+          "backgroundImage": "/service/hero-shop.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center"
+        }
+      }
+    },
+    {
+      "id": "sv-benefits",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "benefit-grid",
+        "values": {
+          "heading": "Experience The Ballard Difference",
+          "items": [
+            {
+              "icon": {
+                "src": "/service/inspections.svg",
+                "alt": "Inspections",
+                "width": 53,
+                "height": 56
+              },
+              "title": "Inspections",
+              "desc": "State and DOT inspections for\ncommercial trucks and trailers."
+            },
+            {
+              "icon": {
+                "src": "/service/preventative.svg",
+                "alt": "Preventative Care",
+                "width": 47,
+                "height": 58
+              },
+              "title": "Preventative Care",
+              "desc": "All axle alignments, oil changes,\nbrakes, tires, and fluids."
+            },
+            {
+              "icon": {
+                "src": "/lease/maintenance.svg",
+                "alt": "Maintenance",
+                "width": 52,
+                "height": 49
+              },
+              "title": "Maintenance",
+              "desc": "Windshield replacements, air\nconditioning, and suspension."
+            },
+            {
+              "icon": {
+                "src": "/service/engine.svg",
+                "alt": "Engine & Transmission",
+                "width": 58,
+                "height": 60
+              },
+              "title": "Engine &\nTransmission",
+              "desc": "Service and replacements for\nengines, transmissions, clutches,\nand drivelines."
+            },
+            {
+              "icon": {
+                "src": "/service/specialty.svg",
+                "alt": "Specialty",
+                "width": 58,
+                "height": 61
+              },
+              "title": "Specialty",
+              "desc": "DPF cleaning, body and frame\nrepairs, flywheel grinding,\ncosmetic upgrades, and more."
+            }
+          ]
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "sv-contact",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card",
+        "anchor": "service-credit"
+      },
+      "children": [
+        {
+          "id": "sv-contact-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "sv-contact-copy",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "sv-contact-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ballard Service Credit Application",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "sv-contact-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Thank you for your interest in a credit account with Ballard Truck Centers. Creating an account with us will allow you to charge your purchases in our Parts and Service departments across all of our locations.\n\nCredit accounts do not apply to purchases of new or used vehicles.\n\nPlease note this form could take 15-20 minutes to complete.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "sv-contact-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "service-get-started"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "sv-contact-card",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "start"
+              },
+              "children": [
+                {
+                  "id": "sv-form-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Service Request Form",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "sv-form-t",
+                  "type": "text",
+                  "props": {
+                    "text": "To schedule service on your vehicle, you may contact us using the form below. If you need immediate assistance, please call us at <a href=\"tel:+18004211576\">(800) 421-1576</a>.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "sv-contact-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "service-request",
+                    "anchor": "service-request"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sv-compare",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "before-after",
+        "values": {
+          "before": {
+            "src": "/service/before.jpg",
+            "alt": "A black stake-bed truck in the shop, before",
+            "width": 1218,
+            "height": 822
+          },
+          "after": {
+            "src": "/service/after.jpg",
+            "alt": "The front of a black Isuzu truck with wheel simulators, after",
+            "width": 1218,
+            "height": 822
+          },
+          "beforeLabel": "Before",
+          "afterLabel": "After",
+          "caption": "Scroll over the image to reveal the before and after wheel simulator upgrade pictures."
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "sv-dpf",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-columns",
+        "values": {
+          "heading": "Locations with DPF Services",
+          "background": {
+            "src": "/service/dpf-shop.jpg",
+            "alt": "",
+            "width": 1920,
+            "height": 455
+          },
+          "items": [
+            {
+              "name": "Johnston, RI",
+              "details": "<a href=\"tel:+14018214800\">(401) 821-4800</a><br><a href=\"https://maps.google.com/?q=280+Scituate+Avenue,+Johnston,+RI+02919\">280 Scituate Avenue,</a><br>Johnston, RI 02919"
+            },
+            {
+              "name": "Tewksbury, MA",
+              "details": "<a href=\"tel:+19788519902\">(978) 851-9902</a><br><a href=\"https://maps.google.com/?q=939+East+Street+A,+Tewksbury,+MA+01876\">939 East Street A,<br>Tewksbury, MA 01876</a>"
+            },
+            {
+              "name": "West Wareham, MA",
+              "details": "<a href=\"tel:+17746787040\">(774) 678-7040</a><br><a href=\"https://maps.google.com/?q=2381+Cranberry+Highway,+West+Wareham,+MA+02576\">2381 Cranberry Highway,<br>West Wareham, MA 02576</a>"
+            },
+            {
+              "name": "Worcester, MA",
+              "details": "<a href=\"tel:+15087531403\">(508) 753-1403</a><br><a href=\"https://maps.google.com/?q=442+Southwest+Cutoff,+Worcester,+MA+01604\">442 Southwest Cutoff,<br>Worcester, MA 01604</a>"
+            }
+          ]
+        }
+      },
+      "children": []
+    }
+  ]
+}

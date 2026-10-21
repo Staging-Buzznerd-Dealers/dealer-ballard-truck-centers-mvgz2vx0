@@ -180,14 +180,14 @@
         {
           "id": "bm-service",
           "label": "Service",
-          "type": "url",
-          "url": "#service-request",
+          "type": "page",
+          "ref": "service",
           "children": [
             {
               "id": "bm-service-form",
               "label": "Schedule Service",
-              "type": "url",
-              "url": "#service-request"
+              "type": "page",
+              "ref": "service"
             }
           ]
         },

@@ -75,5 +75,24 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "service",
+    "title": "Service",
+    "description": "Ballard Truck Centers service: inspections, preventative care, maintenance, engine and transmission work, and specialty services, backed by over 100 years of reliable service.",
+    "path": "/service",
+    "out": "service/index.html",
+    "dir": "service",
+    "group": "ballard",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]
