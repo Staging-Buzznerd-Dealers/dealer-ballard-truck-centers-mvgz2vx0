@@ -16,10 +16,14 @@
 [data-bz-node="ms-title"] { background: #003550; padding-block: 34px 15px; }
 [data-bz-node="ms-title-h"] h1 { margin: 0; font: 700 2.8rem / 1.2 var(--font-heading); color: #fff; }
 
-/* Hero. The reference has a tinted photo of Mack plow trucks behind this; that photo is not
-   in the repo yet, so this is the tint colour on its own. Set a background image on this
-   section (Styles panel) and the overlay below keeps the copy readable. */
+/* Hero. The photo itself is set on this section in the Styles panel (Background image).
+   The reference is that photo under a flat navy layer: measured from the reference, every
+   colour channel is the photo scaled to about 20% plus rgb(0 53 80) at about 80%, which is the
+   title band colour. The Styles panel cannot lay a translucent colour over a photo on the same
+   node (its background colour paints underneath the image), so the layer is this rule. Change
+   the 80% to make the photo show more or less. */
 [data-bz-node="ms-hero"] { display: flex; align-items: center; min-height: 427px; background-color: #0b3b57; background-size: cover; background-position: center; position: relative; }
+[data-bz-node="ms-hero"]::before { content: ""; position: absolute; inset: 0; background: rgb(0 53 80 / 80%); pointer-events: none; }
 [data-bz-node="ms-hero"] > .bz-container { position: relative; width: 100%; text-align: center; }
 [data-bz-node="ms-hero-icon"] .bz-figure { display: flex; justify-content: center; margin: 0; }
 [data-bz-node="ms-hero-icon"] img { width: auto; max-width: 100%; height: auto; border-radius: 0; }
