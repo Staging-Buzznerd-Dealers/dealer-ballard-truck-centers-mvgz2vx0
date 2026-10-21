@@ -1,0 +1,133 @@
+{
+  "version": 2,
+  "id": "team-grid",
+  "name": "Team grid",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading (leave empty to continue the group above)"
+    },
+    {
+      "key": "people",
+      "type": "list",
+      "label": "People",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Phone (links allowed)"
+        },
+        {
+          "key": "email",
+          "type": "text",
+          "label": "Email (links allowed)"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "tg-band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "tg-head",
+          "type": "heading",
+          "props": {
+            "text": "{{heading}}",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "tg-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "start",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "tg-person",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "align": "start",
+                "repeat": "people"
+              },
+              "children": [
+                {
+                  "id": "tg-avatar",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/contact/avatar.svg",
+                      "alt": "Team member",
+                      "width": 72,
+                      "height": 72
+                    },
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "tg-name",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{name}}",
+                    "headingLevel": 3,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "tg-title",
+                  "type": "text",
+                  "props": {
+                    "text": "{{title}}",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "tg-phone",
+                  "type": "text",
+                  "props": {
+                    "text": "{{phone}}",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "tg-email",
+                  "type": "text",
+                  "props": {
+                    "text": "{{email}}",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Team grid: an optional heading, then people centred in rows, each with an avatar, name, title and contact lines. */\n[data-bz-node=\"tg-band\"] > .bz-container { max-width: calc(min(90vw, 1440px) + 32px); }\n[data-bz-section=\"team-grid\"] .bz-block { padding-block: 0; }\n[data-bz-section=\"team-grid\"] h2 { margin: 0 0 56px; text-align: center; font: 700 1.85rem / 1.2 var(--font-heading); color: #000; letter-spacing: 0; }\n[data-bz-section=\"team-grid\"] h2:empty, [data-bz-section=\"team-grid\"] [data-bz-node=\"tg-head\"]:has(h2:empty) { display: none; }\n[data-bz-section=\"team-grid\"] [data-bz-node=\"tg-row\"] { display: flex; flex-wrap: wrap; justify-content: center; row-gap: 60px; }\n[data-bz-section=\"team-grid\"] [data-bz-node=\"tg-row\"] > .bz-col { flex: 1 1 0; min-width: 190px; grid-column: auto; }\n[data-bz-section=\"team-grid\"] .bz-figure { margin: 0; display: flex; justify-content: center; }\n[data-bz-section=\"team-grid\"] .bz-figure img { display: block; width: 72px; height: 72px; border-radius: 50%; }\n[data-bz-section=\"team-grid\"] h3 { margin: 22px 0 0; text-align: center; font: 700 1.5rem / 1.2 var(--font-heading); color: #000; letter-spacing: 0; }\n[data-bz-section=\"team-grid\"] [data-bz-node^=\"tg-title\"] .bz-text p { margin: 12px 0 0; text-align: center; font: 400 1rem / 1.3 var(--font-body); color: #000; max-width: none; }\n[data-bz-section=\"team-grid\"] [data-bz-node^=\"tg-phone\"] .bz-text p, [data-bz-section=\"team-grid\"] [data-bz-node^=\"tg-email\"] .bz-text p { margin: 10px 0 0; text-align: center; font: 400 0.85rem / 1.3 var(--font-body); color: var(--accent); max-width: none; }\n[data-bz-section=\"team-grid\"] [data-bz-node^=\"tg-phone\"] .bz-text p:empty, [data-bz-section=\"team-grid\"] [data-bz-node^=\"tg-email\"] .bz-text p:empty { display: none; }\n[data-bz-section=\"team-grid\"] [data-bz-node^=\"tg-phone\"] a, [data-bz-section=\"team-grid\"] [data-bz-node^=\"tg-email\"] a { color: var(--accent); text-decoration: none; }\n[data-bz-section=\"team-grid\"] [data-bz-node^=\"tg-phone\"] .bz-text p::before, [data-bz-section=\"team-grid\"] [data-bz-node^=\"tg-email\"] .bz-text p::before { content: \"\"; display: inline-block; width: 12px; height: 12px; margin-right: 7px; vertical-align: -1px; background: var(--accent); -webkit-mask: var(--tg-icon) center / contain no-repeat; mask: var(--tg-icon) center / contain no-repeat; }\n[data-bz-section=\"team-grid\"] [data-bz-node^=\"tg-phone\"] .bz-text p { --tg-icon: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath d='M13.300 10.200l-2.700-1.200a.7.700 0 0 0-.8.200l-1.100 1.400a8.200 8.200 0 0 1-3.900-3.900l1.400-1.100a.7.700 0 0 0 .2-.8L3.800.1a.7.700 0 0 0-.8-.4L.5.300A.7.700 0 0 0 0 1c0 7 5.700 12.700 12.700 12.700a.7.700 0 0 0 .7-.5l.6-2.500a.7.7 0 0 0-.7-.9z'/%3E%3C/svg%3E\"); }\n[data-bz-section=\"team-grid\"] [data-bz-node^=\"tg-email\"] .bz-text p { --tg-icon: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 12'%3E%3Cpath d='M1 0h14a1 1 0 0 1 1 1v.5L8 6.500 0 1.500V1a1 1 0 0 1 1-1zM0 3.400l8 5 8-5V11a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1z'/%3E%3C/svg%3E\"); }\n@media (max-width: 640px) { [data-bz-section=\"team-grid\"] [data-bz-node=\"tg-row\"] > .bz-col { flex-basis: 50%; min-width: 0; } }\n"
+}

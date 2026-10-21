@@ -226,8 +226,8 @@
         {
           "id": "bm-contact",
           "label": "Contact Us",
-          "type": "url",
-          "url": "/contact"
+          "type": "page",
+          "ref": "contact"
         }
       ]
     },
