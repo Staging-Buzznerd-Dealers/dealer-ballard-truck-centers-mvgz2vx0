@@ -1,0 +1,69 @@
+{
+  "id": "municipal-services",
+  "name": "Municipal services",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "municipal-info",
+  "submitLabel": "Submit",
+  "successMessage": "Thanks — our municipal team will be in touch shortly.",
+  "consent": {
+    "enabled": false,
+    "required": false,
+    "text": ""
+  },
+  "fields": [
+    {
+      "id": "mf-first",
+      "type": "first_name",
+      "label": "First",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "mf-last",
+      "type": "last_name",
+      "label": "Last",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "mf-town",
+      "type": "single_line",
+      "label": "Town / City",
+      "required": true
+    },
+    {
+      "id": "mf-email",
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "mf-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "mf-comments",
+      "type": "paragraph",
+      "label": "Comments",
+      "required": false
+    }
+  ],
+  "notifications": [
+    {
+      "id": "mf-default",
+      "name": "Sales",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "sales-manager",
+      "scopeMode": "dynamic"
+    }
+  ]
+}

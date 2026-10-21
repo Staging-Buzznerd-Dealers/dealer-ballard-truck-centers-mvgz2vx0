@@ -1,0 +1,591 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "ms-title",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "ms-title-h",
+          "type": "heading",
+          "props": {
+            "text": "Municipal Services",
+            "headingLevel": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "ms-hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center"
+      },
+      "children": [
+        {
+          "id": "ms-hero-icon",
+          "type": "image",
+          "props": {
+            "image": {
+              "src": "/municipal/hero-icon.svg",
+              "alt": "Municipal building",
+              "width": 61,
+              "height": 59
+            },
+            "width": "full"
+          }
+        },
+        {
+          "id": "ms-hero-h",
+          "type": "heading",
+          "props": {
+            "text": "Helping towns transport, build, maintain & serve",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "ms-hero-t",
+          "type": "text",
+          "props": {
+            "text": "Ballard is an approved vendor and trusted provider of vocational vehicles for Massachusetts.",
+            "align": "center",
+            "width": "full"
+          }
+        },
+        {
+          "id": "ms-hero-cta",
+          "type": "buttons",
+          "props": {
+            "items": [
+              {
+                "ctaId": "municipal-info-form"
+              }
+            ],
+            "align": "center"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ms-programs",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "icon-card-grid",
+        "values": {
+          "heading": "Massachusetts Approved Vendor Programs",
+          "intro": "View the benefits of vendor programs below:",
+          "items": [
+            {
+              "icon": {
+                "src": "/municipal/no-bid.svg",
+                "alt": "No Bid Required",
+                "width": 67,
+                "height": 67
+              },
+              "title": "No Bid\nRequired",
+              "desc": "Reach out to us today to learn more,\nor to request more information."
+            },
+            {
+              "icon": {
+                "src": "/municipal/pre-engineered.svg",
+                "alt": "Pre-Engineered Specifications",
+                "width": 71,
+                "height": 73
+              },
+              "title": "Pre-Engineered\nSpecifications",
+              "desc": "No need to reinvent the wheel with existing,\npre-made truck specifications."
+            },
+            {
+              "icon": {
+                "src": "/municipal/body-configurations.svg",
+                "alt": "Municipal Body Configurations",
+                "width": 71,
+                "height": 65
+              },
+              "title": "Municipal Body\nConfigurations",
+              "desc": "Various body configurations for\nmunicipal applications."
+            },
+            {
+              "icon": {
+                "src": "/municipal/flexible-specs.svg",
+                "alt": "Flexible Specifications",
+                "width": 69,
+                "height": 67
+              },
+              "title": "Flexible\nSpecifications",
+              "desc": "Provide customized specs or start with\nexisting specs and alter them as needed."
+            },
+            {
+              "icon": {
+                "src": "/municipal/rfq-commbuys.svg",
+                "alt": "RFQs Through CommBuys",
+                "width": 63,
+                "height": 73
+              },
+              "title": "RFQs Through\nCommBuys",
+              "desc": "Requests for quotes and purchases are made\nthrough the CommBuys website."
+            },
+            {
+              "icon": {
+                "src": "/municipal/state-agencies.svg",
+                "alt": "State & Municipal Agencies",
+                "width": 71,
+                "height": 65
+              },
+              "title": "State & Municipal\nAgencies",
+              "desc": "We can assist and provide services for all state\nand municipal agencies."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ms-contracts",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "ms-contracts-h",
+          "type": "heading",
+          "props": {
+            "text": "State Contracts",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "ms-contracts-t",
+          "type": "text",
+          "props": {
+            "text": "Ballard is an approved vendor for heavy duty Mack and Volvo trucks through the Commonwealth of Massachusetts Operational Services Division on contract VEH111.\nBallard is also an approved vendor for the heavy and medium duty trucks from Mack and Isuzu through the Metropolitan Area Planning Council on the Greater Boston Police Council contract. The municipality must be a member of GBPC to qualify.",
+            "align": "center",
+            "width": "full"
+          }
+        },
+        {
+          "id": "ms-contracts-logos",
+          "type": "logoStrip",
+          "props": {
+            "logos": [
+              {
+                "name": "Massachusetts Highway Association",
+                "image": {
+                  "src": "/municipal/seal-mha.svg",
+                  "alt": "Massachusetts Highway Association, 1893",
+                  "width": 79,
+                  "height": 79
+                }
+              },
+              {
+                "name": "Berkshire County Highway Superintendents Association",
+                "image": {
+                  "src": "/municipal/seal-berkshire.svg",
+                  "alt": "Berkshire County Highway Superintendents Association, District 1",
+                  "width": 83,
+                  "height": 83
+                }
+              },
+              {
+                "name": "Worcester County Highway Association",
+                "image": {
+                  "src": "/municipal/seal-wcha.svg",
+                  "alt": "WCHA, Worcester County Highway Association",
+                  "width": 89,
+                  "height": 61
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ms-towns",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "ms-towns-h",
+          "type": "heading",
+          "props": {
+            "text": "Towns & Cities We Work With",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "ms-towns-list",
+          "type": "check-list-columns",
+          "props": {
+            "col1": [
+              {
+                "label": "Abington"
+              },
+              {
+                "label": "Acton"
+              },
+              {
+                "label": "Andover"
+              },
+              {
+                "label": "Avon"
+              },
+              {
+                "label": "Ashburnham"
+              },
+              {
+                "label": "Amesbury"
+              },
+              {
+                "label": "Barnstable"
+              },
+              {
+                "label": "Barre"
+              },
+              {
+                "label": "Billerica"
+              },
+              {
+                "label": "Boston"
+              },
+              {
+                "label": "Boylston"
+              },
+              {
+                "label": "Brookline"
+              },
+              {
+                "label": "Cambridge"
+              },
+              {
+                "label": "Carver"
+              },
+              {
+                "label": "Chatham"
+              },
+              {
+                "label": "Chicopee"
+              },
+              {
+                "label": "Clinton"
+              },
+              {
+                "label": "Dartmouth"
+              }
+            ],
+            "col2": [
+              {
+                "label": "Dennis"
+              },
+              {
+                "label": "Duxbury"
+              },
+              {
+                "label": "Eastham"
+              },
+              {
+                "label": "East Brookfield"
+              },
+              {
+                "label": "Falmouth"
+              },
+              {
+                "label": "Fall River"
+              },
+              {
+                "label": "Foxboro"
+              },
+              {
+                "label": "Framingham"
+              },
+              {
+                "label": "Goshen"
+              },
+              {
+                "label": "Glouster"
+              },
+              {
+                "label": "Grafton"
+              },
+              {
+                "label": "Hampden"
+              },
+              {
+                "label": "Hanover"
+              },
+              {
+                "label": "Harvard"
+              },
+              {
+                "label": "Harwich"
+              },
+              {
+                "label": "Hinsdale"
+              },
+              {
+                "label": "Holden"
+              },
+              {
+                "label": "Hubbardston"
+              },
+              {
+                "label": "Kingston"
+              }
+            ],
+            "col3": [
+              {
+                "label": "Lunenburg"
+              },
+              {
+                "label": "Lawrence"
+              },
+              {
+                "label": "Littleton"
+              },
+              {
+                "label": "Marshfield"
+              },
+              {
+                "label": "Medfield"
+              },
+              {
+                "label": "Middleboro"
+              },
+              {
+                "label": "Millbury"
+              },
+              {
+                "label": "Newton"
+              },
+              {
+                "label": "New Bedford"
+              },
+              {
+                "label": "New Braintree"
+              },
+              {
+                "label": "New Marlboro"
+              },
+              {
+                "label": "North Attleboro"
+              },
+              {
+                "label": "Northborough"
+              },
+              {
+                "label": "Norwell"
+              },
+              {
+                "label": "Oxford"
+              },
+              {
+                "label": "Palmer"
+              },
+              {
+                "label": "Paxton"
+              },
+              {
+                "label": "Pembroke"
+              },
+              {
+                "label": "Phillipston"
+              },
+              {
+                "label": "Plymouth"
+              }
+            ],
+            "col4": [
+              {
+                "label": "Quincy"
+              },
+              {
+                "label": "Oxford"
+              },
+              {
+                "label": "Raynham"
+              },
+              {
+                "label": "Revere"
+              },
+              {
+                "label": "Rockland"
+              },
+              {
+                "label": "Rowe"
+              },
+              {
+                "label": "Rutland"
+              },
+              {
+                "label": "Sandwich"
+              },
+              {
+                "label": "Shrewsbury"
+              },
+              {
+                "label": "Somerville"
+              },
+              {
+                "label": "Southborough"
+              },
+              {
+                "label": "Southbridge"
+              },
+              {
+                "label": "Spencer"
+              },
+              {
+                "label": "Springfield"
+              },
+              {
+                "label": "Stoughton"
+              },
+              {
+                "label": "Sudbury"
+              },
+              {
+                "label": "Sutton"
+              },
+              {
+                "label": "Templeton"
+              }
+            ],
+            "col5": [
+              {
+                "label": "UMass Amherst"
+              },
+              {
+                "label": "Uxbridge"
+              },
+              {
+                "label": "Walpole"
+              },
+              {
+                "label": "Wayland"
+              },
+              {
+                "label": "Wellesley"
+              },
+              {
+                "label": "Wellfleet"
+              },
+              {
+                "label": "West Brookfield"
+              },
+              {
+                "label": "Westfield"
+              },
+              {
+                "label": "Westminster"
+              },
+              {
+                "label": "Westwood"
+              },
+              {
+                "label": "Weymouth"
+              },
+              {
+                "label": "Williamstown"
+              },
+              {
+                "label": "Winchendon"
+              },
+              {
+                "label": "Worcester"
+              },
+              {
+                "label": "Wrentham"
+              },
+              {
+                "label": "Yarmouth"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ms-contact",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "ms-contact-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "ms-contact-copy",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "ms-contact-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Want to learn more?",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "ms-contact-t",
+                  "type": "text",
+                  "props": {
+                    "text": "With our reliable trucks, extensive parts inventory, and award-winning customer service, we’re more than just a vendor—we’re your long-term partner. We understand how critical uptime and expert support are when it matters most.\n\nContact our team today to discover how we can support your operation—and experience the Ballard Difference for yourself.",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ms-contact-card",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "start"
+              },
+              "children": [
+                {
+                  "id": "ms-contact-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "municipal-services",
+                    "heading": "Municipal Services Form",
+                    "headingLevel": 2,
+                    "anchor": "municipal-form"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

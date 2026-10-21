@@ -1,0 +1,68 @@
+{
+  "id": "check-list-columns",
+  "label": "Check list, five columns",
+  "props": [
+    {
+      "key": "col1",
+      "type": "list",
+      "label": "Column 1",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Item"
+        }
+      ]
+    },
+    {
+      "key": "col2",
+      "type": "list",
+      "label": "Column 2",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Item"
+        }
+      ]
+    },
+    {
+      "key": "col3",
+      "type": "list",
+      "label": "Column 3",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Item"
+        }
+      ]
+    },
+    {
+      "key": "col4",
+      "type": "list",
+      "label": "Column 4",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Item"
+        }
+      ]
+    },
+    {
+      "key": "col5",
+      "type": "list",
+      "label": "Column 5",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Item"
+        }
+      ]
+    }
+  ],
+  "html": "<div class=\"clc\"><ul>{{#each col1}}<li>{{label}}</li>{{/each}}</ul><ul>{{#each col2}}<li>{{label}}</li>{{/each}}</ul><ul>{{#each col3}}<li>{{label}}</li>{{/each}}</ul><ul>{{#each col4}}<li>{{label}}</li>{{/each}}</ul><ul>{{#each col5}}<li>{{label}}</li>{{/each}}</ul></div>",
+  "css": ".clc { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); align-items: start; }\n.clc ul { list-style: none; margin: 0; padding: 0; }\n.clc li { position: relative; margin: 0; padding-left: 28px; min-height: 32.8px; font: 400 0.9375rem / 32.8px var(--font-body); color: #444; }\n.clc li::before { content: \"\"; position: absolute; left: 0; top: 50%; width: 14px; height: 14px; margin-top: -7px; border-radius: 50%; background: var(--accent); }\n.clc li::after { content: \"\"; position: absolute; left: 4.6px; top: 50%; width: 3.2px; height: 6.4px; margin-top: -5.2px; border: solid #fff; border-width: 0 1.7px 1.7px 0; transform: rotate(42deg); }\n@media (max-width: 1100px) { .clc { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 8px; } }\n@media (max-width: 640px) { .clc { grid-template-columns: repeat(2, minmax(0, 1fr)); } }\n"
+}

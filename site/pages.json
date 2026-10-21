@@ -16,6 +16,26 @@
       "footer": null,
       "utilityNav": null
     },
-    "pageType": "Home"
+    "pageType": "Home",
+    "group": "ballard"
+  },
+  {
+    "slug": "municipal-services",
+    "title": "Municipal Services",
+    "description": "Ballard is an approved vendor and trusted provider of vocational vehicles for Massachusetts towns, cities and state agencies.",
+    "path": "/municipal-services",
+    "out": "municipal-services/index.html",
+    "dir": "municipal-services",
+    "group": "ballard",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]
