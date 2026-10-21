@@ -100,7 +100,7 @@
     }
   ],
   "locationSnapshots": {
-    "main": {
+    "avon-ma": {
       "ld-header": {
         "snapshots": {
           "bh-map": {
@@ -109,7 +109,7 @@
                 "id": "11",
                 "name": "Avon, MA",
                 "subtitle": "",
-                "slug": "main",
+                "slug": "avon-ma",
                 "num": "01",
                 "href": null,
                 "streetAddress": "1 Mack Drive, Avon, MA 02322",
@@ -119,7 +119,7 @@
                 "country": null,
                 "latitude": null,
                 "longitude": null,
-                "phone": null,
+                "phone": "",
                 "phoneUrl": null,
                 "mapUrl": "https://www.google.com/maps/search/?api=1&query=1%20Mack%20Drive%2C%20Avon%2C%20MA%2002322%2C%20Avon%2C%20MA%2C%2002322",
                 "email": null,
@@ -164,7 +164,7 @@
               "id": "11",
               "name": "Avon, MA",
               "subtitle": "",
-              "slug": "main",
+              "slug": "avon-ma",
               "num": "01",
               "href": null,
               "streetAddress": "1 Mack Drive, Avon, MA 02322",
@@ -174,7 +174,7 @@
               "country": null,
               "latitude": null,
               "longitude": null,
-              "phone": null,
+              "phone": "",
               "phoneUrl": null,
               "mapUrl": "https://www.google.com/maps/search/?api=1&query=1%20Mack%20Drive%2C%20Avon%2C%20MA%2002322%2C%20Avon%2C%20MA%2C%2002322",
               "email": null,
@@ -219,7 +219,7 @@
               "id": "11",
               "name": "Avon, MA",
               "subtitle": "",
-              "slug": "main",
+              "slug": "avon-ma",
               "num": "01",
               "href": null,
               "streetAddress": "1 Mack Drive, Avon, MA 02322",
@@ -229,7 +229,7 @@
               "country": null,
               "latitude": null,
               "longitude": null,
-              "phone": null,
+              "phone": "",
               "phoneUrl": null,
               "mapUrl": "https://www.google.com/maps/search/?api=1&query=1%20Mack%20Drive%2C%20Avon%2C%20MA%2002322%2C%20Avon%2C%20MA%2C%2002322",
               "email": null,
@@ -1204,7 +1204,7 @@
   },
   "locations": [
     {
-      "slug": "main",
+      "slug": "avon-ma",
       "name": "Avon, MA",
       "city": "Avon",
       "region": "MA",
