@@ -1,0 +1,141 @@
+{
+  "version": 2,
+  "id": "review-slider",
+  "name": "Review slider",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Hear What Our Customers Have to Say"
+    },
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Reviews",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "stars",
+          "type": "text",
+          "label": "Stars"
+        },
+        {
+          "key": "text",
+          "type": "textarea",
+          "label": "Review"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "rs-band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "ink",
+        "paddingY": 0,
+        "behaviour": "carousel",
+        "behaviourOptions": "{\"perMove\":1,\"label\":\"Customer reviews\"}"
+      },
+      "children": [
+        {
+          "id": "rs-head",
+          "type": "heading",
+          "props": {
+            "text": "{{heading}}",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "rs-wrap",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "start"
+          },
+          "children": [
+            {
+              "id": "rs-wrapcol",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "align": "auto"
+              },
+              "children": [
+                {
+                  "id": "rs-rail",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "align": "stretch",
+                    "part": "track"
+                  },
+                  "children": [
+                    {
+                      "id": "rs-card",
+                      "type": "column",
+                      "props": {
+                        "span": 2,
+                        "align": "auto",
+                        "part": "slide",
+                        "repeat": "items"
+                      },
+                      "children": [
+                        {
+                          "id": "rs-name",
+                          "type": "heading",
+                          "props": {
+                            "text": "{{name}}",
+                            "headingLevel": 3
+                          }
+                        },
+                        {
+                          "id": "rs-g",
+                          "type": "image",
+                          "props": {
+                            "image": {
+                              "src": "/home/google-g.svg",
+                              "alt": "Google review",
+                              "width": 22,
+                              "height": 22
+                            },
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "rs-stars",
+                          "type": "text",
+                          "props": {
+                            "text": "{{stars}}",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "rs-text",
+                          "type": "text",
+                          "props": {
+                            "text": "{{text}}",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Review slider: a centred heading over a rail of review cards, five in view, with a thin progress bar on top\n   that shows where the rail has scrolled to. Cards scroll by touch, trackpad, drag, arrow keys or the bar. */\n[data-bz-node=\"rs-band\"] { background: #003652; color: #fff; padding-block: 78px 80px; }\n[data-bz-node=\"rs-band\"] > .bz-container { max-width: calc(min(90vw, 1440px) + 32px); }\n[data-bz-section=\"review-slider\"] .bz-block { padding-block: 0; }\n[data-bz-section=\"review-slider\"] h2 { margin: 0 0 67px; text-align: center; color: #fff; font: 700 1.88rem / 1.2 var(--font-heading); letter-spacing: 0; }\n[data-bz-section=\"review-slider\"] [data-bz-node=\"rs-wrap\"] { --rs-w: 33.33%; --rs-x: 0%; position: relative; padding-top: 8px; }\n[data-bz-section=\"review-slider\"] [data-bz-node=\"rs-wrap\"]::before { content: \"\"; position: absolute; left: 0; right: 0; top: 0; height: 8px; border-radius: 8px 8px 0 0; background: #b0babf; }\n[data-bz-section=\"review-slider\"] [data-bz-node=\"rs-wrap\"]::after { content: \"\"; position: absolute; top: 0; height: 8px; left: var(--rs-x); width: var(--rs-w); border-radius: 8px 0 0 0; background: #0093dd; }\n[data-bz-section=\"review-slider\"] [data-bz-node=\"rs-rail\"] { --bz-slide-gap: 20px; --bz-slide: calc((100% - 80px) / 5); display: flex; gap: 20px; margin: 0; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 0; cursor: grab; }\n[data-bz-section=\"review-slider\"] [data-bz-node=\"rs-rail\"]::-webkit-scrollbar { display: none; }\n[data-bz-section=\"review-slider\"] [data-bz-node=\"rs-rail\"].is-dragging { cursor: grabbing; scroll-snap-type: none; user-select: none; }\n[data-bz-section=\"review-slider\"] [data-bz-node=\"rs-rail\"] > .bz-col { flex: 0 0 var(--bz-slide); grid-column: auto; min-width: 0; position: relative; box-sizing: border-box; min-height: 321px; padding: 24px 33px 40px; background: #ebf8ff; border-radius: 0 0 14px 14px; scroll-snap-align: start; display: flex; flex-direction: column; }\n[data-bz-section=\"review-slider\"] [data-bz-node^=\"rs-name\"] { padding-right: 38px; }\n[data-bz-section=\"review-slider\"] [data-bz-node^=\"rs-name\"] .bz-container, [data-bz-section=\"review-slider\"] [data-bz-node^=\"rs-stars\"] .bz-container, [data-bz-section=\"review-slider\"] [data-bz-node^=\"rs-text\"] .bz-container, [data-bz-section=\"review-slider\"] [data-bz-node^=\"rs-g\"] .bz-container { padding: 0; }\n[data-bz-section=\"review-slider\"] h3 { margin: 0; font: 700 1.425rem / 34px var(--font-heading); color: #003652; letter-spacing: 0; }\n[data-bz-section=\"review-slider\"] [data-bz-node^=\"rs-g\"] { position: absolute; top: 26px; right: 33px; width: 27px; height: 27px; }\n[data-bz-section=\"review-slider\"] [data-bz-node^=\"rs-g\"] .bz-figure { margin: 0; }\n[data-bz-section=\"review-slider\"] [data-bz-node^=\"rs-g\"] img { display: block; width: 27px; height: 27px; max-width: none; border-radius: 0; }\n[data-bz-section=\"review-slider\"] [data-bz-node^=\"rs-stars\"] .bz-text p { margin: 14px 0 0; font: 400 0.8rem / 12px var(--font-body); letter-spacing: 3px; color: #ffcd00; max-width: none; }\n[data-bz-section=\"review-slider\"] [data-bz-node^=\"rs-text\"] { margin: 33px -33px 0; border-top: 1px solid #dbf2ff; flex: 1; }\n[data-bz-section=\"review-slider\"] [data-bz-node^=\"rs-text\"] .bz-text p { margin: 0; padding: 28px 26px 0 33px; font: 400 0.94rem / 19px var(--font-body); color: #003652; max-width: none; }\n@media (max-width: 1100px) { [data-bz-section=\"review-slider\"] [data-bz-node=\"rs-rail\"] { --bz-slide: calc((100% - 40px) / 3); } }\n@media (max-width: 760px) { [data-bz-section=\"review-slider\"] [data-bz-node=\"rs-rail\"] { --bz-slide: calc((100% - 20px) / 2); } }\n@media (max-width: 520px) { [data-bz-section=\"review-slider\"] [data-bz-node=\"rs-rail\"] { --bz-slide: 82%; } [data-bz-node=\"rs-band\"] { padding-block: 48px; } [data-bz-section=\"review-slider\"] h2 { font-size: 1.375rem; margin-bottom: 40px; } }\n",
+  "js": "/* Review slider: the bar on top follows the rail. It is as wide as the share of the rail you can see and moves as\n   you scroll. Click or drag the bar to move the rail, and drag the cards with the mouse. With no script\n   the rail still scrolls by touch and the bar rests at the left. */\n(function () {\n  document.querySelectorAll('[data-bz-section=\"review-slider\"]').forEach(function (root) {\n    if (root.__bzRS) return;\n    root.__bzRS = true;\n    var wrap = root.querySelector('[data-bz-node=\"rs-wrap\"]');\n    var rail = root.querySelector('[data-bz-node=\"rs-rail\"]');\n    if (!wrap || !rail) return;\n    function paint() {\n      var total = rail.scrollWidth, view = rail.clientWidth;\n      if (!total || total <= view + 1) { wrap.style.setProperty('--rs-w', '100%'); wrap.style.setProperty('--rs-x', '0%'); return; }\n      var w = view / total * 100;\n      var x = rail.scrollLeft / total * 100;\n      wrap.style.setProperty('--rs-w', w.toFixed(2) + '%');\n      wrap.style.setProperty('--rs-x', Math.min(100 - w, x).toFixed(2) + '%');\n    }\n    rail.addEventListener('scroll', paint, { passive: true });\n    window.addEventListener('resize', paint);\n    paint();\n    // the bar: a press in its 8px strip moves the rail to that point, and dragging keeps moving it\n    function scrub(e) {\n      var r = wrap.getBoundingClientRect();\n      var f = Math.max(0, Math.min(1, (e.clientX - r.left) / r.width));\n      rail.scrollLeft = f * rail.scrollWidth - rail.clientWidth / 2;\n    }\n    var scrubbing = false;\n    wrap.addEventListener('pointerdown', function (e) {\n      if (e.clientY - wrap.getBoundingClientRect().top > 12) return;\n      scrubbing = true; scrub(e);\n      try { wrap.setPointerCapture(e.pointerId); } catch (x) {}\n    });\n    wrap.addEventListener('pointermove', function (e) { if (scrubbing) scrub(e); });\n    wrap.addEventListener('pointerup', function () { scrubbing = false; });\n    wrap.addEventListener('pointercancel', function () { scrubbing = false; });\n    // drag the cards with a mouse (touch already scrolls natively)\n    var down = null, moved = false;\n    rail.addEventListener('pointerdown', function (e) {\n      if (e.pointerType !== 'mouse' || e.button !== 0) return;\n      down = { x: e.clientX, left: rail.scrollLeft }; moved = false;\n    });\n    window.addEventListener('pointermove', function (e) {\n      if (!down) return;\n      var dx = e.clientX - down.x;\n      if (!moved && Math.abs(dx) > 4) { moved = true; rail.classList.add('is-dragging'); }\n      if (moved) rail.scrollLeft = down.left - dx;\n    });\n    window.addEventListener('pointerup', function () {\n      if (!down) return;\n      down = null;\n      if (moved) { rail.classList.remove('is-dragging'); }\n    });\n  });\n})();\n"
+}
