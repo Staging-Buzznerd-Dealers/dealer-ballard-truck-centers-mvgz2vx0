@@ -56,5 +56,24 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "rent",
+    "title": "Rent",
+    "description": "Rent a truck from Ballard: box trucks, dump trucks, day cab tractors and yard spotters, backed by 24/7 roadside support through NationaLease.",
+    "path": "/rent",
+    "out": "rent/index.html",
+    "dir": "rent",
+    "group": "ballard",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

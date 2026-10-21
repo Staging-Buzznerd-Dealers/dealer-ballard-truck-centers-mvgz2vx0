@@ -72,5 +72,14 @@
     "intent": "lease-request",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "rent-request-form",
+    "label": "Rental Request Form",
+    "url": "#rent-form",
+    "style": "primary",
+    "intent": "rental-request",
+    "newTab": false,
+    "active": true
   }
 ]

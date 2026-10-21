@@ -1,0 +1,100 @@
+/* Rent. Measured from the reference screenshot, a 1920px window scaled to 867px wide
+   (one screenshot pixel is about 2.21 CSS pixels). Colours and fonts come from the Ballard
+   template and the design system. */
+
+[data-bz-node="rt-title"] > .bz-container,
+[data-bz-node="rt-hero"] > .bz-container,
+[data-bz-node="rt-contact"] > .bz-container,
+[data-bz-node="rt-cta"] > .bz-container { max-width: calc(min(90vw, 1440px) + 32px); }
+[data-bz-node^="rt-"] .bz-block { padding-block: 0; }
+
+/* Active item in the main navigation */
+[data-bz-node="hm-main-nav"] a[href="/rent"] { color: var(--accent); }
+
+/* Page title band */
+[data-bz-node="rt-title"] { background: #003550; padding-block: 34px 17px; }
+[data-bz-node="rt-title-h"] h1 { margin: 0; font: 700 2.8rem / 1.2 var(--font-heading); color: #fff; }
+
+/* Hero. The photo is set on this section in the Styles panel (Background image). The photo that
+   ships here was cut from the reference, so it is already navy and the layer below is at 0%. When
+   the original black and white photo is uploaded, set the 0% to 80% to tone it the same way. */
+[data-bz-node="rt-hero"] { display: flex; align-items: center; min-height: 421px; padding-top: 14px; background-color: #0b3b57; background-size: cover; background-position: center; position: relative; }
+[data-bz-node="rt-hero"]::before { content: ""; position: absolute; inset: 0; background: rgb(0 53 80 / 0%); pointer-events: none; }
+[data-bz-node="rt-hero"] > .bz-container { position: relative; width: 100%; text-align: center; }
+[data-bz-node="rt-hero-icon"] .bz-figure { display: flex; justify-content: center; margin: 0; }
+[data-bz-node="rt-hero-icon"] img { width: auto; max-width: 100%; height: auto; border-radius: 0; }
+[data-bz-node="rt-hero-h"] h2 { margin: 29px 0 0; text-align: center; text-transform: uppercase; font: 700 1.875rem / 1.2 var(--font-heading); color: #fff; }
+[data-bz-node="rt-hero-t"] .bz-text p { margin: 16px 0 0; text-align: center; font: 400 1.215rem / 1.4 var(--font-body); color: #fff; max-width: none; }
+[data-bz-node="rt-hero-cta"] { margin-top: 42px; }
+[data-bz-node="rt-hero-cta"] .bz-btns { gap: 48px; }
+[data-bz-node="rt-hero-cta"] .bz-btn { height: 41px; padding: 0 22px; border-radius: 0; font: 700 1.09rem / 41px var(--font-body); background: var(--accent); color: #fff; }
+
+/* Benefits (the benefit grid component carries the rest of its styling) */
+[data-bz-section="benefit-grid-split"] { padding-block: 76px 0; background: #fff; }
+
+/* Contact band: navy copy on the left, white form card on the right */
+[data-bz-node="rt-contact"] { padding-block: 118px 46px; }
+[data-bz-node="rt-contact-row"] { align-items: stretch; }
+[data-bz-node="rt-contact-copy"] { background: #003650; min-height: 868px; display: flex; flex-direction: column; justify-content: center; padding: 0 99px; box-sizing: border-box; }
+[data-bz-node="rt-contact-logo"] .bz-figure { margin: 0; }
+[data-bz-node="rt-contact-logo"] img { display: block; width: 171px; max-width: 100%; height: auto; border-radius: 0; }
+[data-bz-node="rt-contact-h"] h2 { margin: 64px 0 63px; font: 700 1.875rem / 1.2 var(--font-heading); color: var(--accent); }
+[data-bz-node="rt-contact-t"] .bz-text p { margin: 0 0 14px; font: 400 1.175rem / 1.5 var(--font-body); color: #fff; max-width: 504px; }
+[data-bz-node="rt-contact-t"] .bz-text a { color: var(--accent); text-decoration: none; }
+[data-bz-node="rt-contact-card"] { position: relative; z-index: 1; margin: -48px 0 0; align-self: stretch; background: #fdfdfd; box-shadow: 0 2px 14px rgba(0, 0, 0, 0.22); padding: 151px 77px 40px; box-sizing: border-box; }
+[data-bz-node="rt-contact-form"] .bz-formblock { max-width: none; }
+[data-bz-node="rt-contact-form"] .bz-formblock > h2 { margin: 0 0 12px; text-transform: uppercase; font: 700 1.875rem / 1.2 var(--font-heading); color: #000; }
+[data-bz-node="rt-contact-form"] .bz-form { background: none; border: 0; padding: 0; max-width: none; gap: 11px 16px; }
+[data-bz-node="rt-contact-form"] .bz-form__t { display: none; }
+[data-bz-node="rt-contact-form"] .bz-label { font: 400 0.9rem / 1.3 var(--font-body); color: #000; }
+[data-bz-node="rt-contact-form"] .bz-req { font-size: 0; }
+[data-bz-node="rt-contact-form"] .bz-req::after { content: "(Required)"; margin-left: 3px; font: italic 400 0.62rem / 1 var(--font-body); color: #c02b0a; }
+[data-bz-node="rt-contact-form"] .bz-input, [data-bz-node="rt-contact-form"] textarea, [data-bz-node="rt-contact-form"] select { padding: 0 8px; line-height: 36px; border: 1px solid #8d9199; border-radius: 3px; background: #fff; font: 400 0.9rem / 1.3 var(--font-body); }
+[data-bz-node="rt-contact-form"] .bz-input { height: 38px; min-height: 0; }
+[data-bz-node="rt-contact-form"] select.bz-input { padding: 0 8px; line-height: normal; }
+[data-bz-node="rt-contact-form"] textarea.bz-input { height: 88px; min-height: 88px; width: 100%; box-sizing: border-box; }
+[data-bz-node="rt-contact-form"] .bz-form > .bz-btn { flex: 0 0 auto; width: auto; height: 41px; margin-top: 18px; padding: 0 24px; border-radius: 0; font: 700 0.95rem / 1 var(--font-body); }
+/* "Name" group label above First / Last, with each sub-label below its input */
+[data-bz-node="rt-contact-form"] [data-bz-field="rf-first"], [data-bz-node="rt-contact-form"] [data-bz-field="rf-last"] { display: flex; flex-direction: column; }
+[data-bz-node="rt-contact-form"] [data-bz-field="rf-first"] .bz-input, [data-bz-node="rt-contact-form"] [data-bz-field="rf-last"] .bz-input { order: 2; }
+[data-bz-node="rt-contact-form"] [data-bz-field="rf-first"] .bz-label, [data-bz-node="rt-contact-form"] [data-bz-field="rf-last"] .bz-label { order: 3; margin: -4px 0 7px; font-size: 0.72rem; }
+[data-bz-node="rt-contact-form"] [data-bz-field="rf-first"] .bz-req, [data-bz-node="rt-contact-form"] [data-bz-field="rf-last"] .bz-req { display: none; }
+[data-bz-node="rt-contact-form"] [data-bz-field="rf-first"]::before, [data-bz-node="rt-contact-form"] [data-bz-field="rf-last"]::before { content: "Name"; order: 1; margin-bottom: -2px; font: 400 0.9rem / 1.3 var(--font-body); color: #000; }
+[data-bz-node="rt-contact-form"] [data-bz-field="rf-first"]::before { margin-right: -16px; }
+[data-bz-node="rt-contact-form"] [data-bz-field="rf-last"]::before { color: transparent; }
+[data-bz-node="rt-contact-form"] [data-bz-field="rf-first"] { position: relative; }
+[data-bz-node="rt-contact-form"] [data-bz-field="rf-first"]::after { content: "(Required)"; position: absolute; left: 40px; top: 3px; font: italic 400 0.62rem / 1 var(--font-body); color: #c02b0a; }
+
+/* Date fields: a short box, grey until a full date is typed */
+[data-bz-node="rt-contact-form"] input[type="date"].bz-input { width: 55%; }
+[data-bz-node="rt-contact-form"] input[type="date"].bz-input:not(:focus):invalid { color: #9a9a9a; }
+
+/* Rental types and bands under the form */
+[data-bz-section="image-card-grid"] { background: #fff; padding-block: 0 0; }
+[data-bz-node="rt-cta"] { padding-block: 57px; }
+[data-bz-node="rt-cta-row"] { align-items: stretch; }
+[data-bz-node="rt-cta-copy"] { background: var(--accent); align-self: stretch; display: flex; flex-direction: column; justify-content: center; padding: 0 100px 48px; box-sizing: border-box; }
+[data-bz-node="rt-cta-h"] h2 { margin: 0 0 20px; font: 700 1.875rem / 1.2 var(--font-heading); color: #fff; }
+[data-bz-node="rt-cta-t"] .bz-text p { margin: 0; font: 400 1.175rem / 1.5 var(--font-body); color: #fff; max-width: 520px; }
+[data-bz-node="rt-cta-media"] { align-self: stretch; }
+[data-bz-node="rt-cta-media"] .bz-figure { margin: 0; }
+[data-bz-node="rt-cta-media"] img { display: block; width: 100%; height: auto; border-radius: 0; }
+
+@media (max-width: 1100px) {
+  [data-bz-node="rt-hero"] { min-height: 340px; padding-block: 36px; }
+  [data-bz-node="rt-hero-h"] h2 { font-size: 1.6rem; }
+  [data-bz-node="rt-contact"] { padding-block: 48px 40px; }
+  [data-bz-node="rt-contact-copy"] { min-height: 0; padding: 48px 32px; }
+  [data-bz-node="rt-contact-card"] { margin: 0; padding: 40px 28px; }
+  [data-bz-node="rt-cta-copy"] { padding: 48px 32px; }
+  [data-bz-node="rt-cta-media"] img { height: auto; }
+  [data-bz-node="rt-hero"] { padding-top: 36px; }
+}
+@media (max-width: 640px) {
+  [data-bz-node="rt-contact-form"] [data-bz-field="rf-last"]::before { display: none; }
+  [data-bz-node="rt-title-h"] h1 { font-size: 2rem; }
+  [data-bz-node="rt-hero-h"] h2 { font-size: 1.3rem; }
+  [data-bz-node="rt-hero-t"] .bz-text p, [data-bz-node="rt-contact-t"] .bz-text p { font-size: 1rem; }
+  [data-bz-node="rt-hero-cta"] .bz-btn { width: 100%; }
+  [data-bz-node="rt-contact-h"] h2, [data-bz-node="rt-contact-form"] .bz-formblock > h2 { font-size: 1.5rem; }
+}

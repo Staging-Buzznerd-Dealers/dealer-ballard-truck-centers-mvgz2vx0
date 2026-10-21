@@ -1,0 +1,394 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "rt-title",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "rt-title-h",
+          "type": "heading",
+          "props": {
+            "text": "Rent",
+            "headingLevel": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "rt-hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center"
+      },
+      "children": [
+        {
+          "id": "rt-hero-icon",
+          "type": "image",
+          "props": {
+            "image": {
+              "src": "/lease/hero-icon.svg",
+              "alt": "Rent",
+              "width": 55,
+              "height": 55
+            },
+            "width": "full"
+          }
+        },
+        {
+          "id": "rt-hero-h",
+          "type": "heading",
+          "props": {
+            "text": "Renting backed by the Ballard Difference",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "rt-hero-t",
+          "type": "text",
+          "props": {
+            "text": "Affordable rental options for any job, all backed by top-grade customer service.",
+            "align": "center",
+            "width": "full"
+          }
+        },
+        {
+          "id": "rt-hero-cta",
+          "type": "buttons",
+          "props": {
+            "items": [
+              {
+                "ctaId": "lease-credit-application"
+              },
+              {
+                "ctaId": "rent-request-form"
+              }
+            ],
+            "align": "center"
+          }
+        }
+      ],
+      "styles": {
+        "base": {
+          "backgroundImage": "/rent/hero-trucks.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center"
+        }
+      }
+    },
+    {
+      "id": "rt-benefits",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "benefit-grid-split",
+        "values": {
+          "heading": "Benefits of Renting With Ballard",
+          "items": [
+            {
+              "icon": {
+                "src": "/lease/nationalease-partnership.svg",
+                "alt": "NationaLease Partnership",
+                "width": 57,
+                "height": 55
+              },
+              "title": "NationaLease\nPartnership",
+              "desc": "A partnership network that has you covered\nacross the country."
+            },
+            {
+              "icon": {
+                "src": "/lease/roadside-service.svg",
+                "alt": "24/7 Emergency Roadside Service",
+                "width": 48,
+                "height": 51
+              },
+              "title": "24/7 Emergency\nRoadside Service",
+              "desc": "Enjoy peace-of-mind with included, 24/7\nroadside support."
+            },
+            {
+              "icon": {
+                "src": "/lease/paperwork.svg",
+                "alt": "No Long-Term Commitment",
+                "width": 52,
+                "height": 55
+              },
+              "title": "No Long-Term\nCommitment",
+              "desc": "Rent for as little as a day,\nor as long as needed."
+            },
+            {
+              "icon": {
+                "src": "/lease/variety-of-options.svg",
+                "alt": "Variety of Rental Options",
+                "width": 55,
+                "height": 55
+              },
+              "title": "Variety of\nRental Options",
+              "desc": "Choose from a variety of trucks and bodies\nthat best fit your job."
+            },
+            {
+              "icon": {
+                "src": "/lease/competitive-rates.svg",
+                "alt": "Competitive Rates",
+                "width": 66,
+                "height": 64
+              },
+              "title": "Competitive\nRates",
+              "desc": "Affordable rental options for your business."
+            },
+            {
+              "icon": {
+                "src": "/lease/dealerships.svg",
+                "alt": "Dealerships Across New England",
+                "width": 65,
+                "height": 63
+              },
+              "title": "Dealerships Across\nNew England",
+              "desc": "With locations across New England,\nrenting has never been easier."
+            },
+            {
+              "icon": {
+                "src": "/lease/satisfaction.svg",
+                "alt": "#1 in Customer Satisfaction",
+                "width": 46,
+                "height": 48
+              },
+              "title": "#1 in Customer\nSatisfaction",
+              "desc": "Ballard is rated #1 in U.S. Customer Satisfaction\nby Volvo Trucks."
+            }
+          ]
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "rt-contact",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "rt-contact-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "rt-contact-copy",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "rt-contact-logo",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/lease/nationalease.svg",
+                      "alt": "NationaLease",
+                      "width": 171,
+                      "height": 94
+                    },
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "rt-contact-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why rent?",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "rt-contact-t",
+                  "type": "text",
+                  "props": {
+                    "text": "It's simple—get into a reliable truck that you need for however long you need it. With a wide variety of trucks and bodies to choose from, we have the right vehicle for your next job.\n\nWhether you have an unexpected breakdown, need a temporary fleet addition, or have a one-off job, we have you covered.\n\nRent for a day or as long as you need it. Our rentals are well-maintained and backed with peace-of-mind—included 24/7 nation-wide roadside assistance and replacement solutions through our partnership with NationaLease.\n\nIf renting sounds like the solution for you, or if you have questions about our rentals, reach out to us through the Rental Request Form on the right, or call <a href=\"tel:+18882032701\">(888) 203-2701</a>.",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "rt-contact-card",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "start"
+              },
+              "children": [
+                {
+                  "id": "rt-contact-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "rent-request",
+                    "heading": "Rental Request Form",
+                    "headingLevel": 2,
+                    "anchor": "rent-form"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rt-cards",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "image-card-grid",
+        "values": {
+          "items": [
+            {
+              "image": {
+                "src": "/rent/box-truck-26.jpg",
+                "alt": "26' Box Truck Rental",
+                "width": 612,
+                "height": 408
+              },
+              "title": "26' Box Truck Rental",
+              "desc": "Our medium duty box truck rentals do not require a CDL to drive. Try the Mack MD for maximum power, improved turning radius, and air brakes."
+            },
+            {
+              "image": {
+                "src": "/rent/dump-truck.jpg",
+                "alt": "Dump Truck Rental",
+                "width": 612,
+                "height": 408
+              },
+              "title": "Dump Truck Rental",
+              "desc": "Our heavy duty dump truck rentals do require a CDL to drive. These Volvo VHDs are Class 8 dump trucks with 20 yard bodies built for comfort any heavy work."
+            },
+            {
+              "image": {
+                "src": "/rent/day-cab-tractor.jpg",
+                "alt": "Day Cab Tractor Rental",
+                "width": 612,
+                "height": 408
+              },
+              "title": "Day Cab Tractor Rental",
+              "desc": "These day cab tractor trailer truck rentals require a CDL to drive. Comfortable, fuel-efficient, Mack and Volvo trucks that are built for long hauls."
+            },
+            {
+              "image": {
+                "src": "/rent/heavy-duty-day-cab.jpg",
+                "alt": "Heavy-Duty Day Cab Tractor Rental",
+                "width": 612,
+                "height": 408
+              },
+              "title": "Heavy-Duty Day Cab Tractor Rental",
+              "desc": "These heavy-duty day cab tractor trailer truck rentals require a CDL to drive. With 2-line wet systems, these top-grade Mack Pinnacles are ready to work."
+            },
+            {
+              "image": {
+                "src": "/rent/box-truck-16.jpg",
+                "alt": "16' Box Truck Rental",
+                "width": 612,
+                "height": 408
+              },
+              "title": "16' Box Truck Rental",
+              "desc": "Our Isuzu box truck rentals do not require a CDL to drive. With ample cargo space, excellent visibility, and a tight turning radius, they're easy to maneuver through city streets and busy job sites."
+            },
+            {
+              "image": {
+                "src": "/rent/yard-spotter.jpg",
+                "alt": "Yard Spotter Rental",
+                "width": 612,
+                "height": 408
+              },
+              "title": "Yard Spotter Rental",
+              "desc": "Our TICO Yard Spotter rentals are purpose-built for fast, efficient trailer spotting. With excellent visibility and a tight turning radius, they're ideal for busy warehouses, terminals, and distribution centers."
+            }
+          ]
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "rt-cta",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "rt-cta-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "rt-cta-copy",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "auto"
+              },
+              "children": [
+                {
+                  "id": "rt-cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Easy, Convenient, & Practical",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "rt-cta-t",
+                  "type": "text",
+                  "props": {
+                    "text": "No CDL required to drive our light-duty box truck rentals. We rent automatic, fuel-efficient, Isuzu box trucks that feature industry-leading turn radius and visibility, making those tight deliveries easier and safer.",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "rt-cta-media",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "auto"
+              },
+              "children": [
+                {
+                  "id": "rt-cta-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/rent/easy-convenient.jpg",
+                      "alt": "A white Mack truck beside a Ballard Isuzu box truck",
+                      "width": 972,
+                      "height": 672
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

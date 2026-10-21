@@ -1,0 +1,126 @@
+{
+  "id": "rent-request",
+  "name": "Rental request",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "rental-request",
+  "submitLabel": "Submit",
+  "successMessage": "Thanks — our rental team will be in touch shortly.",
+  "consent": {
+    "enabled": false,
+    "required": false,
+    "text": ""
+  },
+  "fields": [
+    {
+      "id": "rf-first",
+      "type": "first_name",
+      "label": "First",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "rf-last",
+      "type": "last_name",
+      "label": "Last",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "rf-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "rf-email",
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "rf-company",
+      "type": "single_line",
+      "label": "Company Name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "rf-location",
+      "type": "dropdown",
+      "label": "Preferred Pickup Location",
+      "required": false,
+      "width": "half",
+      "placeholder": "Select Location",
+      "options": []
+    },
+    {
+      "id": "rf-type",
+      "type": "dropdown",
+      "label": "Rental Type",
+      "required": true,
+      "placeholder": "Select Rental Type",
+      "options": [
+        {
+          "value": "box-truck-26",
+          "label": "26' Box Truck"
+        },
+        {
+          "value": "dump-truck",
+          "label": "Dump Truck"
+        },
+        {
+          "value": "day-cab-tractor",
+          "label": "Day Cab Tractor"
+        },
+        {
+          "value": "heavy-duty-day-cab",
+          "label": "Heavy-Duty Day Cab Tractor"
+        },
+        {
+          "value": "box-truck-16",
+          "label": "16' Box Truck"
+        },
+        {
+          "value": "yard-spotter",
+          "label": "Yard Spotter"
+        }
+      ]
+    },
+    {
+      "id": "rf-pickup",
+      "type": "date",
+      "label": "Pickup Date Requested",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "rf-return",
+      "type": "date",
+      "label": "Return Date*",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "rf-comments",
+      "type": "paragraph",
+      "label": "Additional Comments",
+      "required": false
+    }
+  ],
+  "notifications": [
+    {
+      "id": "rf-default",
+      "name": "Rentals",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "sales-manager",
+      "scopeMode": "dynamic"
+    }
+  ]
+}
