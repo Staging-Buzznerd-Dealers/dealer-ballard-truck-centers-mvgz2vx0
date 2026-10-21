@@ -52,14 +52,14 @@
 
 /* Partners and communities */
 [data-bz-node="ab-partners"] { background: #fff; padding-block: 76px 0; }
-[data-bz-node="ab-partners-h"] h2, [data-bz-node="ab-community-h"] h2 { margin: 0; text-align: center; font: 700 1.5rem / 1.2 var(--font-heading); color: #000; letter-spacing: 0; }
-[data-bz-node="ab-community-h"] { margin-top: 184px; }
+[data-bz-node="ab-partners-h"] h2 { margin: 0; text-align: center; font: 700 1.5rem / 1.2 var(--font-heading); color: #000; letter-spacing: 0; }
 [data-bz-node$="-logos"] .bz-logos { display: grid; align-items: center; justify-items: center; border: 0; padding: 0; margin: 0 auto; gap: 0; grid-auto-rows: 120px; }
 [data-bz-node="ab-partners-logos"] .bz-logos { grid-template-columns: repeat(4, 1fr); margin-top: 56px; }
-[data-bz-node="ab-community-logos"] .bz-logos { grid-template-columns: repeat(7, 1fr); margin-top: 96px; }
 [data-bz-node$="-logos"] .bz-logo { display: flex; align-items: center; justify-content: center; padding: 0; }
 [data-bz-node$="-logos"] .bz-logo img { display: block; width: auto; max-width: 100%; height: auto; border-radius: 0; }
-[data-bz-node="ab-partners"] { padding-bottom: 135px; }
+[data-bz-node="ab-partners"] { padding-bottom: 0; }
+[data-bz-node="ab-community"] { background: #fff; padding-block: 150px 100px; }
+[data-bz-node="ab-community"] > section > .bz-container { max-width: calc(min(90vw, 1440px) + 32px); }
 
 /* Photographs and the timeline between them */
 [data-bz-node^="ab-ph"] { background: #fff; padding-bottom: 6px; }
@@ -77,11 +77,9 @@
   [data-bz-section="icon-card-grid"] [data-bz-node="icg-row"] { padding: 40px 16px; row-gap: 36px; }
   [data-bz-section="award-badges"] { padding-block: 60px; }
   [data-bz-node="ab-partners-logos"] .bz-logos { grid-template-columns: repeat(2, 1fr); }
-  [data-bz-node="ab-community-logos"] .bz-logos { grid-template-columns: repeat(3, 1fr); }
-  [data-bz-node="ab-community-h"] { margin-top: 60px; }
 }
 @media (max-width: 640px) {
   [data-bz-node="ab-title-h"] h1 { font-size: 2rem; }
   [data-bz-node="ab-hero-h"] h2 { font-size: 2.1rem; }
-  [data-bz-node="ab-partners-h"] h2, [data-bz-node="ab-community-h"] h2 { font-size: 1.3rem; }
+  [data-bz-node="ab-partners-h"] h2 { font-size: 1.3rem; }
 }

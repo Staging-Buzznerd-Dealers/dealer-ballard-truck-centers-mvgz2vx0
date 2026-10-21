@@ -2,22 +2,28 @@
   "version": 2,
   "id": "logo-carousel",
   "name": "Logo carousel",
-  "css": ".logo-rail img { max-height: 48px; width: auto; filter: grayscale(1); opacity: .7 }\n.logo-rail img:hover { filter: none; opacity: 1 }",
-  "js": "document.querySelectorAll('[data-bz-section=\"logo-carousel\"]').forEach(function (el) {\n  el.setAttribute('data-logo-count', el.querySelectorAll('img').length);\n});",
   "props": [
     {
       "key": "heading",
       "type": "text",
       "label": "Heading",
-      "default": "Brands we carry"
+      "default": "Supporting our communities"
     },
     {
       "key": "logos",
       "type": "list",
       "label": "Logos",
       "fields": [
-        { "key": "image", "type": "image", "label": "Logo" },
-        { "key": "url", "type": "url", "label": "Links to" }
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Logo"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Links to"
+        }
       ]
     }
   ],
@@ -25,34 +31,90 @@
     {
       "id": "logos",
       "type": "section",
-      "props": { "width": "boxed", "paddingY": 7, "behaviour": "carousel", "behaviourOptions": "{\"perMove\":2}" },
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 0,
+        "behaviour": "carousel",
+        "behaviourOptions": "{\"perMove\":2,\"label\":\"Logos\"}"
+      },
       "children": [
         {
-          "id": "logos-head",
-          "type": "row",
-          "children": [
-            {
-              "id": "logos-headcol",
-              "type": "column",
-              "props": { "span": 12 },
-              "children": [{ "id": "logos-title", "type": "heading", "props": { "text": "{{heading}}", "headingLevel": 2 } }]
-            }
-          ]
+          "id": "logos-title",
+          "type": "heading",
+          "props": {
+            "text": "{{heading}}",
+            "headingLevel": 2,
+            "align": "center"
+          }
         },
         {
-          "id": "logos-rail",
+          "id": "logos-wrap",
           "type": "row",
-          "props": { "part": "track" },
+          "props": {
+            "gap": 0,
+            "align": "center"
+          },
           "children": [
             {
-              "id": "logos-slide",
+              "id": "logos-wrapcol",
               "type": "column",
-              "props": { "span": 3, "part": "slide", "repeat": "logos" },
+              "props": {
+                "span": 12,
+                "align": "auto"
+              },
               "children": [
                 {
-                  "id": "logos-image",
-                  "type": "image",
-                  "props": { "image": "{{image}}", "url": "{{url}}" }
+                  "id": "logos-prev",
+                  "type": "text",
+                  "props": {
+                    "text": "‹",
+                    "align": "center",
+                    "width": "full",
+                    "part": "prev"
+                  }
+                },
+                {
+                  "id": "logos-rail",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "align": "center",
+                    "part": "track"
+                  },
+                  "children": [
+                    {
+                      "id": "logos-slide",
+                      "type": "column",
+                      "props": {
+                        "span": 2,
+                        "align": "auto",
+                        "part": "slide",
+                        "repeat": "logos"
+                      },
+                      "children": [
+                        {
+                          "id": "logos-image",
+                          "type": "image",
+                          "props": {
+                            "image": "{{image}}",
+                            "url": "{{url}}",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "logos-next",
+                  "type": "text",
+                  "props": {
+                    "text": "›",
+                    "align": "center",
+                    "width": "full",
+                    "part": "next"
+                  }
                 }
               ]
             }
@@ -60,5 +122,6 @@
         }
       ]
     }
-  ]
+  ],
+  "css": "/* Logo carousel: a centred heading over a scroll-snap rail of logos, seven in view on a wide screen.\n   Arrows sit at the ends of the rail; the rail also scrolls by touch, wheel and arrow keys. */\n[data-bz-node=\"logos\"] > .bz-container { max-width: calc(min(90vw, 1440px) + 32px); }\n[data-bz-section=\"logo-carousel\"] .bz-block { padding-block: 0; }\n[data-bz-section=\"logo-carousel\"] h2 { margin: 0; text-align: center; font: 700 1.5rem / 1.2 var(--font-heading); color: #000; letter-spacing: 0; }\n[data-bz-section=\"logo-carousel\"] [data-bz-node=\"logos-rail\"] { --bz-slide-gap: 0px; margin-top: 56px; display: flex; gap: 0; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 0; }\n[data-bz-section=\"logo-carousel\"] [data-bz-node=\"logos-rail\"]::-webkit-scrollbar { display: none; }\n[data-bz-section=\"logo-carousel\"] [data-bz-node=\"logos-rail\"] > .bz-col { flex: 0 0 calc(100% / 7); grid-column: auto; scroll-snap-align: start; min-width: 0; display: flex; align-items: center; justify-content: center; height: 150px; }\n[data-bz-section=\"logo-carousel\"] .bz-figure { margin: 0; display: flex; align-items: center; justify-content: center; }\n[data-bz-section=\"logo-carousel\"] .bz-figure img { display: block; width: auto; max-width: 150px; max-height: 150px; height: auto; border-radius: 0; }\n[data-bz-section=\"logo-carousel\"] [data-bz-node=\"logos-wrap\"] { position: relative; }\n[data-bz-section=\"logo-carousel\"] [data-bz-node=\"logos-prev\"], [data-bz-section=\"logo-carousel\"] [data-bz-node=\"logos-next\"] { position: absolute; z-index: 2; top: 50%; width: 40px; height: 40px; margin-top: -20px; padding: 0; }\n[data-bz-section=\"logo-carousel\"] [data-bz-node=\"logos-prev\"] { left: 0; } [data-bz-section=\"logo-carousel\"] [data-bz-node=\"logos-next\"] { right: 0; }\n[data-bz-section=\"logo-carousel\"] [data-bz-node=\"logos-prev\"] .bz-container, [data-bz-section=\"logo-carousel\"] [data-bz-node=\"logos-next\"] .bz-container { padding: 0; }\n[data-bz-section=\"logo-carousel\"] [data-bz-node=\"logos-prev\"] .bz-text p, [data-bz-section=\"logo-carousel\"] [data-bz-node=\"logos-next\"] .bz-text p { margin: 0; width: 40px; height: 40px; border-radius: 50%; background: #fff; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.25); color: var(--accent); font: 700 1.6rem / 38px var(--font-body); text-align: center; cursor: pointer; }\n[data-bz-section=\"logo-carousel\"] [data-bz-carousel][data-bz-at-start] [data-bz-node=\"logos-prev\"], [data-bz-section=\"logo-carousel\"] [data-bz-carousel][data-bz-at-end] [data-bz-node=\"logos-next\"] { opacity: 0.35; }\n@media (max-width: 1100px) { [data-bz-section=\"logo-carousel\"] [data-bz-node=\"logos-rail\"] > .bz-col { flex-basis: 25%; } }\n@media (max-width: 640px) { [data-bz-section=\"logo-carousel\"] [data-bz-node=\"logos-rail\"] > .bz-col { flex-basis: 50%; } [data-bz-section=\"logo-carousel\"] h2 { font-size: 1.3rem; } }\n"
 }

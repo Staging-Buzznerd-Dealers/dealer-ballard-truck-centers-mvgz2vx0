@@ -302,88 +302,85 @@
               }
             ]
           }
-        },
-        {
-          "id": "ab-community-h",
-          "type": "heading",
-          "props": {
-            "text": "Supporting our communities",
-            "headingLevel": 2,
-            "align": "center"
-          }
-        },
-        {
-          "id": "ab-community-logos",
-          "type": "logoStrip",
-          "props": {
-            "logos": [
-              {
-                "name": "Movember Foundation",
-                "image": {
-                  "src": "/about/logos/movember.svg",
-                  "alt": "Movember Foundation",
-                  "width": 137,
-                  "height": 77
-                }
-              },
-              {
-                "name": "Community partner logo (name not legible)",
-                "image": {
-                  "src": "/about/logos/national-ram.svg",
-                  "alt": "Community partner logo (name not legible)",
-                  "width": 155,
-                  "height": 60
-                }
-              },
-              {
-                "name": "Community partner logo (name not legible)",
-                "image": {
-                  "src": "/about/logos/springfield-st-patricks.svg",
-                  "alt": "Community partner logo (name not legible)",
-                  "width": 159,
-                  "height": 150
-                }
-              },
-              {
-                "name": "Community partner logo (name not legible)",
-                "image": {
-                  "src": "/about/logos/wings.svg",
-                  "alt": "Community partner logo (name not legible)",
-                  "width": 150,
-                  "height": 133
-                }
-              },
-              {
-                "name": "Community partner logo (name not legible)",
-                "image": {
-                  "src": "/about/logos/vfw.svg",
-                  "alt": "Community partner logo (name not legible)",
-                  "width": 112,
-                  "height": 146
-                }
-              },
-              {
-                "name": "Community partner logo (name not legible)",
-                "image": {
-                  "src": "/about/logos/pink-shield.svg",
-                  "alt": "Community partner logo (name not legible)",
-                  "width": 146,
-                  "height": 159
-                }
-              },
-              {
-                "name": "ALS One",
-                "image": {
-                  "src": "/about/logos/als-one.svg",
-                  "alt": "ALS One",
-                  "width": 159,
-                  "height": 86
-                }
-              }
-            ]
-          }
         }
       ]
+    },
+    {
+      "id": "ab-community",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "logo-carousel",
+        "values": {
+          "heading": "Supporting our communities",
+          "logos": [
+            {
+              "image": {
+                "src": "/about/logos/hopkinton-womens-club.png",
+                "alt": "Hopkinton Women’s Club",
+                "width": 142,
+                "height": 78
+              }
+            },
+            {
+              "image": {
+                "src": "/about/logos/movember.png",
+                "alt": "Movember Foundation",
+                "width": 131,
+                "height": 67
+              }
+            },
+            {
+              "image": {
+                "src": "/about/logos/national-breast-cancer.png",
+                "alt": "National Breast Cancer Foundation, Inc.",
+                "width": 147,
+                "height": 54
+              }
+            },
+            {
+              "image": {
+                "src": "/about/logos/springfield-st-patricks.png",
+                "alt": "Springfield St. Patrick’s Parade Committee, Inc.",
+                "width": 151,
+                "height": 142
+              }
+            },
+            {
+              "image": {
+                "src": "/about/logos/operation-stand-down.png",
+                "alt": "Operation Stand Down Rhode Island",
+                "width": 143,
+                "height": 126
+              }
+            },
+            {
+              "image": {
+                "src": "/about/logos/vfw-post-8164.png",
+                "alt": "VFW Post 8164, Tewksbury, MA",
+                "width": 103,
+                "height": 141
+              }
+            },
+            {
+              "image": {
+                "src": "/about/logos/wareham-police.png",
+                "alt": "Wareham Police, Gateway to Cape Cod",
+                "width": 141,
+                "height": 155
+              }
+            },
+            {
+              "image": {
+                "src": "/about/logos/als-one.svg",
+                "alt": "ALS One",
+                "width": 159,
+                "height": 86
+              }
+            }
+          ]
+        }
+      },
+      "children": []
     },
     {
       "id": "ab-ph1",
@@ -462,13 +459,13 @@
           "entries": [
             {
               "title": "Established",
-              "text": "[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.\n\n[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.\n\n[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.\n\n[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.",
-              "years": "1906–1940"
+              "years": "1906–1940",
+              "text": "<strong>1906</strong>: Louis Ballard, a skilled blacksmith and carriage maker, offers automotive repair services.\n\n<strong>1918</strong>: With a rising demand for repair services, Louis founded L.H. Ballard’s Garage on Howe Avenue in Millbury, Massachusetts, with his son, Harold, joining as his assistant. It was the first auto repair shop between Worcester and Blackstone.\n\n<strong>1928</strong>: Expanding his business, Louis opened Ballard Motor Sales, a Chrysler dealership, on a neighboring property.\n\n<strong>1940</strong>: By this time, Louis employed seven full-time mechanics, with Harold playing an integral role in the business."
             },
             {
               "title": "Family-Owned",
-              "text": "[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.\n\n[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.\n\n[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.",
-              "years": "1948–1982"
+              "years": "1948–1982",
+              "text": "<strong>1948</strong>: Harold Ballard and his wife, Minnie, took ownership of the dealership, earning the Chrysler Medal of Merit Award in 1951.\n\n<strong>1960</strong>: Robert “Bob” Picking joined the dealership after serving four years in the U.S. Navy.\n\n<strong>1982</strong>: Harold and Minnie’s niece, Janet Grahn, and her nephew, John Picking, began working at the dealership."
             }
           ]
         }
@@ -597,18 +594,18 @@
           "entries": [
             {
               "title": "The Ballard Name",
-              "text": "[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.\n\n[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.\n\n[Year] Text not legible in the reference screenshot.",
-              "years": "1988–1999"
+              "years": "1988–1999",
+              "text": "<strong>1988</strong>: Bob Picking and Janet Grahn acquired Worcester Mack, rebranding it Ballard Mack Sales & Service. Steve Grahn, Janet’s son, joined the team shortly after.\n\n<strong>1990s</strong>: The company shifted focus from consumer vehicles to commercial trucks, closing Ballard Motor Sales and selling the Millbury property.\n\n<strong>1999</strong>: Ballard Mack became Ballard Truck Center."
             },
             {
               "title": "Expansion",
-              "text": "[Year] Text not legible in the reference screenshot.\n\n[Year] Text not legible in the reference screenshot.\n\n[Year] Text not legible in the reference screenshot.\n\n[Year] Text not legible in the reference screenshot.",
-              "years": "2001–2011"
+              "years": "2001–2011",
+              "text": "<strong>2001</strong>: Ballard Truck Center opened its 2nd location in Johnston, Rhode Island.\n\n<strong>2007</strong>: Samantha Grahn, Steve’s daughter, joined the company full-time.\n\n<strong>2010</strong>: A 3rd location is opened in West Springfield, Massachusetts.\n\n<strong>2011</strong>: A 4th location is opened in Avon, Massachusetts."
             },
             {
               "title": "The Ballard Difference",
-              "text": "[Year] Text not legible in the reference screenshot.\n\n[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.\n\n[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.\n\n[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.\n\n[Year] Text not legible in the reference screenshot.\n\n[Year] Text not legible in the reference screenshot.",
-              "years": "2012–2026"
+              "years": "2012–2026",
+              "text": "[Year] [Text not available — replace with the timeline entry.]\n\n[Year] [Text not available — replace with the timeline entry.]\n\n[Year] [Text not available — replace with the timeline entry.]\n\n[Year] [Text not available — replace with the timeline entry.]\n\n[Year] [Text not available — replace with the timeline entry.]\n\n[Year] [Text not available — replace with the timeline entry.]"
             }
           ]
         }
