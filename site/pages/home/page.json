@@ -97,7 +97,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "brands",
@@ -333,7 +334,7 @@
           "type": "image",
           "props": {
             "image": {
-              "src": "/home/mack-lineup.jpg",
+              "src": "https://vendure.ai4dealerships.com/assets/source/90/ms_1.jpg",
               "alt": "A lineup of Mack trucks",
               "width": 1361,
               "height": 414
