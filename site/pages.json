@@ -94,5 +94,24 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "parts",
+    "title": "Parts",
+    "description": "Ballard parts: over $10 million in inventory across New England, quarterly specials, free delivery, genuine Mack Reman carriers and the brands you trust.",
+    "path": "/parts",
+    "out": "parts/index.html",
+    "dir": "parts",
+    "group": "ballard",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

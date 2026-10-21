@@ -1,0 +1,92 @@
+{
+  "version": 2,
+  "id": "check-columns",
+  "name": "Check columns",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "What We Stock, & Then Some"
+    },
+    {
+      "key": "icon",
+      "type": "image",
+      "label": "Check icon"
+    },
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Columns",
+      "fields": [
+        {
+          "key": "label",
+          "type": "textarea",
+          "label": "Caption (bold allowed)"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "cc-band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "cc-head",
+          "type": "heading",
+          "props": {
+            "text": "{{heading}}",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "cc-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "start",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "cc-col",
+              "type": "column",
+              "props": {
+                "span": 2,
+                "align": "start",
+                "repeat": "items"
+              },
+              "children": [
+                {
+                  "id": "cc-icon",
+                  "type": "image",
+                  "props": {
+                    "image": "{{icon}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cc-label",
+                  "type": "text",
+                  "props": {
+                    "text": "{{label}}",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Check columns: a centred heading, then a row of check marks with a caption under each. */\n[data-bz-node=\"cc-band\"] > .bz-container { max-width: calc(min(90vw, 1440px) + 32px); }\n[data-bz-section=\"check-columns\"] .bz-block { padding-block: 0; }\n[data-bz-section=\"check-columns\"] h2 { margin: 0; text-align: center; font: 700 1.875rem / 1.2 var(--font-heading); color: #000; letter-spacing: 0; }\n[data-bz-section=\"check-columns\"] [data-bz-node=\"cc-row\"] { margin-top: 64px; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); }\n[data-bz-section=\"check-columns\"] [data-bz-node=\"cc-row\"] > .bz-col { grid-column: auto; padding-inline: 14px; }\n[data-bz-section=\"check-columns\"] .bz-figure { margin: 0; display: flex; justify-content: center; }\n[data-bz-section=\"check-columns\"] .bz-figure img { width: auto; max-width: 100%; height: auto; border-radius: 0; }\n[data-bz-section=\"check-columns\"] [data-bz-node^=\"cc-label\"] .bz-text p { margin: 28px auto 0; white-space: pre-line; text-align: center; font: 400 0.8rem / 1.65 var(--font-body); color: #333; max-width: 190px; }\n[data-bz-section=\"check-columns\"] [data-bz-node^=\"cc-label\"] strong { font-weight: 700; color: #000; }\n@media (max-width: 1100px) { [data-bz-section=\"check-columns\"] [data-bz-node=\"cc-row\"] { grid-template-columns: repeat(4, minmax(0, 1fr)); row-gap: 32px; } }\n@media (max-width: 640px) { [data-bz-section=\"check-columns\"] [data-bz-node=\"cc-row\"] { grid-template-columns: repeat(2, minmax(0, 1fr)); } [data-bz-section=\"check-columns\"] h2 { font-size: 1.5rem; } }\n"
+}

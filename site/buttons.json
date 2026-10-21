@@ -117,5 +117,59 @@
     "intent": "credit-application",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "parts-specials-benefits",
+    "label": "Parts Specials & Benefits",
+    "url": "#parts-specials",
+    "style": "primary",
+    "intent": "parts-specials",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "parts-credit-application",
+    "label": "Credit Application",
+    "url": "#parts-credit",
+    "style": "primary",
+    "intent": "credit-application",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "parts-request-form",
+    "label": "Parts Request Form",
+    "url": "#parts-request",
+    "style": "primary",
+    "intent": "parts-enquiry",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "trucks-customer-portal",
+    "label": "Trucks Customer Portal",
+    "url": "#truck-portal",
+    "style": "primary",
+    "intent": "customer-portal",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "volvo-login",
+    "label": "Volvo Login",
+    "url": "/volvo-login",
+    "style": "primary",
+    "intent": "customer-portal",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "mack-login",
+    "label": "Mack Login",
+    "url": "/mack-login",
+    "style": "primary",
+    "intent": "customer-portal",
+    "newTab": false,
+    "active": true
   }
 ]

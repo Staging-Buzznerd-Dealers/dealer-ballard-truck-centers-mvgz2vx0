@@ -1,0 +1,216 @@
+{
+  "version": 2,
+  "id": "feature-tabs",
+  "name": "Feature tabs",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "key": "intro",
+      "type": "textarea",
+      "label": "Intro"
+    },
+    {
+      "key": "tabs",
+      "type": "list",
+      "label": "Numbered tabs",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Tab label"
+        },
+        {
+          "key": "text",
+          "type": "textarea",
+          "label": "Tab text"
+        }
+      ]
+    },
+    {
+      "key": "knowHeading",
+      "type": "text",
+      "label": "List heading",
+      "default": "Did you know?"
+    },
+    {
+      "key": "know",
+      "type": "textarea",
+      "label": "List (one item per paragraph)"
+    },
+    {
+      "key": "photo",
+      "type": "image",
+      "label": "Photo"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ft-band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "ft-head",
+          "type": "heading",
+          "props": {
+            "text": "{{heading}}",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "ft-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "ft-left",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "ft-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "{{intro}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ft-tabset",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "align": "start"
+                  },
+                  "children": [
+                    {
+                      "id": "ft-tabset-col",
+                      "type": "column",
+                      "props": {
+                        "span": 12,
+                        "align": "start"
+                      },
+                      "children": [
+                        {
+                          "id": "ft-tabs",
+                          "type": "row",
+                          "props": {
+                            "gap": 0,
+                            "align": "start"
+                          },
+                          "children": [
+                            {
+                              "id": "ft-tab",
+                              "type": "column",
+                              "props": {
+                                "span": 1,
+                                "align": "start",
+                                "repeat": "tabs"
+                              },
+                              "children": [
+                                {
+                                  "id": "ft-tab-label",
+                                  "type": "text",
+                                  "props": {
+                                    "text": "{{label}}",
+                                    "align": "center",
+                                    "width": "full"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "ft-panels",
+                          "type": "row",
+                          "props": {
+                            "gap": 0,
+                            "align": "start"
+                          },
+                          "children": [
+                            {
+                              "id": "ft-panel",
+                              "type": "column",
+                              "props": {
+                                "span": 12,
+                                "align": "start",
+                                "repeat": "tabs"
+                              },
+                              "children": [
+                                {
+                                  "id": "ft-panel-text",
+                                  "type": "text",
+                                  "props": {
+                                    "text": "{{text}}",
+                                    "width": "full"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "ft-know",
+                  "type": "text",
+                  "props": {
+                    "text": "{{knowHeading}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ft-list",
+                  "type": "text",
+                  "props": {
+                    "text": "{{know}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ft-right",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "ft-photo",
+                  "type": "image",
+                  "props": {
+                    "image": "{{photo}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Feature tabs: a heading, then intro, numbered tabs and a list on the left and a photo on the right.\n   With no script (and on the Design canvas) every panel is in flow, one under the other; the script\n   adds .is-tabs and shows one at a time. */\n[data-bz-node=\"ft-band\"] > .bz-container { max-width: calc(min(90vw, 1440px) + 32px); }\n[data-bz-section=\"feature-tabs\"] .bz-block { padding-block: 0; }\n[data-bz-section=\"feature-tabs\"] h2 { margin: 0; text-align: center; font: 700 1.875rem / 1.2 var(--font-heading); color: #000; letter-spacing: 0; }\n[data-bz-section=\"feature-tabs\"] [data-bz-node=\"ft-row\"] { margin-top: 52px; align-items: center; }\n[data-bz-section=\"feature-tabs\"] [data-bz-node=\"ft-left\"] { max-width: 570px; margin-left: 81px; }\n[data-bz-section=\"feature-tabs\"] [data-bz-node=\"ft-intro\"] .bz-text p { margin: 0 0 40px; padding-inline: 26px; font: 400 1.15rem / 1.55 var(--font-body); color: #333; max-width: none; }\n[data-bz-section=\"feature-tabs\"] [data-bz-node=\"ft-tabset\"] { background: #ebf7ff; }\n[data-bz-section=\"feature-tabs\"] [data-bz-node=\"ft-tabset-col\"] { padding: 29px 26px 29px; }\n[data-bz-section=\"feature-tabs\"] [data-bz-node=\"ft-tabs\"] { display: flex; gap: 0; }\n[data-bz-section=\"feature-tabs\"] [data-bz-node=\"ft-tabs\"] > .bz-col { flex: 0 0 auto; grid-column: auto; min-width: 56px; }\n[data-bz-section=\"feature-tabs\"] [data-bz-node^=\"ft-tab-label\"] .bz-text p { margin: 0; padding: 18px 0 16px; text-align: center; font: 400 0.8rem / 1 var(--font-body); color: #003550; cursor: pointer; border: 1px solid transparent; border-bottom: 0; }\n[data-bz-section=\"feature-tabs\"] .is-tab-active [data-bz-node^=\"ft-tab-label\"] .bz-text p, [data-bz-section=\"feature-tabs\"] [data-bz-node=\"ft-tabs\"] > .bz-col:first-child:not(.is-tabbed) [data-bz-node^=\"ft-tab-label\"] .bz-text p { border-color: #003550; background: #fff; position: relative; z-index: 1; margin-bottom: -1px; }\n[data-bz-section=\"feature-tabs\"] [data-bz-node=\"ft-panels\"] { border: 1px solid #003550; background: #fff; padding: 28px 30px 30px; margin-top: 0; }\n[data-bz-section=\"feature-tabs\"] [data-bz-node^=\"ft-panel-text\"] .bz-text p { margin: 0; font: 400 0.8rem / 1.5 var(--font-body); color: #333; max-width: none; }\n[data-bz-section=\"feature-tabs\"] .is-tabs [data-bz-node=\"ft-panels\"] > .bz-col:not(.is-tab-active) { display: none; }\n[data-bz-section=\"feature-tabs\"] [data-bz-node=\"ft-know\"] { margin-top: 40px; }\n[data-bz-section=\"feature-tabs\"] [data-bz-node=\"ft-know\"] .bz-text p { margin: 0 0 16px; padding-inline: 26px; font: 700 0.8rem / 1.2 var(--font-body); color: #000; }\n[data-bz-section=\"feature-tabs\"] [data-bz-node=\"ft-list\"] .bz-text p { position: relative; margin: 0 0 4px; padding: 0 112px 0 28px; font: 400 0.88rem / 1.6 var(--font-body); color: #333; max-width: none; }\n[data-bz-section=\"feature-tabs\"] [data-bz-node=\"ft-list\"] .bz-text p::before { content: \"\"; position: absolute; left: 10px; top: 0.7em; width: 4px; height: 4px; border-radius: 50%; background: #333; }\n[data-bz-section=\"feature-tabs\"] [data-bz-node=\"ft-photo\"] .bz-figure { margin: 0; text-align: center; }\n[data-bz-section=\"feature-tabs\"] [data-bz-node=\"ft-photo\"] img { display: inline-block; width: 100%; max-width: 600px; height: auto; border-radius: 0; }\n@media (max-width: 1100px) { [data-bz-section=\"feature-tabs\"] [data-bz-node=\"ft-left\"] { margin-left: 0; max-width: none; } [data-bz-section=\"feature-tabs\"] [data-bz-node=\"ft-intro\"] .bz-text p, [data-bz-section=\"feature-tabs\"] [data-bz-node=\"ft-know\"] .bz-text p { padding-inline: 0; } [data-bz-section=\"feature-tabs\"] [data-bz-node=\"ft-list\"] .bz-text p { padding-right: 0; } [data-bz-section=\"feature-tabs\"] [data-bz-node=\"ft-tabset-col\"] { padding: 20px 14px; } [data-bz-section=\"feature-tabs\"] [data-bz-node=\"ft-tabs\"] { flex-wrap: wrap; } }\n@media (max-width: 640px) { [data-bz-section=\"feature-tabs\"] h2 { font-size: 1.5rem; } }\n",
+  "js": "/* Feature tabs: the numbered tabs show one panel at a time. There is no behaviour for numbered tabs,\n   so this is the whole of it: click or arrow keys, one panel visible, the matching tab marked. */\n(function () {\n  document.querySelectorAll('[data-bz-section=\"feature-tabs\"]').forEach(function (root) {\n    if (root.__bzTabs) return;\n    root.__bzTabs = true;\n    var tabs = root.querySelectorAll('[data-bz-node=\"ft-tabs\"] > .bz-col');\n    var panels = root.querySelectorAll('[data-bz-node=\"ft-panels\"] > .bz-col');\n    if (!tabs.length || tabs.length !== panels.length) return;\n    var list = root.querySelector('[data-bz-node=\"ft-tabs\"]');\n    list.setAttribute('role', 'tablist');\n    function show(i) {\n      tabs.forEach(function (t, j) {\n        t.classList.add('is-tabbed');\n        t.classList.toggle('is-tab-active', i === j);\n        t.setAttribute('aria-selected', i === j ? 'true' : 'false');\n        t.setAttribute('tabindex', i === j ? '0' : '-1');\n        panels[j].classList.toggle('is-tab-active', i === j);\n      });\n    }\n    root.classList.add('is-tabs');\n    tabs.forEach(function (t, i) {\n      t.setAttribute('role', 'tab');\n      t.addEventListener('click', function () { show(i); });\n      t.addEventListener('keydown', function (e) {\n        var n = e.key === 'ArrowRight' ? i + 1 : e.key === 'ArrowLeft' ? i - 1 : -1;\n        if (n >= 0 && n < tabs.length) { show(n); tabs[n].focus(); e.preventDefault(); }\n      });\n    });\n    show(0);\n  });\n})();\n"
+}

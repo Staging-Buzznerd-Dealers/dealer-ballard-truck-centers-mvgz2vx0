@@ -1,0 +1,990 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "pt-title",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "pt-title-h",
+          "type": "heading",
+          "props": {
+            "text": "Parts",
+            "headingLevel": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "pt-hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center"
+      },
+      "children": [
+        {
+          "id": "pt-hero-icon",
+          "type": "image",
+          "props": {
+            "image": {
+              "src": "/parts/hero-box.svg",
+              "alt": "Parts",
+              "width": 55,
+              "height": 58
+            },
+            "width": "full"
+          }
+        },
+        {
+          "id": "pt-hero-h",
+          "type": "heading",
+          "props": {
+            "text": "A parts inventory that has you covered",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "pt-hero-t",
+          "type": "text",
+          "props": {
+            "text": "Our parts team is ready to help you find whatever you need to get your truck back on the road and performing at its best.\n\nWith over $10 million in inventory across New England, we have you covered.",
+            "align": "center",
+            "width": "full"
+          }
+        },
+        {
+          "id": "pt-hero-ctas",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "center",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "pt-hero-cta-a",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "auto"
+              },
+              "children": [
+                {
+                  "id": "pt-hero-cta-a-btns",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "parts-specials-benefits"
+                      },
+                      {
+                        "ctaId": "parts-credit-application"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "pt-hero-cta-b",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "auto"
+              },
+              "children": [
+                {
+                  "id": "pt-hero-cta-b-btns",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "parts-request-form"
+                      },
+                      {
+                        "ctaId": "trucks-customer-portal"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "styles": {
+        "base": {
+          "backgroundImage": "/parts/hero-parts.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center"
+        }
+      }
+    },
+    {
+      "id": "pt-specials",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "special-columns",
+        "values": {
+          "heading": "Parts Specials & Benefits",
+          "intro": "Order parts over the phone, through our Parts Request Form, online through PartsASSIST, or visit any one of our <a href=\"/locations\">locations</a> across New England.",
+          "items": [
+            {
+              "icon": {
+                "src": "/parts/bell.svg",
+                "alt": "Limited Time Specials",
+                "width": 61,
+                "height": 61
+              },
+              "title": "Limited Time Specials",
+              "desc": "Be sure to take a look at our short-cycle\nspecials, for a limited and\nwhile supplies last.",
+              "ctaLabel": "View Specials",
+              "ctaUrl": "/parts-specials/limited-time.pdf"
+            },
+            {
+              "icon": {
+                "src": "/parts/pie.svg",
+                "alt": "Quarterly Specials",
+                "width": 64,
+                "height": 61
+              },
+              "title": "Quarterly Specials",
+              "desc": "Every quarter we offer specials for specific\nproducts. Be sure to check back to find the\nlatest deals.",
+              "ctaLabel": "View Specials",
+              "ctaUrl": "/parts-specials/quarterly.pdf"
+            },
+            {
+              "icon": {
+                "src": "/parts/calendar.svg",
+                "alt": "Semi-Annual Specials",
+                "width": 64,
+                "height": 64
+              },
+              "title": "Semi-Annual Specials",
+              "desc": "Our semi-annual specials include a more\nextensive list of featured items that we\nupdate twice per year.",
+              "ctaLabel": "View Specials",
+              "ctaUrl": "/parts-specials/semi-annual.pdf"
+            },
+            {
+              "icon": {
+                "src": "/parts/delivery.svg",
+                "alt": "Free Delivery",
+                "width": 67,
+                "height": 55
+              },
+              "title": "Free Delivery",
+              "desc": "Our parts drivers will deliver right to your\ndoor, free of charge.",
+              "ctaLabel": "Contact Us",
+              "ctaUrl": "/contact"
+            }
+          ]
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "pt-contact",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "paddingY": 0,
+        "background": "ink",
+        "anchor": "parts-credit"
+      },
+      "children": [
+        {
+          "id": "pt-contact-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "pt-contact-copy",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "auto"
+              },
+              "children": [
+                {
+                  "id": "pt-contact-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ballard Parts Credit Application",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "pt-contact-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Thank you for your interest in a credit account with Ballard Truck Centers. Creating an account with us will allow you to charge your purchases in our Parts and Service departments across all of our locations.\n\nCredit accounts do not apply to purchases of new or used vehicles.\n\nPlease note this form could take 15-20 minutes to complete.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pt-contact-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "service-get-started"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "pt-contact-card",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "start"
+              },
+              "children": [
+                {
+                  "id": "pt-form-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Parts Request Form",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "pt-form-t",
+                  "type": "text",
+                  "props": {
+                    "text": "To order or learn more about parts, you may contact us using the form below. If you need immediate assistance, please call us at <a href=\"tel:+18004211576\">(800) 421-1576</a>.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pt-contact-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "parts-request",
+                    "anchor": "parts-request"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt-portal",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card",
+        "anchor": "truck-portal"
+      },
+      "children": [
+        {
+          "id": "pt-portal-h",
+          "type": "heading",
+          "props": {
+            "text": "Trucks Customer Portal",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "pt-portal-t",
+          "type": "text",
+          "props": {
+            "text": "For customers with existing accounts, please make your selection below. If you do not currently have an account, please contact <a href=\"mailto:jnisbet@ballardtrucks.com\">jnisbet@ballardtrucks.com</a>.",
+            "align": "center",
+            "width": "full"
+          }
+        },
+        {
+          "id": "pt-portal-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "start",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "pt-portal-volvo",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "pt-portal-volvo-logo",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/parts/logos/volvo-clear.svg",
+                      "alt": "Volvo",
+                      "width": 171,
+                      "height": 23
+                    },
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pt-portal-volvo-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "volvo-login"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "pt-portal-mack",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "pt-portal-mack-logo",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/parts/logos/mack-clear.svg",
+                      "alt": "Mack",
+                      "width": 153,
+                      "height": 80
+                    },
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pt-portal-mack-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "mack-login"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt-reman",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-tabs",
+        "values": {
+          "heading": "Why Genuine Mack Reman Carriers from Ballard?",
+          "intro": "Get peace of mind with quality Mack Reman carriers now with improved availability and competitive pricing.",
+          "tabs": [
+            {
+              "label": "1",
+              "text": "Includes an all-new breather."
+            },
+            {
+              "label": "2",
+              "text": ""
+            },
+            {
+              "label": "3",
+              "text": ""
+            },
+            {
+              "label": "4",
+              "text": ""
+            },
+            {
+              "label": "5",
+              "text": ""
+            },
+            {
+              "label": "6",
+              "text": ""
+            },
+            {
+              "label": "7",
+              "text": ""
+            },
+            {
+              "label": "8",
+              "text": ""
+            }
+          ],
+          "knowHeading": "Did you know?",
+          "know": "Mack Remanufactured carriers are better than the originals, as they receive the latest engineering updates.\n\nOnly the OEM can bring the product up to the current OE specifications. Other rebuilders do not have access to these engineering specs.\n\nThe Middletown Reman plant technicians have years of experience and ONLY work on genuine Mack carriers.\n\nEvery ReMack carrier comes with a 2 year/unlimited mileage warranty.",
+          "photo": {
+            "src": "/parts/mack-reman-carrier.jpg",
+            "alt": "A Mack remanufactured carrier with its numbered features marked",
+            "width": 824,
+            "height": 736
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "pt-stock",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "check-columns",
+        "values": {
+          "heading": "What We Stock, & Then Some",
+          "icon": {
+            "src": "/parts/check.svg",
+            "alt": "",
+            "width": 44,
+            "height": 44
+          },
+          "items": [
+            {
+              "label": "Genuine &\nAftermarket Parts"
+            },
+            {
+              "label": "<strong>Reitnouer, Trail King,\n& XL Specialized\nTrailer Parts</strong>"
+            },
+            {
+              "label": "<strong>ReadChoice\nTruck Parts</strong>"
+            },
+            {
+              "label": "Oils, Coolants, &\nOther Fluid Products"
+            },
+            {
+              "label": "Mirrors, Chrome, &\nOther Accessories"
+            },
+            {
+              "label": "Cleaning Solutions\n& Equipment"
+            },
+            {
+              "label": "Wiper Blades &\nOther Expendables"
+            }
+          ]
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "pt-brands",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "pt-brands-h",
+          "type": "heading",
+          "props": {
+            "text": "Genuine & Aftermarket Part Brands",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "pt-brands-logos",
+          "type": "logoStrip",
+          "props": {
+            "logos": [
+              {
+                "name": "Mack",
+                "image": {
+                  "src": "/parts/logos/mack.svg",
+                  "alt": "Mack",
+                  "width": 153,
+                  "height": 80
+                }
+              },
+              {
+                "name": "Volvo",
+                "image": {
+                  "src": "/parts/logos/volvo.svg",
+                  "alt": "Volvo",
+                  "width": 171,
+                  "height": 23
+                }
+              },
+              {
+                "name": "Isuzu",
+                "image": {
+                  "src": "/parts/logos/isuzu.svg",
+                  "alt": "Isuzu",
+                  "width": 87,
+                  "height": 87
+                }
+              },
+              {
+                "name": "Hino",
+                "image": {
+                  "src": "/parts/logos/hino.svg",
+                  "alt": "Hino",
+                  "width": 101,
+                  "height": 84
+                }
+              },
+              {
+                "name": "Fuso",
+                "image": {
+                  "src": "/parts/logos/fuso.svg",
+                  "alt": "Fuso",
+                  "width": 98,
+                  "height": 98
+                }
+              },
+              {
+                "name": "Road Choice",
+                "image": {
+                  "src": "/parts/logos/road-choice.svg",
+                  "alt": "Road Choice",
+                  "width": 191,
+                  "height": 58
+                }
+              },
+              {
+                "name": "Prevost",
+                "image": {
+                  "src": "/parts/logos/prevost.svg",
+                  "alt": "Prevost",
+                  "width": 182,
+                  "height": 29
+                }
+              },
+              {
+                "name": "Cummins",
+                "image": {
+                  "src": "/parts/logos/cummins.svg",
+                  "alt": "Cummins",
+                  "width": 98,
+                  "height": 93
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "pt-more-h",
+          "type": "heading",
+          "props": {
+            "text": "More Trusted Brands We Support",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "pt-more-logos",
+          "type": "logoStrip",
+          "props": {
+            "logos": [
+              {
+                "name": "Accuride",
+                "image": {
+                  "src": "/parts/logos/accuride.svg",
+                  "alt": "Accuride",
+                  "width": 203,
+                  "height": 52
+                }
+              },
+              {
+                "name": "Allison Transmission",
+                "image": {
+                  "src": "/parts/logos/allison.svg",
+                  "alt": "Allison Transmission",
+                  "width": 182,
+                  "height": 55
+                }
+              },
+              {
+                "name": "American Chrome",
+                "image": {
+                  "src": "/parts/logos/american-chrome.svg",
+                  "alt": "American Chrome",
+                  "width": 185,
+                  "height": 58
+                }
+              },
+              {
+                "name": "ATRO",
+                "image": {
+                  "src": "/parts/logos/atro.svg",
+                  "alt": "ATRO",
+                  "width": 139,
+                  "height": 72
+                }
+              },
+              {
+                "name": "Automann",
+                "image": {
+                  "src": "/parts/logos/automann.svg",
+                  "alt": "Automann",
+                  "width": 211,
+                  "height": 49
+                }
+              },
+              {
+                "name": "Bendix",
+                "image": {
+                  "src": "/parts/logos/bendix.svg",
+                  "alt": "Bendix",
+                  "width": 127,
+                  "height": 81
+                }
+              },
+              {
+                "name": "Bostrom",
+                "image": {
+                  "src": "/parts/logos/bostrom.svg",
+                  "alt": "Bostrom",
+                  "width": 159,
+                  "height": 52
+                }
+              },
+              {
+                "name": "CR Seals",
+                "image": {
+                  "src": "/parts/logos/cr-seals.svg",
+                  "alt": "CR Seals",
+                  "width": 93,
+                  "height": 101
+                }
+              },
+              {
+                "name": "Dayco",
+                "image": {
+                  "src": "/parts/logos/dayco.svg",
+                  "alt": "Dayco",
+                  "width": 197,
+                  "height": 58
+                }
+              },
+              {
+                "name": "Delco Remy",
+                "image": {
+                  "src": "/parts/logos/delco-remy.svg",
+                  "alt": "Delco Remy",
+                  "width": 96,
+                  "height": 98
+                }
+              },
+              {
+                "name": "DEX",
+                "image": {
+                  "src": "/parts/logos/dex.svg",
+                  "alt": "DEX",
+                  "width": 107,
+                  "height": 107
+                }
+              },
+              {
+                "name": "Donaldson",
+                "image": {
+                  "src": "/parts/logos/donaldson.svg",
+                  "alt": "Donaldson",
+                  "width": 197,
+                  "height": 58
+                }
+              },
+              {
+                "name": "East Penn",
+                "image": {
+                  "src": "/parts/logos/east-penn.svg",
+                  "alt": "East Penn",
+                  "width": 171,
+                  "height": 46
+                }
+              },
+              {
+                "name": "Eaton",
+                "image": {
+                  "src": "/parts/logos/eaton.svg",
+                  "alt": "Eaton",
+                  "width": 168,
+                  "height": 58
+                }
+              },
+              {
+                "name": "Exide",
+                "image": {
+                  "src": "/parts/logos/exide.svg",
+                  "alt": "Exide",
+                  "width": 171,
+                  "height": 64
+                }
+              },
+              {
+                "name": "ExxonMobil",
+                "image": {
+                  "src": "/parts/logos/exxonmobil.svg",
+                  "alt": "ExxonMobil",
+                  "width": 171,
+                  "height": 43
+                }
+              },
+              {
+                "name": "Fleetguard",
+                "image": {
+                  "src": "/parts/logos/fleetguard.svg",
+                  "alt": "Fleetguard",
+                  "width": 116,
+                  "height": 87
+                }
+              },
+              {
+                "name": "FleetValue",
+                "image": {
+                  "src": "/parts/logos/fleetvalue.svg",
+                  "alt": "FleetValue",
+                  "width": 168,
+                  "height": 70
+                }
+              },
+              {
+                "name": "Fontaine",
+                "image": {
+                  "src": "/parts/logos/fontaine.svg",
+                  "alt": "Fontaine",
+                  "width": 156,
+                  "height": 87
+                }
+              },
+              {
+                "name": "Grote",
+                "image": {
+                  "src": "/parts/logos/grote.svg",
+                  "alt": "Grote",
+                  "width": 130,
+                  "height": 81
+                }
+              },
+              {
+                "name": "Hendrickson",
+                "image": {
+                  "src": "/parts/logos/hendrickson.svg",
+                  "alt": "Hendrickson",
+                  "width": 203,
+                  "height": 52
+                }
+              },
+              {
+                "name": "SAF-Holland",
+                "image": {
+                  "src": "/parts/logos/saf-holland.svg",
+                  "alt": "SAF-Holland",
+                  "width": 185,
+                  "height": 58
+                }
+              },
+              {
+                "name": "JOST",
+                "image": {
+                  "src": "/parts/logos/jost.svg",
+                  "alt": "JOST",
+                  "width": 139,
+                  "height": 49
+                }
+              },
+              {
+                "name": "Meritor",
+                "image": {
+                  "src": "/parts/logos/meritor.svg",
+                  "alt": "Meritor",
+                  "width": 171,
+                  "height": 101
+                }
+              },
+              {
+                "name": "MGM Brakes",
+                "image": {
+                  "src": "/parts/logos/mgm-brakes.svg",
+                  "alt": "MGM Brakes",
+                  "width": 188,
+                  "height": 64
+                }
+              },
+              {
+                "name": "Neapco",
+                "image": {
+                  "src": "/parts/logos/neapco.svg",
+                  "alt": "Neapco",
+                  "width": 156,
+                  "height": 58
+                }
+              },
+              {
+                "name": "Bower NTN",
+                "image": {
+                  "src": "/parts/logos/bower-ntn.svg",
+                  "alt": "Bower NTN",
+                  "width": 177,
+                  "height": 38
+                }
+              },
+              {
+                "name": "Oilzum",
+                "image": {
+                  "src": "/parts/logos/oilzum.svg",
+                  "alt": "Oilzum",
+                  "width": 107,
+                  "height": 107
+                }
+              },
+              {
+                "name": "Pana Pacific",
+                "image": {
+                  "src": "/parts/logos/pana-pacific.svg",
+                  "alt": "Pana Pacific",
+                  "width": 136,
+                  "height": 67
+                }
+              },
+              {
+                "name": "Parker",
+                "image": {
+                  "src": "/parts/logos/parker.svg",
+                  "alt": "Parker",
+                  "width": 151,
+                  "height": 64
+                }
+              },
+              {
+                "name": "Permatex",
+                "image": {
+                  "src": "/parts/logos/permatex.svg",
+                  "alt": "Permatex",
+                  "width": 194,
+                  "height": 55
+                }
+              },
+              {
+                "name": "RedDOT",
+                "image": {
+                  "src": "/parts/logos/redot.svg",
+                  "alt": "RedDOT",
+                  "width": 177,
+                  "height": 64
+                }
+              },
+              {
+                "name": "Seats",
+                "image": {
+                  "src": "/parts/logos/seats.svg",
+                  "alt": "Seats",
+                  "width": 185,
+                  "height": 49
+                }
+              },
+              {
+                "name": "Silverback",
+                "image": {
+                  "src": "/parts/logos/silverback.svg",
+                  "alt": "Silverback",
+                  "width": 171,
+                  "height": 64
+                }
+              },
+              {
+                "name": "Stemco",
+                "image": {
+                  "src": "/parts/logos/stemco.svg",
+                  "alt": "Stemco",
+                  "width": 174,
+                  "height": 84
+                }
+              },
+              {
+                "name": "Tramec Sloan",
+                "image": {
+                  "src": "/parts/logos/tramec-sloan.svg",
+                  "alt": "Tramec Sloan",
+                  "width": 174,
+                  "height": 46
+                }
+              },
+              {
+                "name": "Truck-Lite",
+                "image": {
+                  "src": "/parts/logos/truck-lite.svg",
+                  "alt": "Truck-Lite",
+                  "width": 165,
+                  "height": 67
+                }
+              },
+              {
+                "name": "Velvac",
+                "image": {
+                  "src": "/parts/logos/velvac.svg",
+                  "alt": "Velvac",
+                  "width": 159,
+                  "height": 43
+                }
+              },
+              {
+                "name": "WAB",
+                "image": {
+                  "src": "/parts/logos/wab.svg",
+                  "alt": "WAB",
+                  "width": 162,
+                  "height": 49
+                }
+              },
+              {
+                "name": "WABCO",
+                "image": {
+                  "src": "/parts/logos/wabco.svg",
+                  "alt": "WABCO",
+                  "width": 180,
+                  "height": 43
+                }
+              },
+              {
+                "name": "Webb",
+                "image": {
+                  "src": "/parts/logos/webb.svg",
+                  "alt": "Webb",
+                  "width": 194,
+                  "height": 55
+                }
+              },
+              {
+                "name": "Würth",
+                "image": {
+                  "src": "/parts/logos/wurth.svg",
+                  "alt": "Würth",
+                  "width": 180,
+                  "height": 49
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
