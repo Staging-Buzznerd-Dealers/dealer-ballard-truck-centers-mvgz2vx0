@@ -1,0 +1,122 @@
+{
+  "version": 2,
+  "id": "feature-split",
+  "name": "Feature split",
+  "props": [
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Sections",
+      "fields": [
+        {
+          "key": "heading",
+          "type": "text",
+          "label": "Heading"
+        },
+        {
+          "key": "text",
+          "type": "textarea",
+          "label": "Text (paragraphs separated by a blank line)"
+        },
+        {
+          "key": "ctaLabel",
+          "type": "text",
+          "label": "Button label"
+        },
+        {
+          "key": "ctaUrl",
+          "type": "url",
+          "label": "Button link"
+        },
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Photo"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "fs-band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "none",
+        "paddingY": 0,
+        "repeat": "items"
+      },
+      "children": [
+        {
+          "id": "fs-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "fs-copy",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "fs-head",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "fs-text",
+                  "type": "text",
+                  "props": {
+                    "text": "{{text}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fs-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{ctaLabel}}",
+                        "url": "{{ctaUrl}}"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "fs-media",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "fs-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Feature split: a heading, copy and a button beside a photograph. Rows alternate: the first has the photo on\n   the right, the second on the left (on a pale panel), and so on. */\n[data-bz-node^=\"fs-band\"] { background: #fff; }\n[data-bz-node^=\"fs-band\"] > .bz-container { max-width: min(90vw, 1440px); }\n[data-bz-section=\"feature-split\"] .bz-block { padding-block: 0; }\n[data-bz-node^=\"fs-row\"] { align-items: center; }\n[data-bz-node^=\"fs-copy\"] { padding: 0 40px 0 24px; }\n[data-bz-section=\"feature-split\"] h2 { margin: 0 0 22px; font: 700 1.9rem / 1.2 var(--font-heading); color: #000; letter-spacing: 0; }\n[data-bz-node^=\"fs-text\"] .bz-text p { margin: 0 0 14px; font: 400 0.8rem / 1.7 var(--font-body); color: #000; max-width: none; }\n[data-bz-node^=\"fs-cta\"] { margin-top: 24px; }\n[data-bz-node^=\"fs-cta\"] .bz-btn { height: 41px; padding: 0 22px; border-radius: 0; font: 700 0.85rem / 41px var(--font-body); background: var(--accent); color: #fff; }\n[data-bz-node^=\"fs-media\"] .bz-figure { margin: 0; }\n[data-bz-node^=\"fs-media\"] img { display: block; width: 100%; height: auto; border-radius: 0; }\n[data-bz-node=\"fs-band-1\"], [data-bz-node=\"fs-band-3\"] { padding-block: 72px 48px; }\n[data-bz-node=\"fs-band-3\"] { padding-block: 72px 48px; }\n[data-bz-node=\"fs-band-2\"] > .bz-container { background: #ebf7ff; padding: 30px 0 30px 30px; }\n[data-bz-node=\"fs-band-2\"] { padding-block: 30px 0; }\n[data-bz-node=\"fs-band-2\"] [data-bz-node^=\"fs-row\"] > [data-bz-node^=\"fs-copy\"] { order: 2; padding: 0 70px 0 60px; }\n[data-bz-node=\"fs-band-2\"] [data-bz-node^=\"fs-row\"] > [data-bz-node^=\"fs-media\"] { order: 1; }\n@media (max-width: 1100px) { [data-bz-node^=\"fs-copy\"], [data-bz-node=\"fs-band-2\"] [data-bz-node^=\"fs-row\"] > [data-bz-node^=\"fs-copy\"] { padding: 24px; order: 2; } [data-bz-node^=\"fs-media\"] { order: 1; } [data-bz-node^=\"fs-band\"] { padding-block: 32px 0 !important; } [data-bz-node=\"fs-band-2\"] > .bz-container { padding: 0; } }\n"
+}

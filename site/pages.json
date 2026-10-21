@@ -170,5 +170,25 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "location-detail",
+    "title": "{{city}}, {{region}}",
+    "description": "{{name}}: address, phone, hours, services and contacts for {{city}}, {{region}}.",
+    "path": "/locations/:slug",
+    "out": "locations/:slug/index.html",
+    "dir": "location-detail",
+    "group": "ballard",
+    "forEach": "locations",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]
