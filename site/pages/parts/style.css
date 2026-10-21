@@ -1,0 +1,120 @@
+/* Parts. Measured from the reference screenshot, a 1920px window scaled to 663px wide
+   (one screenshot pixel is about 2.9 CSS pixels). Colours and fonts come from the Ballard
+   template and the design system. */
+
+[data-bz-node="pt-title"] > .bz-container,
+[data-bz-node="pt-hero"] > .bz-container,
+[data-bz-node="pt-portal"] > .bz-container { max-width: calc(min(90vw, 1440px) + 32px); }
+[data-bz-node^="pt-"] .bz-block { padding-block: 0; }
+
+/* Active item in the main navigation */
+[data-bz-node="hm-main-nav"] a[href="/parts"] { color: var(--accent); }
+
+/* Page title band */
+[data-bz-node="pt-title"] { background: #003550; padding-block: 34px 17px; }
+[data-bz-node="pt-title-h"] h1 { margin: 0; font: 700 2.8rem / 1.2 var(--font-heading); color: #fff; }
+
+/* Hero. The photo is set on this section in the Styles panel (Background image). The photo that
+   ships here was cut from the reference, so it is already navy and the layer below is at 0%. When
+   the original black and white photo is uploaded, set the 0% to 80% to tone it the same way. */
+[data-bz-node="pt-hero"] { display: flex; align-items: center; min-height: 394px; padding-top: 10px; background-color: #0b3b57; background-size: cover; background-position: center; position: relative; }
+[data-bz-node="pt-hero"]::before { content: ""; position: absolute; inset: 0; background: rgb(0 53 80 / 0%); pointer-events: none; }
+[data-bz-node="pt-hero"] > .bz-container { position: relative; width: 100%; text-align: center; }
+[data-bz-node="pt-hero-icon"] .bz-figure { display: flex; justify-content: center; margin: 0; }
+[data-bz-node="pt-hero-icon"] img { width: auto; max-width: 100%; height: auto; border-radius: 0; }
+[data-bz-node="pt-hero-h"] h2 { margin: 28px 0 0; text-align: center; text-transform: uppercase; font: 700 1.875rem / 1.2 var(--font-heading); color: #fff; }
+[data-bz-node="pt-hero-t"] .bz-text p { margin: 14px 0 0; text-align: center; font: 400 1.185rem / 1.4 var(--font-body); color: #fff; max-width: none; }
+[data-bz-node="pt-hero-ctas"] { margin-top: 32px; display: flex; justify-content: center; gap: 46px; }
+[data-bz-node="pt-hero-ctas"] > .bz-col { flex: 0 0 auto; grid-column: auto; }
+[data-bz-node="pt-hero-ctas"] .bz-btns { gap: 46px; }
+[data-bz-node="pt-hero-ctas"] .bz-btn { height: 41px; padding: 0 22px; border-radius: 0; font: 700 1.09rem / 41px var(--font-body); background: var(--accent); color: #fff; }
+
+/* Parts specials (the special columns component carries the rest of its styling) */
+[data-bz-section="special-columns"] { padding-block: 78px 98px; background: #fff; }
+
+/* Credit application and request form: a navy band as wide as the page, copy and card on the page grid */
+[data-bz-node="pt-contact"] { background: #003650; }
+[data-bz-node="pt-contact-row"] { width: 100%; max-width: min(90vw, 1440px); margin-inline: auto; align-items: stretch; }
+[data-bz-node="pt-contact-copy"] { min-height: 654px; display: flex; flex-direction: column; justify-content: center; padding: 0 28px 0 99px; box-sizing: border-box; }
+[data-bz-node="pt-contact-h"] h2 { margin: 0 0 34px; font: 700 1.75rem / 1.2 var(--font-heading); color: var(--accent); }
+[data-bz-node="pt-contact-t"] .bz-text p { margin: 0 0 14px; font: 400 1.19rem / 1.5 var(--font-body); color: #fff; max-width: 540px; }
+[data-bz-node="pt-contact-cta"] { margin-top: 50px; }
+[data-bz-node="pt-contact-cta"] .bz-btn { height: 41px; padding: 0 22px; border-radius: 0; font: 700 1.09rem / 41px var(--font-body); background: var(--accent); color: #fff; }
+[data-bz-node="pt-form-h"] h2 { margin: 8px 0 14px; text-transform: uppercase; font: 700 1.875rem / 1.2 var(--font-heading); color: #000; }
+[data-bz-node="pt-form-t"] .bz-text p { margin: 0 0 10px; font: 400 0.95rem / 1.6 var(--font-body); color: #000; max-width: none; }
+[data-bz-node="pt-form-t"] .bz-text a { color: var(--accent); text-decoration: none; }
+[data-bz-node="pt-contact-card"] { position: relative; z-index: 1; margin: -52px 0 0; align-self: stretch; background: #fdfdfd; box-shadow: 0 2px 14px rgba(0, 0, 0, 0.22); padding: 82px 47px 57px; box-sizing: border-box; }
+[data-bz-node="pt-contact-form"] .bz-formblock { max-width: none; }
+[data-bz-node="pt-contact-form"] .bz-form { background: none; border: 0; padding: 0; max-width: none; gap: 11px 16px; }
+[data-bz-node="pt-contact-form"] .bz-form__t { display: none; }
+[data-bz-node="pt-contact-form"] .bz-label { font: 400 0.9rem / 1.3 var(--font-body); color: #000; }
+[data-bz-node="pt-contact-form"] .bz-req { font-size: 0; }
+[data-bz-node="pt-contact-form"] .bz-req::after { content: "(Required)"; margin-left: 3px; font: italic 400 0.62rem / 1 var(--font-body); color: #c02b0a; }
+[data-bz-node="pt-contact-form"] .bz-input, [data-bz-node="pt-contact-form"] textarea, [data-bz-node="pt-contact-form"] select { padding: 0 8px; line-height: 36px; border: 1px solid #8d9199; border-radius: 3px; background: #fff; font: 400 0.9rem / 1.3 var(--font-body); }
+[data-bz-node="pt-contact-form"] .bz-input { height: 38px; min-height: 0; }
+[data-bz-node="pt-contact-form"] select.bz-input { padding: 0 8px; line-height: normal; }
+[data-bz-node="pt-contact-form"] textarea.bz-input { height: 86px; min-height: 86px; width: 100%; box-sizing: border-box; }
+[data-bz-node="pt-contact-form"] .bz-form > .bz-btn { flex: 0 0 auto; width: auto; height: 41px; margin-top: 18px; padding: 0 24px; border-radius: 0; font: 700 0.95rem / 1 var(--font-body); }
+/* "Name" group label above First / Last, with each sub-label below its input */
+[data-bz-node="pt-contact-form"] [data-bz-field="pr-first"], [data-bz-node="pt-contact-form"] [data-bz-field="pr-last"] { display: flex; flex-direction: column; }
+[data-bz-node="pt-contact-form"] [data-bz-field="pr-first"] .bz-input, [data-bz-node="pt-contact-form"] [data-bz-field="pr-last"] .bz-input { order: 2; }
+[data-bz-node="pt-contact-form"] [data-bz-field="pr-first"] .bz-label, [data-bz-node="pt-contact-form"] [data-bz-field="pr-last"] .bz-label { order: 3; margin: -4px 0 7px; font-size: 0.72rem; }
+[data-bz-node="pt-contact-form"] [data-bz-field="pr-first"] .bz-req, [data-bz-node="pt-contact-form"] [data-bz-field="pr-last"] .bz-req { display: none; }
+[data-bz-node="pt-contact-form"] [data-bz-field="pr-first"]::before, [data-bz-node="pt-contact-form"] [data-bz-field="pr-last"]::before { content: "Name"; order: 1; margin-bottom: -2px; padding-bottom: 4px; border-bottom: 1px solid #e1e1e1; font: 400 0.9rem / 1.3 var(--font-body); color: #000; }
+[data-bz-node="pt-contact-form"] [data-bz-field="pr-first"]::before { margin-right: -16px; }
+[data-bz-node="pt-contact-form"] [data-bz-field="pr-last"]::before { color: transparent; }
+[data-bz-node="pt-contact-form"] [data-bz-field="pr-first"] { position: relative; }
+[data-bz-node="pt-contact-form"] [data-bz-field="pr-first"]::after { content: "(Required)"; position: absolute; left: 40px; top: 3px; font: italic 400 0.62rem / 1 var(--font-body); color: #c02b0a; }
+
+
+/* Trucks customer portal: a pale panel, a logo and a login button each */
+[data-bz-node="pt-portal"] { background: #fff; }
+[data-bz-node="pt-portal"] > .bz-container { max-width: min(90vw, 1440px); background: #e9f6ff; padding: 94px 0 59px; }
+[data-bz-node="pt-portal-h"] h2 { margin: 0; text-align: center; font: 700 1.875rem / 1.2 var(--font-heading); color: #000; letter-spacing: 0; }
+[data-bz-node="pt-portal-t"] .bz-text p { margin: 14px 0 0; text-align: center; font: 400 1rem / 1.4 var(--font-body); color: #000; max-width: none; }
+[data-bz-node="pt-portal-t"] a { color: var(--accent); text-decoration: none; }
+[data-bz-node="pt-portal-row"] { margin: 71px auto 0; max-width: 806px; }
+[data-bz-node="pt-portal-volvo-logo"] .bz-figure, [data-bz-node="pt-portal-mack-logo"] .bz-figure { margin: 0; display: flex; justify-content: center; align-items: center; height: 90px; }
+[data-bz-node="pt-portal-volvo-logo"] img, [data-bz-node="pt-portal-mack-logo"] img { width: auto; max-width: 100%; height: auto; border-radius: 0; }
+[data-bz-node^="pt-portal-"][data-bz-node$="-cta"] { margin-top: 32px; }
+[data-bz-node^="pt-portal-"][data-bz-node$="-cta"] .bz-btn { height: 41px; padding: 0 22px; border-radius: 0; font: 700 1.09rem / 41px var(--font-body); background: var(--accent); color: #fff; }
+[data-bz-node^="pt-portal-"][data-bz-node$="-cta"] .bz-btn::before { content: ""; display: inline-block; width: 12px; height: 14px; margin: 0 8px -2px 0; background: #fff; -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Ccircle cx='7' cy='4' r='3.200'/%3E%3Cpath d='M1 13c0-3.300 2.700-5 6-5s6 1.700 6 5z'/%3E%3C/svg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Ccircle cx='7' cy='4' r='3.200'/%3E%3Cpath d='M1 13c0-3.300 2.700-5 6-5s6 1.700 6 5z'/%3E%3C/svg%3E") center / contain no-repeat; }
+
+/* Reman carriers, what we stock */
+[data-bz-section="feature-tabs"] { padding-block: 86px 0; background: #fff; }
+[data-bz-section="check-columns"] { padding-block: 150px 0; background: #fff; }
+
+/* Brand logos: two headings, each over a grid of logos on fixed-height rows */
+[data-bz-node="pt-brands"] { background: #fff; padding-block: 162px 52px; }
+[data-bz-node="pt-brands"] > .bz-container { max-width: calc(min(90vw, 1440px) + 32px); }
+[data-bz-node^="pt-brands-h"] h2, [data-bz-node="pt-more-h"] h2 { margin: 0; text-align: center; font: 700 1.875rem / 1.2 var(--font-heading); color: #000; letter-spacing: 0; }
+[data-bz-node="pt-more-h"] { margin-top: 186px; }
+[data-bz-node="pt-brands-logos"] .bz-logos, [data-bz-node="pt-more-logos"] .bz-logos { display: grid; align-items: center; justify-items: center; border: 0; padding: 0; margin: 0 auto; gap: 0; }
+[data-bz-node="pt-brands-logos"] .bz-logos { grid-template-columns: repeat(4, 1fr); grid-auto-rows: 124px; max-width: 1260px; margin-top: 65px; }
+[data-bz-node="pt-more-logos"] .bz-logos { grid-template-columns: repeat(6, 1fr); grid-auto-rows: 140px; max-width: 1440px; margin-top: 57px; }
+[data-bz-node$="-logos"] .bz-logo { display: flex; align-items: center; justify-content: center; padding: 0; }
+[data-bz-node$="-logos"] .bz-logo img { display: block; width: auto; max-width: 100%; height: auto; border-radius: 0; }
+
+@media (max-width: 1100px) {
+  [data-bz-node="pt-hero"] { min-height: 340px; padding-block: 36px; }
+  [data-bz-node="pt-hero-h"] h2 { font-size: 1.6rem; }
+  [data-bz-node="pt-hero-ctas"] { flex-direction: column; align-items: center; gap: 14px; }
+  [data-bz-node="pt-contact-copy"] { min-height: 0; padding: 48px 32px; }
+  [data-bz-node="pt-contact-card"] { margin: 0; padding: 40px 28px; }
+  [data-bz-node="pt-brands-logos"] .bz-logos { grid-template-columns: repeat(2, 1fr); }
+  [data-bz-node="pt-more-logos"] .bz-logos { grid-template-columns: repeat(3, 1fr); }
+  [data-bz-node="pt-more-h"] { margin-top: 90px; }
+  [data-bz-section="special-columns"] { padding-block: 60px 80px; }
+  [data-bz-section="feature-tabs"], [data-bz-section="check-columns"] { padding-block: 70px 0; }
+  [data-bz-node="pt-brands"] { padding-block: 70px; }
+}
+@media (max-width: 640px) {
+  [data-bz-node="pt-contact-form"] [data-bz-field="pr-last"]::before { display: none; }
+  [data-bz-node="pt-title-h"] h1 { font-size: 2rem; }
+  [data-bz-node="pt-hero-h"] h2 { font-size: 1.3rem; }
+  [data-bz-node="pt-hero-t"] .bz-text p, [data-bz-node="pt-contact-t"] .bz-text p, [data-bz-node="pt-portal-t"] .bz-text p { font-size: 1rem; }
+  [data-bz-node="pt-hero-ctas"] .bz-btns { flex-direction: column; gap: 14px; }
+  [data-bz-node="pt-hero-ctas"] .bz-btn { width: 100%; }
+  [data-bz-node="pt-contact-h"] h2, [data-bz-node="pt-form-h"] h2, [data-bz-node="pt-portal-h"] h2, [data-bz-node^="pt-brands-h"] h2, [data-bz-node="pt-more-h"] h2 { font-size: 1.5rem; }
+  [data-bz-node="pt-more-logos"] .bz-logos { grid-template-columns: repeat(2, 1fr); }
+}

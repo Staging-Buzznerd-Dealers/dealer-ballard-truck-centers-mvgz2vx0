@@ -194,7 +194,7 @@
         {
           "id": "bm-parts",
           "label": "Parts",
-          "type": "inventory",
+          "type": "page",
           "ref": "parts",
           "children": [
             {
@@ -206,8 +206,8 @@
             {
               "id": "bm-parts-form",
               "label": "Request a Part",
-              "type": "url",
-              "url": "#parts-request"
+              "type": "page",
+              "ref": "parts"
             }
           ]
         },
