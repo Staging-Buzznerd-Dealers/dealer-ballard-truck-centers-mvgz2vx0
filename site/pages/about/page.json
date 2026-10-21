@@ -117,93 +117,117 @@
           "heading": "The Ballard Difference Backed by Award-Winning Service",
           "items": [
             {
-              "title": "[Award title]",
-              "accent": "[Award name]",
+              "label": "North America <em>Customer\nExperience for Sales,</em>\nDealer of the Year",
+              "year": "2025",
+              "logo": {
+                "src": "/about/awards/mack.svg",
+                "alt": "Mack Trucks",
+                "width": 58,
+                "height": 30
+              }
+            },
+            {
+              "label": "<em>Circle of\nExcellence</em> Award",
+              "year": "2024",
+              "logo": {
+                "src": "/about/awards/isuzu-truck.png",
+                "alt": "Isuzu Truck",
+                "width": 45,
+                "height": 45
+              }
+            },
+            {
+              "label": "North America <em>Customer\nExperience for Sales,</em>\nDealer of the Year",
+              "year": "2024",
+              "logo": {
+                "src": "/about/awards/mack.svg",
+                "alt": "Mack Trucks",
+                "width": 58,
+                "height": 30
+              }
+            },
+            {
+              "label": "Northeast\n<em>Dealer of the Year</em>",
+              "year": "2023",
+              "logo": {
+                "src": "/about/awards/mack.svg",
+                "alt": "Mack Trucks",
+                "width": 58,
+                "height": 30
+              }
+            },
+            {
+              "label": "<em>Circle of\nExcellence</em> Award",
+              "year": "2023",
+              "logo": {
+                "src": "/about/awards/isuzu-truck.png",
+                "alt": "Isuzu Truck",
+                "width": 45,
+                "height": 45
+              }
+            },
+            {
+              "label": "United States\n<em>Dealer of the Year</em>",
+              "year": "2022",
+              "logo": {
+                "src": "/about/awards/volvo.svg",
+                "alt": "Volvo",
+                "width": 75,
+                "height": 10
+              }
+            },
+            {
+              "label": "North America\n<em>Dealer of the Year</em>",
+              "year": "2022",
+              "logo": {
+                "src": "/about/awards/mack.svg",
+                "alt": "Mack Trucks",
+                "width": 58,
+                "height": 30
+              }
+            },
+            {
+              "label": "<em>[Award not legible in the reference]</em>",
               "year": "[Year]"
             },
             {
-              "title": "[Award title]",
-              "accent": "[Award name]",
+              "label": "<em>[Award not legible in the reference]</em>",
               "year": "[Year]"
             },
             {
-              "title": "[Award title]",
-              "accent": "[Award name]",
+              "label": "<em>[Award not legible in the reference]</em>",
               "year": "[Year]"
             },
             {
-              "title": "[Award title]",
-              "accent": "[Award name]",
+              "label": "<em>[Award not legible in the reference]</em>",
               "year": "[Year]"
             },
             {
-              "title": "[Award title]",
-              "accent": "[Award name]",
+              "label": "<em>[Award not legible in the reference]</em>",
               "year": "[Year]"
             },
             {
-              "title": "[Award title]",
-              "accent": "[Award name]",
+              "label": "<em>[Award not legible in the reference]</em>",
               "year": "[Year]"
             },
             {
-              "title": "[Award title]",
-              "accent": "[Award name]",
+              "label": "<em>[Award not legible in the reference]</em>",
               "year": "[Year]"
             },
             {
-              "title": "[Award title]",
-              "accent": "[Award name]",
+              "label": "<em>[Award not legible in the reference]</em>",
               "year": "[Year]"
             },
             {
-              "title": "[Award title]",
-              "accent": "[Award name]",
+              "label": "<em>[Award not legible in the reference]</em>",
               "year": "[Year]"
             },
             {
-              "title": "[Award title]",
-              "accent": "[Award name]",
+              "label": "<em>[Award not legible in the reference]</em>",
               "year": "[Year]"
             },
             {
-              "title": "[Award title]",
-              "accent": "[Award name]",
-              "year": "[Year]"
-            },
-            {
-              "title": "[Award title]",
-              "accent": "[Award name]",
-              "year": "[Year]"
-            },
-            {
-              "title": "[Award title]",
-              "accent": "[Award name]",
-              "year": "[Year]"
-            },
-            {
-              "title": "[Award title]",
-              "accent": "[Award name]",
-              "year": "[Year]"
-            },
-            {
-              "title": "[Award title]",
-              "accent": "[Award name]",
-              "year": "[Year]"
-            },
-            {
-              "title": "[Award title]",
-              "accent": "[Award name]",
-              "year": "[Year]"
-            },
-            {
-              "title": "[Award title]",
-              "accent": "[Award name]",
-              "year": "[Year]"
-            },
-            {
-              "title": "[Award title]",
-              "accent": "[Award name]",
+              "label": "<em>[Award not legible in the reference]</em>",
               "year": "[Year]"
             }
           ]
