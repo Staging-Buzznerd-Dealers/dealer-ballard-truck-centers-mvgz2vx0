@@ -280,10 +280,10 @@
           "type": "image",
           "props": {
             "image": {
-              "src": "https://vendure.ai4dealerships.com/assets/source/ff/leasing-polar-truck.jpg",
+              "src": "https://vendure.ai4dealerships.com/assets/source/58/park.png",
               "alt": "A white Mack truck with a Polar Park delivery wrap parked outside Polar Park",
               "width": 939,
-              "height": 244
+              "height": 243
             },
             "width": "full"
           }
