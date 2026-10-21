@@ -2,6 +2,44 @@
   "version": 2,
   "nodes": [
     {
+      "id": "hm-hiring",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "hm-hiring-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "hm-hiring-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hm-hiring-text",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>We're hiring!</strong> <a href=\"mailto:drive@ballardtrucks.com\">Click to view our open positions.</a>",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "hero-slider",
       "type": "sharedSection",
       "props": {

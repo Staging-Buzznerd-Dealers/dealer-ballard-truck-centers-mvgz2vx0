@@ -138,8 +138,16 @@
         {
           "id": "bm-municipal",
           "label": "Municipal",
-          "type": "inventory",
-          "ref": "search?q=municipal"
+          "type": "page",
+          "ref": "municipal-services",
+          "children": [
+            {
+              "id": "bm-municipal-services",
+              "label": "Municipal Services",
+              "type": "page",
+              "ref": "municipal-services"
+            }
+          ]
         },
         {
           "id": "bm-lease",

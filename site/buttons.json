@@ -45,5 +45,14 @@
     "intent": "about",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "municipal-info-form",
+    "label": "Municipal Information Form",
+    "url": "#municipal-form",
+    "style": "primary",
+    "intent": "municipal-info",
+    "newTab": false,
+    "active": true
   }
 ]
