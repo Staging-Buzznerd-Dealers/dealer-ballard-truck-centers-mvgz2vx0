@@ -346,54 +346,66 @@
     },
     {
       "id": "reviews",
-      "type": "section",
+      "type": "sharedSection",
       "props": {
-        "width": "boxed",
-        "background": "accent",
-        "paddingY": 7
-      },
-      "children": [
-        {
-          "id": "reviews-list",
-          "type": "testimonials",
-          "props": {
-            "heading": "Hear What Our Customers Have to Say",
-            "headingLevel": 2,
-            "items": [
-              {
-                "name": "Rishabh",
-                "role": "Google review",
-                "rating": 5,
-                "quote": "Awesome place. Got here overnight. They open at 6 am and my truck was in a bay at 6:15 am. Truck repaired for a leaky front differential filter. Done and dusted by 8:45 am."
-              },
-              {
-                "name": "Alexander Cabral",
-                "role": "Google review",
-                "rating": 5,
-                "quote": "Excellent quality parts and usually have what you need in stock or can get it fast. Highly recommended."
-              },
-              {
-                "name": "Bruce Maxwell",
-                "role": "Google review",
-                "rating": 5,
-                "quote": "Awesome service and always have the parts needed for any job. Service always has a positive attitude making for a great experience every time. 10/10 recommend"
-              },
-              {
-                "name": "Soban Peng",
-                "role": "Google review",
-                "rating": 5,
-                "quote": "Parts department always gets the stuff I need. Everyone is knowledgeable and if any issues arise they communicate with me. Great parts department."
-              },
-              {
-                "name": "Duane Boucher",
-                "role": "Google review",
-                "rating": 5,
-                "quote": "Great to have this dealer located closer to the Cape for convenience. They are always responsive to our needs."
-              }
-            ]
-          }
+        "sectionId": "review-slider",
+        "values": {
+          "heading": "Hear What Our Customers Have to Say",
+          "items": [
+            {
+              "name": "Kelsie Carver",
+              "stars": "★★★★★",
+              "text": "We come here for all our parts for the trailers and big rigs. They are always kind and very helpful. If I have to go anywhere I will always choose Ballard."
+            },
+            {
+              "name": "Andre West",
+              "stars": "★★★★★",
+              "text": "Great location with great In stock availability and customer service! I definitely recommend!"
+            },
+            {
+              "name": "Matthew Bourgeois",
+              "stars": "★★★★★",
+              "text": "Very pleased with the service. The parts department crew is outstanding."
+            },
+            {
+              "name": "Adam Macek",
+              "stars": "★★★★★",
+              "text": "Brought my truck in for service, mechanic who looked at my truck was fantastic and very helpful. Service office was great to work with as well. I would definitely go there again, highly recommend!"
+            },
+            {
+              "name": "Pyne Sand & Stone",
+              "stars": "★★★★★",
+              "text": "The Ballard team goes above and beyond every time I need them. This is the reason why we are so brand loyal."
+            },
+            {
+              "name": "Rishabh",
+              "stars": "★★★★★",
+              "text": "Awesome place. Got here overnight. They open at 6 am and my truck was in a bay at 6:15 am. Truck repaired for a leaky front differential filter. Done and dusted by 8:45 am."
+            },
+            {
+              "name": "Alexander Cabral",
+              "stars": "★★★★★",
+              "text": "Excellent quality parts and usually have what you need in stock or can get it fast. Highly recommended."
+            },
+            {
+              "name": "Bruce Maxwell",
+              "stars": "★★★★★",
+              "text": "Awesome service and always have the parts needed for any job. Service always has a positive attitude making for a great experience every time. 10/10 recommend"
+            },
+            {
+              "name": "Soban Peng",
+              "stars": "★★★★★",
+              "text": "Parts department always gets the stuff I need. Everyone is knowledgeable and if any issues arise they communicate with me. Great parts department."
+            },
+            {
+              "name": "Duane Boucher",
+              "stars": "★★★★★",
+              "text": "Great to have this dealer located closer to the Cape for convenience. They are always responsive to our needs."
+            }
+          ]
         }
-      ]
+      },
+      "children": []
     }
   ]
 }
