@@ -214,8 +214,8 @@
         {
           "id": "bm-about",
           "label": "About Us",
-          "type": "url",
-          "url": "/about"
+          "type": "page",
+          "ref": "about"
         },
         {
           "id": "bm-careers",

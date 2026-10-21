@@ -1,0 +1,87 @@
+/* About Ballard. Measured from the reference screenshot, a 1920px window scaled to 447px wide
+   (one screenshot pixel is about 4.3 CSS pixels). Colours and fonts come from the Ballard
+   template and the design system. */
+
+[data-bz-node="ab-title"] > .bz-container,
+[data-bz-node="ab-hero"] > .bz-container,
+[data-bz-node="ab-partners"] > .bz-container,
+[data-bz-node^="ab-ph"] > .bz-container { max-width: calc(min(90vw, 1440px) + 32px); }
+[data-bz-node^="ab-"] .bz-block { padding-block: 0; }
+
+/* Active item in the main navigation */
+[data-bz-node="hm-main-nav"] a[href="/about"] { color: var(--accent); }
+
+/* Page title band */
+[data-bz-node="ab-title"] { background: #003550; padding-block: 34px 17px; }
+[data-bz-node="ab-title-h"] h1 { margin: 0; font: 700 2.8rem / 1.2 var(--font-heading); color: #fff; }
+
+/* Hero. The photo is set on this section in the Styles panel (Background image). The photo that
+   ships here was cut from the reference, so it is already navy and the layer below is at 0%. When
+   the original photo is uploaded, set the 0% to about 80% to tone it the same way. */
+[data-bz-node="ab-hero"] { display: flex; align-items: center; min-height: 627px; padding-top: 28px; background-color: #0b3b57; background-size: cover; background-position: center; position: relative; }
+[data-bz-node="ab-hero"]::before { content: ""; position: absolute; inset: 0; background: rgb(0 53 80 / 0%); pointer-events: none; }
+[data-bz-node="ab-hero"] > .bz-container { position: relative; width: 100%; }
+[data-bz-node="ab-hero-h"] h2 { margin: 0; font: 400 3.6rem / 1.1 "Brush Script MT", "Segoe Script", "Lucida Handwriting", "Apple Chancery", cursive; font-style: italic; color: #fff; letter-spacing: 0; }
+[data-bz-node="ab-hero-t"] .bz-text p { margin: 38px 0 0; max-width: 540px; font: 400 1rem / 1.6 var(--font-body); color: #fff; }
+[data-bz-node="ab-hero-cta"] { margin-top: 38px; }
+[data-bz-node="ab-hero-cta"] .bz-btn { height: 41px; padding: 0 22px; border-radius: 0; font: 700 1.09rem / 41px var(--font-body); background: var(--accent); color: #fff; }
+
+/* Mission, vision and values: the icon card grid, drawn on dark texture with a translucent panel */
+[data-bz-section="icon-card-grid"] { background: #06121a url("/about/asphalt.jpg") center / cover; padding-block: 52px; }
+[data-bz-section="icon-card-grid"] [data-bz-node="icg-band"] { background: transparent; }
+[data-bz-section="icon-card-grid"] [data-bz-node="icg-head"], [data-bz-section="icon-card-grid"] [data-bz-node="icg-intro"] { display: none; }
+[data-bz-section="icon-card-grid"] [data-bz-node="icg-row"] { margin-top: 0; max-width: min(90vw, 1440px); margin-inline: auto; background: rgb(0 96 150 / 38%); padding: 78px 40px 60px; }
+[data-bz-section="icon-card-grid"] [data-bz-node^="icg-card"] { padding-inline: 30px; }
+[data-bz-section="icon-card-grid"] h3 { margin: 34px 0 0; font-size: 1.5rem; }
+[data-bz-section="icon-card-grid"] [data-bz-node^="icg-desc"] .bz-text p { margin: 18px auto 0; color: #fff; font: 400 1.05rem / 1.7 var(--font-body); max-width: 340px; white-space: normal; }
+
+/* Awards */
+[data-bz-section="award-badges"] { background: #fff; padding-block: 90px 94px; }
+
+/* Stats on the same texture */
+[data-bz-node="ab-stats"] { background: #06121a url("/about/asphalt.jpg") center / cover; min-height: 275px; display: flex; align-items: center; padding-block: 0; }
+[data-bz-node="ab-stats"] > .bz-block { width: 100%; padding-block: 0; }
+[data-bz-node="ab-stats"] .bz-band { display: block; }
+[data-bz-node="ab-stats"] .bz-band > div:empty { display: none; }
+[data-bz-node="ab-stats"] .bz-block--statBand, [data-bz-node="ab-stats"] .bz-container { background: transparent; }
+[data-bz-node="ab-stats"] .bz-container { max-width: calc(min(90vw, 1440px) + 32px); }
+[data-bz-node="ab-stats"] .bz-stats { grid-template-columns: repeat(3, 1fr); gap: 0; text-align: center; }
+[data-bz-node="ab-stats"] .bz-block--statBand .bz-stat { border: 0; padding: 0; }
+[data-bz-node="ab-stats"] .bz-stat__v { font: 700 3.7rem / 1 var(--font-heading); color: var(--accent); }
+[data-bz-node="ab-stats"] .bz-stat__l { margin: 24px 0 0; font: 400 1.45rem / 1.2 var(--font-body); color: #fff; }
+
+/* Partners and communities */
+[data-bz-node="ab-partners"] { background: #fff; padding-block: 76px 0; }
+[data-bz-node="ab-partners-h"] h2, [data-bz-node="ab-community-h"] h2 { margin: 0; text-align: center; font: 700 1.5rem / 1.2 var(--font-heading); color: #000; letter-spacing: 0; }
+[data-bz-node="ab-community-h"] { margin-top: 184px; }
+[data-bz-node$="-logos"] .bz-logos { display: grid; align-items: center; justify-items: center; border: 0; padding: 0; margin: 0 auto; gap: 0; grid-auto-rows: 120px; }
+[data-bz-node="ab-partners-logos"] .bz-logos { grid-template-columns: repeat(4, 1fr); margin-top: 56px; }
+[data-bz-node="ab-community-logos"] .bz-logos { grid-template-columns: repeat(7, 1fr); margin-top: 96px; }
+[data-bz-node$="-logos"] .bz-logo { display: flex; align-items: center; justify-content: center; padding: 0; }
+[data-bz-node$="-logos"] .bz-logo img { display: block; width: auto; max-width: 100%; height: auto; border-radius: 0; }
+[data-bz-node="ab-partners"] { padding-bottom: 135px; }
+
+/* Photographs and the timeline between them */
+[data-bz-node^="ab-ph"] { background: #fff; padding-bottom: 6px; }
+[data-bz-node^="ab-ph"] .bz-figure { margin: 0; }
+[data-bz-node^="ab-ph"] img { display: block; width: 100%; height: auto; border-radius: 0; }
+[data-bz-node="ab-ph1-row"], [data-bz-node="ab-ph3-row"] { column-gap: 6px; }
+[data-bz-section="timeline"] { background: #fff; padding-block: 0 6px; }
+[data-bz-node="ab-night"] { padding-top: 47px; background: #fff; }
+[data-bz-node="ab-night-img"] .bz-figure { margin: 0; }
+[data-bz-node="ab-night-img"] img { display: block; width: 100%; height: auto; max-height: 395px; object-fit: cover; border-radius: 0; }
+
+@media (max-width: 1100px) {
+  [data-bz-node="ab-hero"] { min-height: 420px; padding-block: 40px; }
+  [data-bz-node="ab-hero-h"] h2 { font-size: 2.6rem; }
+  [data-bz-section="icon-card-grid"] [data-bz-node="icg-row"] { padding: 40px 16px; row-gap: 36px; }
+  [data-bz-section="award-badges"] { padding-block: 60px; }
+  [data-bz-node="ab-partners-logos"] .bz-logos { grid-template-columns: repeat(2, 1fr); }
+  [data-bz-node="ab-community-logos"] .bz-logos { grid-template-columns: repeat(3, 1fr); }
+  [data-bz-node="ab-community-h"] { margin-top: 60px; }
+}
+@media (max-width: 640px) {
+  [data-bz-node="ab-title-h"] h1 { font-size: 2rem; }
+  [data-bz-node="ab-hero-h"] h2 { font-size: 2.1rem; }
+  [data-bz-node="ab-partners-h"] h2, [data-bz-node="ab-community-h"] h2 { font-size: 1.3rem; }
+}

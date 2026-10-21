@@ -1,0 +1,687 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "ab-title",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "ab-title-h",
+          "type": "heading",
+          "props": {
+            "text": "About Ballard",
+            "headingLevel": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "ab-hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "ab-hero-h",
+          "type": "heading",
+          "props": {
+            "text": "Roots that date back over 100 years",
+            "headingLevel": 2
+          }
+        },
+        {
+          "id": "ab-hero-t",
+          "type": "text",
+          "props": {
+            "text": "What started in 1906 with Louis Ballard, a blacksmith and carriage maker, opening a small repair shop in Millbury, Massachusetts, has grown into a family legacy spanning 5 generations.",
+            "width": "full"
+          }
+        },
+        {
+          "id": "ab-hero-cta",
+          "type": "buttons",
+          "props": {
+            "items": [
+              {
+                "ctaId": "about-learn-more"
+              }
+            ],
+            "align": "left"
+          }
+        }
+      ],
+      "styles": {
+        "base": {
+          "backgroundImage": "/about/hero-1906.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center"
+        }
+      }
+    },
+    {
+      "id": "ab-values",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "icon-card-grid",
+        "values": {
+          "heading": "",
+          "intro": "",
+          "items": [
+            {
+              "icon": {
+                "src": "/about/mission.svg",
+                "alt": "Mission",
+                "width": 48,
+                "height": 46
+              },
+              "title": "Mission",
+              "desc": "Provide honest and genuine, full-service commercial truck support to the hardworking people that transport, build, maintain, repair, and serve our communities across New England."
+            },
+            {
+              "icon": {
+                "src": "/about/vision.svg",
+                "alt": "Vision",
+                "width": 52,
+                "height": 52
+              },
+              "title": "Vision",
+              "desc": "To be the Northeast's most trusted full-service commercial truck network by delivering exceptional experiences to our customers and employees—setting the standard for satisfaction, reliability, and service at every touchpoint."
+            },
+            {
+              "icon": {
+                "src": "/about/values.svg",
+                "alt": "Values",
+                "width": 52,
+                "height": 52
+              },
+              "title": "Values",
+              "desc": "The Ballard Difference means treating every employee and customer like family, doing what's right, and continually striving to be better. These are the values that we operate by every day."
+            }
+          ]
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "ab-awards",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "award-badges",
+        "values": {
+          "heading": "The Ballard Difference Backed by Award-Winning Service",
+          "items": [
+            {
+              "title": "[Award title]",
+              "accent": "[Award name]",
+              "year": "[Year]"
+            },
+            {
+              "title": "[Award title]",
+              "accent": "[Award name]",
+              "year": "[Year]"
+            },
+            {
+              "title": "[Award title]",
+              "accent": "[Award name]",
+              "year": "[Year]"
+            },
+            {
+              "title": "[Award title]",
+              "accent": "[Award name]",
+              "year": "[Year]"
+            },
+            {
+              "title": "[Award title]",
+              "accent": "[Award name]",
+              "year": "[Year]"
+            },
+            {
+              "title": "[Award title]",
+              "accent": "[Award name]",
+              "year": "[Year]"
+            },
+            {
+              "title": "[Award title]",
+              "accent": "[Award name]",
+              "year": "[Year]"
+            },
+            {
+              "title": "[Award title]",
+              "accent": "[Award name]",
+              "year": "[Year]"
+            },
+            {
+              "title": "[Award title]",
+              "accent": "[Award name]",
+              "year": "[Year]"
+            },
+            {
+              "title": "[Award title]",
+              "accent": "[Award name]",
+              "year": "[Year]"
+            },
+            {
+              "title": "[Award title]",
+              "accent": "[Award name]",
+              "year": "[Year]"
+            },
+            {
+              "title": "[Award title]",
+              "accent": "[Award name]",
+              "year": "[Year]"
+            },
+            {
+              "title": "[Award title]",
+              "accent": "[Award name]",
+              "year": "[Year]"
+            },
+            {
+              "title": "[Award title]",
+              "accent": "[Award name]",
+              "year": "[Year]"
+            },
+            {
+              "title": "[Award title]",
+              "accent": "[Award name]",
+              "year": "[Year]"
+            },
+            {
+              "title": "[Award title]",
+              "accent": "[Award name]",
+              "year": "[Year]"
+            },
+            {
+              "title": "[Award title]",
+              "accent": "[Award name]",
+              "year": "[Year]"
+            },
+            {
+              "title": "[Award title]",
+              "accent": "[Award name]",
+              "year": "[Year]"
+            }
+          ]
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "ab-stats",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "ab-stats-b",
+          "type": "statBand",
+          "props": {
+            "stats": [
+              {
+                "value": "350",
+                "label": "Ballard Employees"
+              },
+              {
+                "value": "9",
+                "label": "Locations Across New England"
+              },
+              {
+                "value": "$10M",
+                "label": "In Parts Inventory"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ab-partners",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "ab-partners-h",
+          "type": "heading",
+          "props": {
+            "text": "Our industry partners",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "ab-partners-logos",
+          "type": "logoStrip",
+          "props": {
+            "logos": [
+              {
+                "name": "ATD (American Truck Dealers)",
+                "image": {
+                  "src": "/about/logos/atd.svg",
+                  "alt": "ATD (American Truck Dealers)",
+                  "width": 232,
+                  "height": 99
+                }
+              },
+              {
+                "name": "Massachusetts TAM",
+                "image": {
+                  "src": "/about/logos/tam.svg",
+                  "alt": "Massachusetts TAM",
+                  "width": 176,
+                  "height": 103
+                }
+              },
+              {
+                "name": "RITA",
+                "image": {
+                  "src": "/about/logos/rita.svg",
+                  "alt": "RITA",
+                  "width": 142,
+                  "height": 137
+                }
+              },
+              {
+                "name": "Industry partner logo (name not legible)",
+                "image": {
+                  "src": "/about/logos/maine-ata.svg",
+                  "alt": "Industry partner logo (name not legible)",
+                  "width": 133,
+                  "height": 150
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "ab-community-h",
+          "type": "heading",
+          "props": {
+            "text": "Supporting our communities",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "ab-community-logos",
+          "type": "logoStrip",
+          "props": {
+            "logos": [
+              {
+                "name": "Movember Foundation",
+                "image": {
+                  "src": "/about/logos/movember.svg",
+                  "alt": "Movember Foundation",
+                  "width": 137,
+                  "height": 77
+                }
+              },
+              {
+                "name": "Community partner logo (name not legible)",
+                "image": {
+                  "src": "/about/logos/national-ram.svg",
+                  "alt": "Community partner logo (name not legible)",
+                  "width": 155,
+                  "height": 60
+                }
+              },
+              {
+                "name": "Community partner logo (name not legible)",
+                "image": {
+                  "src": "/about/logos/springfield-st-patricks.svg",
+                  "alt": "Community partner logo (name not legible)",
+                  "width": 159,
+                  "height": 150
+                }
+              },
+              {
+                "name": "Community partner logo (name not legible)",
+                "image": {
+                  "src": "/about/logos/wings.svg",
+                  "alt": "Community partner logo (name not legible)",
+                  "width": 150,
+                  "height": 133
+                }
+              },
+              {
+                "name": "Community partner logo (name not legible)",
+                "image": {
+                  "src": "/about/logos/vfw.svg",
+                  "alt": "Community partner logo (name not legible)",
+                  "width": 112,
+                  "height": 146
+                }
+              },
+              {
+                "name": "Community partner logo (name not legible)",
+                "image": {
+                  "src": "/about/logos/pink-shield.svg",
+                  "alt": "Community partner logo (name not legible)",
+                  "width": 146,
+                  "height": 159
+                }
+              },
+              {
+                "name": "ALS One",
+                "image": {
+                  "src": "/about/logos/als-one.svg",
+                  "alt": "ALS One",
+                  "width": 159,
+                  "height": 86
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ab-ph1",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "ab-ph1-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "start",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "ab-ph1-c0",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "auto"
+              },
+              "children": [
+                {
+                  "id": "ab-ph1-p0",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/about/goodrich.jpg",
+                      "alt": "Ballard's Garage, a Goodrich Tires sign on a wooden building",
+                      "width": 672,
+                      "height": 380
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ab-ph1-c1",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "auto"
+              },
+              "children": [
+                {
+                  "id": "ab-ph1-p1",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/about/station.jpg",
+                      "alt": "An early Ballard service station with cars out front",
+                      "width": 672,
+                      "height": 380
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab-tl-a",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "timeline",
+        "values": {
+          "entries": [
+            {
+              "title": "Established",
+              "text": "[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.\n\n[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.\n\n[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.\n\n[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.",
+              "years": "1906–1940"
+            },
+            {
+              "title": "Family-Owned",
+              "text": "[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.\n\n[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.\n\n[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.",
+              "years": "1948–1982"
+            }
+          ]
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "ab-ph2",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "ab-ph2-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "start",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "ab-ph2-c0",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "align": "auto"
+              },
+              "children": [
+                {
+                  "id": "ab-ph2-p0",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/about/ballard-mac-team.jpg",
+                      "alt": "The Ballard Mack Sales & Service team outside the brick building",
+                      "width": 1348,
+                      "height": 436
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab-ph3",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "ab-ph3-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "start",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "ab-ph3-c0",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "auto"
+              },
+              "children": [
+                {
+                  "id": "ab-ph3-p0",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/about/mack-yard.jpg",
+                      "alt": "The Mack dealership lot with cars and a delivery truck",
+                      "width": 672,
+                      "height": 376
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ab-ph3-c1",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "auto"
+              },
+              "children": [
+                {
+                  "id": "ab-ph3-p1",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/about/mack-station.jpg",
+                      "alt": "The Mack dealership building beside the road",
+                      "width": 672,
+                      "height": 376
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab-tl-b",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "timeline",
+        "values": {
+          "entries": [
+            {
+              "title": "The Ballard Name",
+              "text": "[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.\n\n[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.\n\n[Year] Text not legible in the reference screenshot.",
+              "years": "1988–1999"
+            },
+            {
+              "title": "Expansion",
+              "text": "[Year] Text not legible in the reference screenshot.\n\n[Year] Text not legible in the reference screenshot.\n\n[Year] Text not legible in the reference screenshot.\n\n[Year] Text not legible in the reference screenshot.",
+              "years": "2001–2011"
+            },
+            {
+              "title": "The Ballard Difference",
+              "text": "[Year] Text not legible in the reference screenshot.\n\n[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.\n\n[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.\n\n[Year] Text not legible in the reference screenshot. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry. Replace with the timeline entry.\n\n[Year] Text not legible in the reference screenshot.\n\n[Year] Text not legible in the reference screenshot.",
+              "years": "2012–2026"
+            }
+          ]
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "ab-ph4",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "ab-ph4-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "start",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "ab-ph4-c0",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "align": "auto"
+              },
+              "children": [
+                {
+                  "id": "ab-ph4-p0",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/about/red-mack-snow.jpg",
+                      "alt": "A red Mack tractor in the snow with a Mack Trucks sign behind",
+                      "width": 1348,
+                      "height": 440
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab-night",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "ab-night-img",
+          "type": "image",
+          "props": {
+            "image": {
+              "src": "/about/night-shop.jpg",
+              "alt": "A Ballard dealership at night under a stormy sky",
+              "width": 2235,
+              "height": 460
+            },
+            "width": "full"
+          }
+        }
+      ]
+    }
+  ]
+}
