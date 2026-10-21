@@ -113,5 +113,24 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "about",
+    "title": "About Ballard",
+    "description": "Ballard Truck Centers: roots that date back over 100 years, a family legacy spanning five generations and award-winning service across New England.",
+    "path": "/about",
+    "out": "about/index.html",
+    "dir": "about",
+    "group": "ballard",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

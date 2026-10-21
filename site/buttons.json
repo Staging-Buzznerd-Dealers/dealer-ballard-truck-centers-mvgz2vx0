@@ -171,5 +171,14 @@
     "intent": "customer-portal",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "about-learn-more",
+    "label": "Learn More",
+    "url": "#our-story",
+    "style": "primary",
+    "intent": "learn-more",
+    "newTab": false,
+    "active": true
   }
 ]
