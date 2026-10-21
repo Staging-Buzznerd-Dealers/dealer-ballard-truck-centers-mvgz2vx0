@@ -11,14 +11,50 @@
           "slides": [
             {
               "image": {
-                "src": "/hero/volvo-vnx.jpg",
+                "src": "/hero/volvo-vnx-banner.jpg",
                 "alt": "The all-new Volvo VNX dump truck",
-                "width": 1178,
-                "height": 741
+                "width": 1920,
+                "height": 797
               },
               "titleTop": "The All-New",
               "titleBottom": "Volvo VNX",
               "body": "The all-new Volvo VNX combines rugged capability,\nadvanced safety, and enhanced driver comfort\nfor the toughest jobs.",
+              "link": ""
+            },
+            {
+              "image": {
+                "src": "/hero/slide-map.jpg",
+                "alt": "Map of New England with Ballard Truck Centers locations marked",
+                "width": 1728,
+                "height": 1152
+              },
+              "titleTop": "Find Your Nearest",
+              "titleBottom": "Ballard Location",
+              "body": "With dealerships across Massachusetts, Rhode Island,\nConnecticut, New Hampshire and Maine, expert sales,\nservice and parts are never far away.",
+              "link": ""
+            },
+            {
+              "image": {
+                "src": "/hero/slide-isuzu.jpg",
+                "alt": "A white Isuzu NPR HD truck with a black dump body",
+                "width": 1728,
+                "height": 1152
+              },
+              "titleTop": "Built to Work",
+              "titleBottom": "In Stock Now",
+              "body": "Browse new and used trucks and trailers, priced\nand ready to go to work for your business today.",
+              "link": ""
+            },
+            {
+              "image": {
+                "src": "/hero/slide-road.jpg",
+                "alt": "A winding mountain road at dusk",
+                "width": 1728,
+                "height": 1152
+              },
+              "titleTop": "Keep Your Fleet",
+              "titleBottom": "On the Road",
+              "body": "Factory-trained technicians and genuine parts keep\nyour trucks running, with fast turnaround across\nevery department.",
               "link": ""
             }
           ]
