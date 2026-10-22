@@ -27,6 +27,13 @@
         "paddingY": 0,
         "align": "center"
       },
+      "styles": {
+        "base": {
+          "backgroundImage": "/contact/hero-road.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center"
+        }
+      },
       "children": [
         {
           "id": "ct-hero-icon",
@@ -77,14 +84,7 @@
             "align": "center"
           }
         }
-      ],
-      "styles": {
-        "base": {
-          "backgroundImage": "/contact/hero-road.jpg",
-          "backgroundSize": "cover",
-          "backgroundPosition": "center"
-        }
-      }
+      ]
     },
     {
       "id": "ct-locations",
@@ -100,348 +100,6 @@
               "pagePathPrefix": "/locations"
             }
           }
-        },
-        "data": {
-          "locations": [
-            {
-              "id": "11",
-              "name": "Avon, MA",
-              "subtitle": "",
-              "slug": "avon-ma",
-              "num": "01",
-              "href": "/locations/avon-ma",
-              "streetAddress": "1 Mack Drive, Avon, MA 02322",
-              "city": "Avon",
-              "region": "MA",
-              "postalCode": "02322",
-              "country": null,
-              "latitude": null,
-              "longitude": null,
-              "phone": "",
-              "phoneUrl": null,
-              "mapUrl": "https://www.google.com/maps/search/?api=1&query=1%20Mack%20Drive%2C%20Avon%2C%20MA%2002322%2C%20Avon%2C%20MA%2C%2002322",
-              "email": null,
-              "brands": "",
-              "services": "",
-              "perks": "",
-              "brandKeys": "",
-              "perkKeys": "",
-              "perk1": null,
-              "perk2": null,
-              "perk3": null,
-              "departments": "",
-              "hours": "",
-              "phone2": null,
-              "phone2Url": null,
-              "phone3": null,
-              "phone3Url": null,
-              "group": null,
-              "groupKey": null,
-              "photo": {
-                "src": "",
-                "alt": ""
-              },
-              "banner": {
-                "src": "",
-                "alt": ""
-              },
-              "brandRows": [],
-              "serviceRows": [],
-              "perkRows": [],
-              "departmentRows": [],
-              "hoursRows": []
-            },
-            {
-              "id": "12",
-              "name": "Bangor, ME",
-              "subtitle": "",
-              "slug": "bangor-me",
-              "num": "02",
-              "href": "/locations/bangor-me",
-              "streetAddress": "2245 Odlin Road",
-              "city": "Hermon,",
-              "region": "ME",
-              "postalCode": "04401",
-              "country": null,
-              "latitude": null,
-              "longitude": null,
-              "phone": "",
-              "phoneUrl": null,
-              "mapUrl": "https://www.google.com/maps/search/?api=1&query=2245%20Odlin%20Road%2C%20Hermon%2C%2C%20ME%2C%2004401",
-              "email": null,
-              "brands": "",
-              "services": "",
-              "perks": "",
-              "brandKeys": "",
-              "perkKeys": "",
-              "perk1": null,
-              "perk2": null,
-              "perk3": null,
-              "departments": "",
-              "hours": "",
-              "phone2": null,
-              "phone2Url": null,
-              "phone3": null,
-              "phone3Url": null,
-              "group": null,
-              "groupKey": null,
-              "photo": {
-                "src": "",
-                "alt": ""
-              },
-              "banner": {
-                "src": "",
-                "alt": ""
-              },
-              "brandRows": [],
-              "serviceRows": [],
-              "perkRows": [],
-              "departmentRows": [],
-              "hoursRows": []
-            },
-            {
-              "id": "13",
-              "name": "Johnston, RI",
-              "subtitle": "",
-              "slug": "johnston-ri",
-              "num": "03",
-              "href": "/locations/johnston-ri",
-              "streetAddress": "280 Scituate Avenue",
-              "city": "Johnston",
-              "region": "RI",
-              "postalCode": "02919",
-              "country": null,
-              "latitude": 41.8043977,
-              "longitude": -71.5131372,
-              "phone": "(401) 821-4800",
-              "phoneUrl": "tel:4018214800",
-              "mapUrl": "https://www.google.com/maps/search/?api=1&query=41.8043977,-71.5131372",
-              "email": null,
-              "brands": "",
-              "services": "",
-              "perks": "",
-              "brandKeys": "",
-              "perkKeys": "",
-              "perk1": null,
-              "perk2": null,
-              "perk3": null,
-              "departments": "Sales · Service · Parts",
-              "hours": "Sales: 07:00–18:00 Mon–Fri, 08:00–14:00 Sat\n\nService: 07:00–18:00 Mon–Fri, 08:00–14:00 Sat\n\nParts: 07:00–18:00 Mon–Fri, 08:00–14:00 Sat",
-              "phone2": null,
-              "phone2Url": null,
-              "phone3": null,
-              "phone3Url": null,
-              "group": null,
-              "groupKey": null,
-              "photo": {
-                "src": "",
-                "alt": ""
-              },
-              "banner": {
-                "src": "",
-                "alt": ""
-              },
-              "brandRows": [],
-              "serviceRows": [],
-              "perkRows": [],
-              "departmentRows": [
-                {
-                  "name": "Sales",
-                  "key": "sales",
-                  "phone": null,
-                  "phoneUrl": null,
-                  "email": null,
-                  "hours": "07:00–18:00 Mon–Fri, 08:00–14:00 Sat"
-                },
-                {
-                  "name": "Service",
-                  "key": "service",
-                  "phone": null,
-                  "phoneUrl": null,
-                  "email": null,
-                  "hours": "07:00–18:00 Mon–Fri, 08:00–14:00 Sat"
-                },
-                {
-                  "name": "Parts",
-                  "key": "parts",
-                  "phone": null,
-                  "phoneUrl": null,
-                  "email": null,
-                  "hours": "07:00–18:00 Mon–Fri, 08:00–14:00 Sat"
-                }
-              ],
-              "hoursRows": [
-                {
-                  "department": "Sales",
-                  "key": "sales",
-                  "summary": "07:00–18:00 Mon–Fri, 08:00–14:00 Sat",
-                  "days": [
-                    {
-                      "day": "Sunday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Monday",
-                      "hours": "07:00–18:00",
-                      "opensAt": "07:00",
-                      "closesAt": "18:00",
-                      "closed": false
-                    },
-                    {
-                      "day": "Tuesday",
-                      "hours": "07:00–18:00",
-                      "opensAt": "07:00",
-                      "closesAt": "18:00",
-                      "closed": false
-                    },
-                    {
-                      "day": "Wednesday",
-                      "hours": "07:00–18:00",
-                      "opensAt": "07:00",
-                      "closesAt": "18:00",
-                      "closed": false
-                    },
-                    {
-                      "day": "Thursday",
-                      "hours": "07:00–18:00",
-                      "opensAt": "07:00",
-                      "closesAt": "18:00",
-                      "closed": false
-                    },
-                    {
-                      "day": "Friday",
-                      "hours": "07:00–18:00",
-                      "opensAt": "07:00",
-                      "closesAt": "18:00",
-                      "closed": false
-                    },
-                    {
-                      "day": "Saturday",
-                      "hours": "08:00–14:00",
-                      "opensAt": "08:00",
-                      "closesAt": "14:00",
-                      "closed": false
-                    }
-                  ]
-                },
-                {
-                  "department": "Service",
-                  "key": "service",
-                  "summary": "07:00–18:00 Mon–Fri, 08:00–14:00 Sat",
-                  "days": [
-                    {
-                      "day": "Sunday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Monday",
-                      "hours": "07:00–18:00",
-                      "opensAt": "07:00",
-                      "closesAt": "18:00",
-                      "closed": false
-                    },
-                    {
-                      "day": "Tuesday",
-                      "hours": "07:00–18:00",
-                      "opensAt": "07:00",
-                      "closesAt": "18:00",
-                      "closed": false
-                    },
-                    {
-                      "day": "Wednesday",
-                      "hours": "07:00–18:00",
-                      "opensAt": "07:00",
-                      "closesAt": "18:00",
-                      "closed": false
-                    },
-                    {
-                      "day": "Thursday",
-                      "hours": "07:00–18:00",
-                      "opensAt": "07:00",
-                      "closesAt": "18:00",
-                      "closed": false
-                    },
-                    {
-                      "day": "Friday",
-                      "hours": "07:00–18:00",
-                      "opensAt": "07:00",
-                      "closesAt": "18:00",
-                      "closed": false
-                    },
-                    {
-                      "day": "Saturday",
-                      "hours": "08:00–14:00",
-                      "opensAt": "08:00",
-                      "closesAt": "14:00",
-                      "closed": false
-                    }
-                  ]
-                },
-                {
-                  "department": "Parts",
-                  "key": "parts",
-                  "summary": "07:00–18:00 Mon–Fri, 08:00–14:00 Sat",
-                  "days": [
-                    {
-                      "day": "Sunday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Monday",
-                      "hours": "07:00–18:00",
-                      "opensAt": "07:00",
-                      "closesAt": "18:00",
-                      "closed": false
-                    },
-                    {
-                      "day": "Tuesday",
-                      "hours": "07:00–18:00",
-                      "opensAt": "07:00",
-                      "closesAt": "18:00",
-                      "closed": false
-                    },
-                    {
-                      "day": "Wednesday",
-                      "hours": "07:00–18:00",
-                      "opensAt": "07:00",
-                      "closesAt": "18:00",
-                      "closed": false
-                    },
-                    {
-                      "day": "Thursday",
-                      "hours": "07:00–18:00",
-                      "opensAt": "07:00",
-                      "closesAt": "18:00",
-                      "closed": false
-                    },
-                    {
-                      "day": "Friday",
-                      "hours": "07:00–18:00",
-                      "opensAt": "07:00",
-                      "closesAt": "18:00",
-                      "closed": false
-                    },
-                    {
-                      "day": "Saturday",
-                      "hours": "08:00–14:00",
-                      "opensAt": "08:00",
-                      "closesAt": "14:00",
-                      "closed": false
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
         },
         "snapshots": {}
       },
@@ -711,10 +369,10 @@
           "type": "image",
           "props": {
             "image": {
-              "src": "/contact/night-shop.jpg",
+              "src": "https://vendure.ai4dealerships.com/assets/source/ec/10036.jpg",
               "alt": "A Ballard dealership at night under a stormy sky",
-              "width": 2276,
-              "height": 468
+              "width": 1200,
+              "height": 800
             },
             "width": "full"
           }
