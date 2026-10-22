@@ -27,6 +27,13 @@
         "paddingY": 0,
         "align": "center"
       },
+      "styles": {
+        "base": {
+          "backgroundImage": "/parts/hero-parts.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center"
+        }
+      },
       "children": [
         {
           "id": "pt-hero-icon",
@@ -120,14 +127,7 @@
             }
           ]
         }
-      ],
-      "styles": {
-        "base": {
-          "backgroundImage": "/parts/hero-parts.jpg",
-          "backgroundSize": "cover",
-          "backgroundPosition": "center"
-        }
-      }
+      ]
     },
     {
       "id": "pt-specials",
@@ -442,7 +442,7 @@
           "knowHeading": "Did you know?",
           "know": "Mack Remanufactured carriers are better than the originals, as they receive the latest engineering updates.\n\nOnly the OEM can bring the product up to the current OE specifications. Other rebuilders do not have access to these engineering specs.\n\nThe Middletown Reman plant technicians have years of experience and ONLY work on genuine Mack carriers.\n\nEvery ReMack carrier comes with a 2 year/unlimited mileage warranty.",
           "photo": {
-            "src": "/parts/mack-reman-carrier.jpg",
+            "src": "https://vendure.ai4dealerships.com/assets/source/bb/10001__04.jpg",
             "alt": "A Mack remanufactured carrier with its numbered features marked",
             "width": 824,
             "height": 736
@@ -517,73 +517,73 @@
               {
                 "name": "Mack",
                 "image": {
-                  "src": "/parts/logos/mack.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/b9/10003-1.png",
                   "alt": "Mack",
-                  "width": 153,
-                  "height": 80
+                  "width": 2684,
+                  "height": 1200
                 }
               },
               {
                 "name": "Volvo",
                 "image": {
-                  "src": "/parts/logos/volvo.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/5f/10003-3.png",
                   "alt": "Volvo",
-                  "width": 171,
-                  "height": 23
+                  "width": 2684,
+                  "height": 1200
                 }
               },
               {
                 "name": "Isuzu",
                 "image": {
-                  "src": "/parts/logos/isuzu.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/d5/10003-5.png",
                   "alt": "Isuzu",
-                  "width": 87,
-                  "height": 87
+                  "width": 2684,
+                  "height": 1200
                 }
               },
               {
                 "name": "Hino",
                 "image": {
-                  "src": "/parts/logos/hino.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/e0/10003-7.png",
                   "alt": "Hino",
-                  "width": 101,
-                  "height": 84
+                  "width": 2684,
+                  "height": 1200
                 }
               },
               {
                 "name": "Fuso",
                 "image": {
-                  "src": "/parts/logos/fuso.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/a4/10003-2.png",
                   "alt": "Fuso",
-                  "width": 98,
-                  "height": 98
+                  "width": 2684,
+                  "height": 1200
                 }
               },
               {
                 "name": "Road Choice",
                 "image": {
-                  "src": "/parts/logos/road-choice.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/1e/10003-4.png",
                   "alt": "Road Choice",
-                  "width": 191,
-                  "height": 58
+                  "width": 2684,
+                  "height": 1200
                 }
               },
               {
                 "name": "Prevost",
                 "image": {
-                  "src": "/parts/logos/prevost.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/32/10003-6.png",
                   "alt": "Prevost",
-                  "width": 182,
-                  "height": 29
+                  "width": 2684,
+                  "height": 1200
                 }
               },
               {
                 "name": "Cummins",
                 "image": {
-                  "src": "/parts/logos/cummins.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/f0/10003-8.png",
                   "alt": "Cummins",
-                  "width": 98,
-                  "height": 93
+                  "width": 2684,
+                  "height": 1200
                 }
               }
             ]
@@ -606,7 +606,7 @@
               {
                 "name": "Accuride",
                 "image": {
-                  "src": "/parts/logos/accuride.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/fe/10002-1.png",
                   "alt": "Accuride",
                   "width": 203,
                   "height": 52
@@ -615,7 +615,7 @@
               {
                 "name": "Allison Transmission",
                 "image": {
-                  "src": "/parts/logos/allison.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/13/10002-8.png",
                   "alt": "Allison Transmission",
                   "width": 182,
                   "height": 55
@@ -624,7 +624,7 @@
               {
                 "name": "American Chrome",
                 "image": {
-                  "src": "/parts/logos/american-chrome.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/1d/10002-15.png",
                   "alt": "American Chrome",
                   "width": 185,
                   "height": 58
@@ -633,7 +633,7 @@
               {
                 "name": "ATRO",
                 "image": {
-                  "src": "/parts/logos/atro.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/b1/10002-22.png",
                   "alt": "ATRO",
                   "width": 139,
                   "height": 72
@@ -642,7 +642,7 @@
               {
                 "name": "Automann",
                 "image": {
-                  "src": "/parts/logos/automann.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/19/10002-29.png",
                   "alt": "Automann",
                   "width": 211,
                   "height": 49
@@ -651,7 +651,7 @@
               {
                 "name": "Bendix",
                 "image": {
-                  "src": "/parts/logos/bendix.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/54/10002-36.png",
                   "alt": "Bendix",
                   "width": 127,
                   "height": 81
@@ -660,7 +660,7 @@
               {
                 "name": "Bostrom",
                 "image": {
-                  "src": "/parts/logos/bostrom.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/79/10002-2.png",
                   "alt": "Bostrom",
                   "width": 159,
                   "height": 52
@@ -669,7 +669,7 @@
               {
                 "name": "CR Seals",
                 "image": {
-                  "src": "/parts/logos/cr-seals.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/a9/10002-9.png",
                   "alt": "CR Seals",
                   "width": 93,
                   "height": 101
@@ -678,7 +678,7 @@
               {
                 "name": "Dayco",
                 "image": {
-                  "src": "/parts/logos/dayco.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/ce/10002-16.png",
                   "alt": "Dayco",
                   "width": 197,
                   "height": 58
@@ -687,298 +687,298 @@
               {
                 "name": "Delco Remy",
                 "image": {
-                  "src": "/parts/logos/delco-remy.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/7b/10002-23.png",
                   "alt": "Delco Remy",
-                  "width": 96,
-                  "height": 98
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "DEX",
                 "image": {
-                  "src": "/parts/logos/dex.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/11/10002-30.png",
                   "alt": "DEX",
-                  "width": 107,
-                  "height": 107
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "Donaldson",
                 "image": {
-                  "src": "/parts/logos/donaldson.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/67/10002-37.png",
                   "alt": "Donaldson",
-                  "width": 197,
-                  "height": 58
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "East Penn",
                 "image": {
-                  "src": "/parts/logos/east-penn.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/c1/10002-3.png",
                   "alt": "East Penn",
-                  "width": 171,
-                  "height": 46
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "Eaton",
                 "image": {
-                  "src": "/parts/logos/eaton.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/f7/10002-10.png",
                   "alt": "Eaton",
-                  "width": 168,
-                  "height": 58
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "Exide",
                 "image": {
-                  "src": "/parts/logos/exide.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/a9/10002-17.png",
                   "alt": "Exide",
-                  "width": 171,
-                  "height": 64
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "ExxonMobil",
                 "image": {
-                  "src": "/parts/logos/exxonmobil.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/b5/10002-24.png",
                   "alt": "ExxonMobil",
-                  "width": 171,
-                  "height": 43
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "Fleetguard",
                 "image": {
-                  "src": "/parts/logos/fleetguard.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/41/10002-31.png",
                   "alt": "Fleetguard",
-                  "width": 116,
-                  "height": 87
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "FleetValue",
                 "image": {
-                  "src": "/parts/logos/fleetvalue.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/d9/10002-38.png",
                   "alt": "FleetValue",
-                  "width": 168,
-                  "height": 70
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "Fontaine",
                 "image": {
-                  "src": "/parts/logos/fontaine.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/b6/10002-4.png",
                   "alt": "Fontaine",
-                  "width": 156,
-                  "height": 87
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "Grote",
                 "image": {
-                  "src": "/parts/logos/grote.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/45/10002-11.png",
                   "alt": "Grote",
-                  "width": 130,
-                  "height": 81
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "Hendrickson",
                 "image": {
-                  "src": "/parts/logos/hendrickson.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/0e/10002-18.png",
                   "alt": "Hendrickson",
-                  "width": 203,
-                  "height": 52
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "SAF-Holland",
                 "image": {
-                  "src": "/parts/logos/saf-holland.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/dd/10002-25.png",
                   "alt": "SAF-Holland",
-                  "width": 185,
-                  "height": 58
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "JOST",
                 "image": {
-                  "src": "/parts/logos/jost.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/f4/10002-32.png",
                   "alt": "JOST",
-                  "width": 139,
-                  "height": 49
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "Meritor",
                 "image": {
-                  "src": "/parts/logos/meritor.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/06/10002-39.png",
                   "alt": "Meritor",
-                  "width": 171,
-                  "height": 101
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "MGM Brakes",
                 "image": {
-                  "src": "/parts/logos/mgm-brakes.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/4e/10002-5.png",
                   "alt": "MGM Brakes",
-                  "width": 188,
-                  "height": 64
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "Neapco",
                 "image": {
-                  "src": "/parts/logos/neapco.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/75/10002-12.png",
                   "alt": "Neapco",
-                  "width": 156,
-                  "height": 58
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "Bower NTN",
                 "image": {
-                  "src": "/parts/logos/bower-ntn.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/78/10002-19.png",
                   "alt": "Bower NTN",
-                  "width": 177,
-                  "height": 38
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "Oilzum",
                 "image": {
-                  "src": "/parts/logos/oilzum.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/55/10002-26.png",
                   "alt": "Oilzum",
-                  "width": 107,
-                  "height": 107
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "Pana Pacific",
                 "image": {
-                  "src": "/parts/logos/pana-pacific.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/f8/10002-33.png",
                   "alt": "Pana Pacific",
-                  "width": 136,
-                  "height": 67
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "Parker",
                 "image": {
-                  "src": "/parts/logos/parker.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/ce/10002-40.png",
                   "alt": "Parker",
-                  "width": 151,
-                  "height": 64
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "Permatex",
                 "image": {
-                  "src": "/parts/logos/permatex.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/38/10002-6.png",
                   "alt": "Permatex",
-                  "width": 194,
-                  "height": 55
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "RedDOT",
                 "image": {
-                  "src": "/parts/logos/redot.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/13/10002-13.png",
                   "alt": "RedDOT",
-                  "width": 177,
-                  "height": 64
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "Seats",
                 "image": {
-                  "src": "/parts/logos/seats.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/c5/10002-20.png",
                   "alt": "Seats",
-                  "width": 185,
-                  "height": 49
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "Silverback",
                 "image": {
-                  "src": "/parts/logos/silverback.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/49/10002-27.png",
                   "alt": "Silverback",
-                  "width": 171,
-                  "height": 64
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "Stemco",
                 "image": {
-                  "src": "/parts/logos/stemco.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/12/10002-34.png",
                   "alt": "Stemco",
-                  "width": 174,
-                  "height": 84
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "Tramec Sloan",
                 "image": {
-                  "src": "/parts/logos/tramec-sloan.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/87/10002-41.png",
                   "alt": "Tramec Sloan",
-                  "width": 174,
-                  "height": 46
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "Truck-Lite",
                 "image": {
-                  "src": "/parts/logos/truck-lite.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/dd/10002-7.png",
                   "alt": "Truck-Lite",
-                  "width": 165,
-                  "height": 67
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "Velvac",
                 "image": {
-                  "src": "/parts/logos/velvac.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/e5/10002-14.png",
                   "alt": "Velvac",
-                  "width": 159,
-                  "height": 43
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "WAB",
                 "image": {
-                  "src": "/parts/logos/wab.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/26/10002-21.png",
                   "alt": "WAB",
-                  "width": 162,
-                  "height": 49
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "WABCO",
                 "image": {
-                  "src": "/parts/logos/wabco.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/f9/10002-28.png",
                   "alt": "WABCO",
-                  "width": 180,
-                  "height": 43
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "Webb",
                 "image": {
-                  "src": "/parts/logos/webb.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/66/10002-35.png",
                   "alt": "Webb",
-                  "width": 194,
-                  "height": 55
+                  "width": 2004,
+                  "height": 948
                 }
               },
               {
                 "name": "Würth",
                 "image": {
-                  "src": "/parts/logos/wurth.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/ef/10002-42.png",
                   "alt": "Würth",
-                  "width": 180,
-                  "height": 49
+                  "width": 2004,
+                  "height": 948
                 }
               }
             ]
