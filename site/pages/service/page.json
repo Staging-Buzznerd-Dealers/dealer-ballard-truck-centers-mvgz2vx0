@@ -27,6 +27,13 @@
         "paddingY": 0,
         "align": "center"
       },
+      "styles": {
+        "base": {
+          "backgroundImage": "/service/hero-shop.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center"
+        }
+      },
       "children": [
         {
           "id": "sv-hero-icon",
@@ -77,14 +84,7 @@
             "align": "center"
           }
         }
-      ],
-      "styles": {
-        "base": {
-          "backgroundImage": "/service/hero-shop.jpg",
-          "backgroundSize": "cover",
-          "backgroundPosition": "center"
-        }
-      }
+      ]
     },
     {
       "id": "sv-benefits",
@@ -251,13 +251,13 @@
         "sectionId": "before-after",
         "values": {
           "before": {
-            "src": "/service/before.jpg",
+            "src": "https://vendure.ai4dealerships.com/assets/source/02/10002__02.jpg",
             "alt": "A black stake-bed truck in the shop, before",
             "width": 1218,
             "height": 822
           },
           "after": {
-            "src": "/service/after.jpg",
+            "src": "https://vendure.ai4dealerships.com/assets/source/0c/10001__03.jpg",
             "alt": "The front of a black Isuzu truck with wheel simulators, after",
             "width": 1218,
             "height": 822
