@@ -26,6 +26,13 @@
         "width": "boxed",
         "paddingY": 0
       },
+      "styles": {
+        "base": {
+          "backgroundImage": "/about/hero-1906.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center"
+        }
+      },
       "children": [
         {
           "id": "ab-hero-h",
@@ -55,14 +62,7 @@
             "align": "left"
           }
         }
-      ],
-      "styles": {
-        "base": {
-          "backgroundImage": "/about/hero-1906.jpg",
-          "backgroundSize": "cover",
-          "backgroundPosition": "center"
-        }
-      }
+      ]
     },
     {
       "id": "ab-values",
@@ -134,25 +134,25 @@
               {
                 "name": "North America Customer Experience for Sales, Dealer of the Year 2025 (Mack)",
                 "image": {
-                  "src": "/about/awards/award-01.png",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/d7/10001.png",
                   "alt": "North America Customer Experience for Sales, Dealer of the Year 2025 (Mack)",
-                  "width": 180,
-                  "height": 260
+                  "width": 717,
+                  "height": 1024
                 }
               },
               {
                 "name": "Circle of Excellence Award 2024 (Isuzu Truck)",
                 "image": {
-                  "src": "/about/awards/award-02.png",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/60/10003.png",
                   "alt": "Circle of Excellence Award 2024 (Isuzu Truck)",
-                  "width": 180,
-                  "height": 260
+                  "width": 730,
+                  "height": 1042
                 }
               },
               {
                 "name": "North America Customer Experience for Sales, Dealer of the Year 2024 (Mack)",
                 "image": {
-                  "src": "/about/awards/award-03.png",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/9b/ballard-award-banners-template-01-717x1024.png",
                   "alt": "North America Customer Experience for Sales, Dealer of the Year 2024 (Mack)",
                   "width": 180,
                   "height": 260
@@ -161,7 +161,7 @@
               {
                 "name": "Northeast Dealer of the Year 2023 (Mack)",
                 "image": {
-                  "src": "/about/awards/award-04.png",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/5c/ballard-award-banners-template-10-717x1024.png",
                   "alt": "Northeast Dealer of the Year 2023 (Mack)",
                   "width": 180,
                   "height": 260
@@ -170,34 +170,61 @@
               {
                 "name": "Circle of Excellence Award 2023 (Isuzu Truck)",
                 "image": {
-                  "src": "/about/awards/award-05.png",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/98/10004.png",
                   "alt": "Circle of Excellence Award 2023 (Isuzu Truck)",
-                  "width": 180,
-                  "height": 260
+                  "width": 730,
+                  "height": 1042
                 }
               },
               {
                 "name": "United States Dealer of the Year 2022 (Volvo)",
                 "image": {
-                  "src": "/about/awards/award-06.png",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/d0/10005.png",
                   "alt": "United States Dealer of the Year 2022 (Volvo)",
-                  "width": 180,
-                  "height": 260
+                  "width": 717,
+                  "height": 1024
                 }
               },
               {
                 "name": "North America Dealer of the Year 2022 (Mack)",
                 "image": {
-                  "src": "/about/awards/award-07.png",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/ea/ballard-award-banners-template-09-717x1024.png",
                   "alt": "North America Dealer of the Year 2022 (Mack)",
-                  "width": 180,
-                  "height": 260
+                  "width": 717,
+                  "height": 1024
                 }
               },
               {
                 "name": "Ballard award badge",
                 "image": {
-                  "src": "/about/awards/award-08.png",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/f0/10002__02.png",
+                  "alt": "Ballard award badge",
+                  "width": 717,
+                  "height": 1024
+                }
+              },
+              {
+                "name": "Ballard award badge",
+                "image": {
+                  "src": "https://vendure.ai4dealerships.com/assets/source/dd/ballard-award-banners-template-05-717x1024.png",
+                  "alt": "Ballard award badge",
+                  "width": 717,
+                  "height": 1024
+                }
+              },
+              {
+                "name": "Ballard award badge",
+                "image": {
+                  "src": "https://vendure.ai4dealerships.com/assets/source/ed/10008.png",
+                  "alt": "Ballard award badge",
+                  "width": 717,
+                  "height": 1024
+                }
+              },
+              {
+                "name": "Ballard award badge",
+                "image": {
+                  "src": "https://vendure.ai4dealerships.com/assets/source/83/ballard-award-banners-template-14-717x1024.png",
                   "alt": "Ballard award badge",
                   "width": 180,
                   "height": 260
@@ -206,91 +233,55 @@
               {
                 "name": "Ballard award badge",
                 "image": {
-                  "src": "/about/awards/award-09.png",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/89/10039.png",
                   "alt": "Ballard award badge",
-                  "width": 180,
-                  "height": 260
+                  "width": 730,
+                  "height": 1042
                 }
               },
               {
                 "name": "Ballard award badge",
                 "image": {
-                  "src": "/about/awards/award-10.png",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/13/10038.png",
                   "alt": "Ballard award badge",
-                  "width": 180,
-                  "height": 260
+                  "width": 730,
+                  "height": 1042
                 }
               },
               {
                 "name": "Ballard award badge",
                 "image": {
-                  "src": "/about/awards/award-11.png",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/17/ballard-award-banners-template-11-717x1024.png",
                   "alt": "Ballard award badge",
-                  "width": 180,
-                  "height": 260
+                  "width": 730,
+                  "height": 1042
                 }
               },
               {
                 "name": "Ballard award badge",
                 "image": {
-                  "src": "/about/awards/award-12.png",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/32/ballard-award-banners-template-02-717x1024.png",
                   "alt": "Ballard award badge",
-                  "width": 180,
-                  "height": 260
+                  "width": 717,
+                  "height": 1024
                 }
               },
               {
                 "name": "Ballard award badge",
                 "image": {
-                  "src": "/about/awards/award-13.png",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/c1/ballard-award-banners-template-13-717x1024.png",
                   "alt": "Ballard award badge",
-                  "width": 180,
-                  "height": 260
+                  "width": 717,
+                  "height": 1024
                 }
               },
               {
                 "name": "Ballard award badge",
                 "image": {
-                  "src": "/about/awards/award-14.png",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/50/ballard-award-banners-template-08-717x1024.png",
                   "alt": "Ballard award badge",
-                  "width": 180,
-                  "height": 260
-                }
-              },
-              {
-                "name": "Ballard award badge",
-                "image": {
-                  "src": "/about/awards/award-15.png",
-                  "alt": "Ballard award badge",
-                  "width": 180,
-                  "height": 260
-                }
-              },
-              {
-                "name": "Ballard award badge",
-                "image": {
-                  "src": "/about/awards/award-16.png",
-                  "alt": "Ballard award badge",
-                  "width": 180,
-                  "height": 260
-                }
-              },
-              {
-                "name": "Ballard award badge",
-                "image": {
-                  "src": "/about/awards/award-17.png",
-                  "alt": "Ballard award badge",
-                  "width": 180,
-                  "height": 260
-                }
-              },
-              {
-                "name": "Ballard award badge",
-                "image": {
-                  "src": "/about/awards/award-18.png",
-                  "alt": "Ballard award badge",
-                  "width": 180,
-                  "height": 260
+                  "width": 717,
+                  "height": 1024
                 }
               }
             ]
@@ -354,37 +345,37 @@
               {
                 "name": "ATD (American Truck Dealers)",
                 "image": {
-                  "src": "/about/logos/atd.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/3a/10010.png",
                   "alt": "ATD (American Truck Dealers)",
-                  "width": 232,
-                  "height": 99
+                  "width": 225,
+                  "height": 81
                 }
               },
               {
                 "name": "Massachusetts TAM",
                 "image": {
-                  "src": "/about/logos/tam.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/1b/10011.png",
                   "alt": "Massachusetts TAM",
-                  "width": 176,
-                  "height": 103
+                  "width": 166,
+                  "height": 86
                 }
               },
               {
                 "name": "RITA",
                 "image": {
-                  "src": "/about/logos/rita.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/7c/10012.png",
                   "alt": "RITA",
-                  "width": 142,
-                  "height": 137
+                  "width": 126,
+                  "height": 126
                 }
               },
               {
                 "name": "Industry partner logo (name not legible)",
                 "image": {
-                  "src": "/about/logos/maine-ata.svg",
+                  "src": "https://vendure.ai4dealerships.com/assets/source/d2/10013.png",
                   "alt": "Industry partner logo (name not legible)",
-                  "width": 133,
-                  "height": 150
+                  "width": 125,
+                  "height": 147
                 }
               }
             ]
@@ -402,66 +393,66 @@
           "logos": [
             {
               "image": {
-                "src": "/about/logos/hopkinton-womens-club.png",
+                "src": "https://vendure.ai4dealerships.com/assets/source/cc/10026.jpg",
                 "alt": "Hopkinton Women’s Club",
-                "width": 142,
-                "height": 78
+                "width": 300,
+                "height": 160
               }
             },
             {
               "image": {
-                "src": "/about/logos/movember.png",
+                "src": "https://vendure.ai4dealerships.com/assets/source/ad/10027.jpg",
                 "alt": "Movember Foundation",
-                "width": 131,
-                "height": 67
+                "width": 300,
+                "height": 163
               }
             },
             {
               "image": {
-                "src": "/about/logos/national-breast-cancer.png",
+                "src": "https://vendure.ai4dealerships.com/assets/source/c6/10028.jpg",
                 "alt": "National Breast Cancer Foundation, Inc.",
-                "width": 147,
-                "height": 54
+                "width": 300,
+                "height": 120
               }
             },
             {
               "image": {
-                "src": "/about/logos/springfield-st-patricks.png",
+                "src": "https://vendure.ai4dealerships.com/assets/source/70/10029.jpg",
                 "alt": "Springfield St. Patrick’s Parade Committee, Inc.",
-                "width": 151,
-                "height": 142
+                "width": 300,
+                "height": 300
               }
             },
             {
               "image": {
-                "src": "/about/logos/operation-stand-down.png",
+                "src": "https://vendure.ai4dealerships.com/assets/source/58/10030.jpg",
                 "alt": "Operation Stand Down Rhode Island",
-                "width": 143,
-                "height": 126
+                "width": 300,
+                "height": 300
               }
             },
             {
               "image": {
-                "src": "/about/logos/vfw-post-8164.png",
+                "src": "https://vendure.ai4dealerships.com/assets/source/3d/10014.jpg",
                 "alt": "VFW Post 8164, Tewksbury, MA",
-                "width": 103,
-                "height": 141
+                "width": 300,
+                "height": 270
               }
             },
             {
               "image": {
-                "src": "/about/logos/wareham-police.png",
+                "src": "https://vendure.ai4dealerships.com/assets/source/8b/10015.jpg",
                 "alt": "Wareham Police, Gateway to Cape Cod",
-                "width": 141,
-                "height": 155
+                "width": 300,
+                "height": 286
               }
             },
             {
               "image": {
-                "src": "/about/logos/als-one.svg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/5b/10016.jpg",
                 "alt": "ALS One",
-                "width": 159,
-                "height": 86
+                "width": 300,
+                "height": 175
               }
             }
           ]
@@ -500,10 +491,10 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/about/goodrich.jpg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/b3/10031.jpg",
                       "alt": "Ballard's Garage, a Goodrich Tires sign on a wooden building",
-                      "width": 672,
-                      "height": 380
+                      "width": 1024,
+                      "height": 576
                     },
                     "width": "full"
                   }
@@ -523,10 +514,10 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/about/station.jpg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/1a/10032.jpg",
                       "alt": "An early Ballard service station with cars out front",
-                      "width": 672,
-                      "height": 380
+                      "width": 1024,
+                      "height": 576
                     },
                     "width": "full"
                   }
@@ -590,10 +581,10 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/about/ballard-mac-team.jpg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/9f/10034.jpg",
                       "alt": "The Ballard Mack Sales & Service team outside the brick building",
-                      "width": 1348,
-                      "height": 436
+                      "width": 1600,
+                      "height": 550
                     },
                     "width": "full"
                   }
@@ -635,10 +626,10 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/about/mack-yard.jpg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/1e/10042.jpg",
                       "alt": "The Mack dealership lot with cars and a delivery truck",
-                      "width": 672,
-                      "height": 376
+                      "width": 1400,
+                      "height": 788
                     },
                     "width": "full"
                   }
@@ -658,10 +649,10 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/about/mack-station.jpg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/8c/10043.jpg",
                       "alt": "The Mack dealership building beside the road",
-                      "width": 672,
-                      "height": 376
+                      "width": 1400,
+                      "height": 788
                     },
                     "width": "full"
                   }
@@ -730,10 +721,10 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/about/red-mack-snow.jpg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/74/10035.jpg",
                       "alt": "A red Mack tractor in the snow with a Mack Trucks sign behind",
-                      "width": 1348,
-                      "height": 440
+                      "width": 1600,
+                      "height": 550
                     },
                     "width": "full"
                   }
@@ -757,10 +748,10 @@
           "type": "image",
           "props": {
             "image": {
-              "src": "/about/night-shop.jpg",
+              "src": "https://vendure.ai4dealerships.com/assets/source/ec/10036.jpg",
               "alt": "A Ballard dealership at night under a stormy sky",
-              "width": 2235,
-              "height": 460
+              "width": 1200,
+              "height": 800
             },
             "width": "full"
           }
