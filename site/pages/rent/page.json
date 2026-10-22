@@ -27,6 +27,13 @@
         "paddingY": 0,
         "align": "center"
       },
+      "styles": {
+        "base": {
+          "backgroundImage": "/rent/hero-trucks.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center"
+        }
+      },
       "children": [
         {
           "id": "rt-hero-icon",
@@ -74,14 +81,7 @@
             "align": "center"
           }
         }
-      ],
-      "styles": {
-        "base": {
-          "backgroundImage": "/rent/hero-trucks.jpg",
-          "backgroundSize": "cover",
-          "backgroundPosition": "center"
-        }
-      }
+      ]
     },
     {
       "id": "rt-benefits",
@@ -256,7 +256,7 @@
           "items": [
             {
               "image": {
-                "src": "/rent/box-truck-26.jpg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/bc/10001__02.jpg",
                 "alt": "26' Box Truck Rental",
                 "width": 612,
                 "height": 408
@@ -266,7 +266,7 @@
             },
             {
               "image": {
-                "src": "/rent/dump-truck.jpg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/f0/10002.jpg",
                 "alt": "Dump Truck Rental",
                 "width": 612,
                 "height": 408
@@ -276,7 +276,7 @@
             },
             {
               "image": {
-                "src": "/rent/day-cab-tractor.jpg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/ca/leasingpic_whitevnr-800x533.webp",
                 "alt": "Day Cab Tractor Rental",
                 "width": 612,
                 "height": 408
@@ -286,7 +286,7 @@
             },
             {
               "image": {
-                "src": "/rent/heavy-duty-day-cab.jpg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/f9/10003.jpg",
                 "alt": "Heavy-Duty Day Cab Tractor Rental",
                 "width": 612,
                 "height": 408
@@ -296,7 +296,7 @@
             },
             {
               "image": {
-                "src": "/rent/box-truck-16.jpg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/c8/10004.jpg",
                 "alt": "16' Box Truck Rental",
                 "width": 612,
                 "height": 408
@@ -306,7 +306,7 @@
             },
             {
               "image": {
-                "src": "/rent/yard-spotter.jpg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/46/10006.jpg",
                 "alt": "Yard Spotter Rental",
                 "width": 612,
                 "height": 408
@@ -376,7 +376,7 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/rent/easy-convenient.jpg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/15/10007.jpg",
                       "alt": "A white Mack truck beside a Ballard Isuzu box truck",
                       "width": 972,
                       "height": 672
