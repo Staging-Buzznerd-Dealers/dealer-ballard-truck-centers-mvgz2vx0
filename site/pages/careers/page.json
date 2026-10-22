@@ -27,6 +27,13 @@
         "paddingY": 0,
         "align": "center"
       },
+      "styles": {
+        "base": {
+          "backgroundImage": "/careers/hero-team.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center"
+        }
+      },
       "children": [
         {
           "id": "cr-hero-icon",
@@ -74,14 +81,7 @@
             "align": "center"
           }
         }
-      ],
-      "styles": {
-        "base": {
-          "backgroundImage": "/careers/hero-team.jpg",
-          "backgroundSize": "cover",
-          "backgroundPosition": "center"
-        }
-      }
+      ]
     },
     {
       "id": "cr-culture",
@@ -142,10 +142,10 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/careers/aerial.jpg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/80/10001__05.jpg",
                       "alt": "An aerial view of a Ballard dealership and its lot",
-                      "width": 976,
-                      "height": 548
+                      "width": 1400,
+                      "height": 788
                     },
                     "width": "full"
                   }
@@ -165,46 +165,46 @@
           "items": [
             {
               "image": {
-                "src": "/careers/culture-sunset.jpg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/9b/10002__03.jpg",
                 "alt": "We understand that sometimes, “life” happens.",
-                "width": 375,
-                "height": 370
+                "width": 800,
+                "height": 800
               },
               "caption": "We understand that sometimes, “life” happens."
             },
             {
               "image": {
-                "src": "/careers/culture-trophies.jpg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/9d/10003__02.jpg",
                 "alt": "We are a little competitive… with company-wide staff competitions.",
-                "width": 375,
-                "height": 370
+                "width": 800,
+                "height": 800
               },
               "caption": "We are a little competitive… with company-wide staff competitions."
             },
             {
               "image": {
-                "src": "/careers/culture-drivers.jpg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/7a/10004__02.jpg",
                 "alt": "We are a transparent business, because our success is your success.",
-                "width": 370,
-                "height": 370
+                "width": 800,
+                "height": 800
               },
               "caption": "We are a transparent business, because our success is your success."
             },
             {
               "image": {
-                "src": "/careers/culture-trailer.jpg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/5c/10005.jpg",
                 "alt": "We are big believers in staff appreciation.",
-                "width": 375,
-                "height": 370
+                "width": 800,
+                "height": 800
               },
               "caption": "We are big believers in staff appreciation."
             },
             {
               "image": {
-                "src": "/careers/culture-toys.jpg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/92/10006__02.jpg",
                 "alt": "We are passionate about giving back to our communities.",
-                "width": 370,
-                "height": 370
+                "width": 800,
+                "height": 800
               },
               "caption": "We are passionate about giving back to our communities."
             }
@@ -221,10 +221,10 @@
         "values": {
           "heading": "General Benefits",
           "photo": {
-            "src": "/careers/team-trucks.jpg",
+            "src": "https://vendure.ai4dealerships.com/assets/source/7a/10004__02.jpg",
             "alt": "Two Ballard employees standing in front of Mack trucks",
-            "width": 976,
-            "height": 656
+            "width": 800,
+            "height": 800
           },
           "items": [
             {
@@ -294,10 +294,10 @@
         "values": {
           "heading": "Additional Benefits for Diesel Tech Careers",
           "photo": {
-            "src": "/careers/diesel-tech.jpg",
+            "src": "https://vendure.ai4dealerships.com/assets/source/74/10008.jpg",
             "alt": "A Ballard technician working on a diesel engine",
-            "width": 976,
-            "height": 660
+            "width": 1024,
+            "height": 692
           },
           "items": [
             {
@@ -350,28 +350,28 @@
           "items": [
             {
               "image": {
-                "src": "/careers/training-room.jpg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/a0/10009.jpg",
                 "alt": "Further your expertise in diesel and/or electric trucks with training.",
-                "width": 440,
-                "height": 435
+                "width": 400,
+                "height": 400
               },
               "caption": "Further your expertise in diesel and/or electric trucks with training."
             },
             {
               "image": {
-                "src": "/careers/competition.jpg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/de/10010.jpg",
                 "alt": "Participate in world-class competitions and team building activities.",
-                "width": 440,
-                "height": 435
+                "width": 800,
+                "height": 800
               },
               "caption": "Participate in world-class competitions and team building activities."
             },
             {
               "image": {
-                "src": "/careers/growth.jpg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/7f/10011.jpg",
                 "alt": "Regardless of your starting position, there are opportunities for growth and advancement.",
-                "width": 385,
-                "height": 435
+                "width": 800,
+                "height": 800
               },
               "caption": "Regardless of your starting position, there are opportunities for growth and advancement."
             }
@@ -411,10 +411,10 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/careers/flag-truck.jpg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/0e/10012.jpg",
                       "alt": "A Ballard truck painted with military service emblems parked beside an American flag",
-                      "width": 1016,
-                      "height": 676
+                      "width": 2560,
+                      "height": 1707
                     },
                     "width": "full"
                   }
@@ -554,10 +554,10 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/careers/careers-form.jpg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/ab/10013.jpg",
                       "alt": "Two Ballard technicians smiling in front of a truck, one giving a thumbs up",
-                      "width": 1060,
-                      "height": 860
+                      "width": 1024,
+                      "height": 692
                     },
                     "width": "full"
                   }
