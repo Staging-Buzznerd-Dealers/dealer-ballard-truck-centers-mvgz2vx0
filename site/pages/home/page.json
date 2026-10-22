@@ -321,10 +321,10 @@
           "type": "image",
           "props": {
             "image": {
-              "src": "https://vendure.ai4dealerships.com/assets/source/90/ms_1.jpg",
+              "src": "https://vendure.ai4dealerships.com/assets/source/56/trucks-home.jpg",
               "alt": "A lineup of Mack trucks",
-              "width": 1361,
-              "height": 414
+              "width": 1200,
+              "height": 375
             },
             "width": "full"
           }
